@@ -7,11 +7,11 @@ The profile elements are described using the [Profiles Vocabulary](https://www.w
 
 
 ## Repository Contents
-* resources/ - non-RDF source files used to create the RDF
-* style/ - images, CSS files etc. used to render the HTML version of the Profile
-* <profile.ttl> - the profile declaration, in RDF - *currently a stub file only*
-* <units.ttl> - the vocabulary of Geo Units. All units are taken from QUDT. This file also includes new collections of the units - *currently a stub file only*
-* <geoqudt.html> - the profile declaration, in HTML, generated from all the above listed RDF files - *currently a stub file only*
+* [resources/](resources/) - non-RDF source files used to create the RDF
+* [style/](style/) - images, CSS files etc. used to render the HTML version of the Profile
+* [profile.ttl](profile.ttl) - the profile declaration, in RDF - *currently a stub file only*
+* [units.ttl](units.ttl) - the vocabulary of Geo Units. All units are taken from QUDT. This file also includes new collections of the units - *currently a stub file only*
+* [geoqudt.html](geoqudt.html) - the profile declaration, in HTML, generated from all the above listed RDF files - *currently a stub file only*
 
 
 ## License
