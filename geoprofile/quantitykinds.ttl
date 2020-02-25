@@ -1,0 +1,653 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix qk: <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+qk:Area a qudt:QuantityKind ;
+    rdfs:label "Area" ;
+    dcterms:description "Area is a quantity expressing the two-dimensional size of a defined part of a surface, typically a region bounded by a closed curve."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/AC>,
+        <http://qudt.org/vocab/unit/ARE>,
+        <http://qudt.org/vocab/unit/BARN>,
+        <http://qudt.org/vocab/unit/CentiM2>,
+        <http://qudt.org/vocab/unit/FT2>,
+        <http://qudt.org/vocab/unit/HA>,
+        <http://qudt.org/vocab/unit/IN2>,
+        <http://qudt.org/vocab/unit/M2>,
+        <http://qudt.org/vocab/unit/MI2>,
+        <http://qudt.org/vocab/unit/MIL_Circ>,
+        <http://qudt.org/vocab/unit/PlanckArea>,
+        <http://qudt.org/vocab/unit/YD2> ;
+    qudt:baseCGSUnitDimensions "cm^2" ;
+    qudt:baseSIUnitDimensions "m^2" ;
+    qudt:baseUnitDimensions "L^2" ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Area"^^xsd:anyURI ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L2I0M0H0T0D0> ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:Capacitance a qudt:QuantityKind ;
+    rdfs:label "Capacitance" ;
+    dcterms:description "\"Capacitance\" is the ability of a body to hold an electrical charge; it is quantified as the amount of electric charge stored for a given electric potential. Capacitance is a scalar-valued quantity."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/FARAD>,
+        <http://qudt.org/vocab/unit/FARAD_Ab>,
+        <http://qudt.org/vocab/unit/FARAD_Stat>,
+        <http://qudt.org/vocab/unit/MicroFARAD>,
+        <http://qudt.org/vocab/unit/NanoFARAD>,
+        <http://qudt.org/vocab/unit/PicoFARAD> ;
+    qudt:baseUnitDimensions "A^2 \\cdot s^4/kg \\cdot m^2",
+        "I^2 \\cdot T^4/L^2 \\cdot M" ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Capacitance"^^xsd:anyURI ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E2L-2I0M-1H0T4D0> ;
+    qudt:informativeReference "http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=31891"^^xsd:anyURI ;
+    qudt:isoNormativeReference "http://www.iso.org/iso/catalogue_detail?csnumber=43012"^^xsd:anyURI ;
+    qudt:latexDefinition "\\(C = Q/U\\), where \\(Q\\) is electric charge and \\(V\\) is voltage." ;
+    qudt:symbol "C" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:Compressibility a qudt:QuantityKind ;
+    rdfs:label "Compressibility" ;
+    dcterms:description "Compressibility is a measure of the relative volume change of a fluid or solid as a response to a pressure (or mean stress) change."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/PER-PA> ;
+    qudt:informativeReference "http://en.wikipedia.org/wiki/Compressibility"^^xsd:anyURI ;
+    qudt:isoNormativeReference "http://www.iso.org/iso/catalogue_detail?csnumber=31889"^^xsd:anyURI ;
+    qudt:latexDefinition "\\(\\chi = -(\\frac{\\1}{V})\\frac{dV}{d\\rho}\\), where \\(V\\) is volume and \\(p\\) is pressure." ;
+    qudt:symbol "\\chi" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:Concentration a qudt:QuantityKind ;
+    rdfs:label "Concentration" ;
+    dcterms:description "In chemistry, concentration is defined as the abundance of a constituent divided by the total volume of a mixture. Furthermore, in chemistry, four types of mathematical description can be distinguished: mass concentration, molar concentration, number concentration, and volume concentration. The term concentration can be applied to any kind of chemical mixture, but most frequently it refers to solutes in solutions."^^rdf:HTML ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Concentration"^^xsd:anyURI ;
+    qudt:informativeReference "http://en.wikipedia.org/wiki/Concentration"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:Density a qudt:QuantityKind ;
+    rdfs:label "Density" ;
+    dcterms:description "The mass density or density of a material is defined as its mass per unit volume. The symbol most often used for density is \\(\\rho\\).  Mathematically, density is defined as mass divided by volume: \\(\\rho = m/V\\), where \\(\\rho\\) is the density, \\(m\\) is the mass, and \\(V\\) is the volume. In some cases, density is also defined as its weight per unit volume, although this quantity is more properly called specific weight."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/GRAIN-PER-GAL>,
+        <http://qudt.org/vocab/unit/KiloGM-PER-M3>,
+        <http://qudt.org/vocab/unit/LB_M-PER-FT3>,
+        <http://qudt.org/vocab/unit/LB_M-PER-GAL>,
+        <http://qudt.org/vocab/unit/LB_M-PER-IN3>,
+        <http://qudt.org/vocab/unit/LB_M-PER-M3>,
+        <http://qudt.org/vocab/unit/LB_M-PER-YD3>,
+        <http://qudt.org/vocab/unit/MilliGM-PER-DeciL>,
+        <http://qudt.org/vocab/unit/OZ-PER-GAL>,
+        <http://qudt.org/vocab/unit/OZ-PER-IN3>,
+        <http://qudt.org/vocab/unit/PlanckDensity>,
+        <http://qudt.org/vocab/unit/SLUG-PER-FT3>,
+        <http://qudt.org/vocab/unit/TON_LONG-PER-YD3>,
+        <http://qudt.org/vocab/unit/TON_SHORT-PER-YD3> ;
+    qudt:baseUnitDimensions "M/L^3",
+        "kg/m^3" ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Density"^^xsd:anyURI ;
+    qudt:expression "m-l^{-3}" ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L-3I0M1H0T0D0> ;
+    qudt:informativeReference "http://en.wikipedia.org/wiki/Density"^^xsd:anyURI ;
+    qudt:latexDefinition "\\(\\rho = m/V\\), where \\(\\rho\\) is the density, \\(m\\) is the mass, and \\(V\\) is the volume." ;
+    qudt:symbol "\\rho" ;
+    ns1:todo "belongs to SOQ-ISO" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:Distance a qudt:QuantityKind ;
+    rdfs:label "Distance" ;
+    dcterms:description "\"Distance\" is a numerical description of how far apart objects are. "^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/M> ;
+    qudt:informativeReference "http://en.wikipedia.org/wiki/Distance"^^xsd:anyURI ;
+    qudt:isoNormativeReference "http://www.iso.org/iso/catalogue_detail?csnumber=43012"^^xsd:anyURI ;
+    qudt:symbol "d" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:ElectricCharge a qudt:QuantityKind ;
+    rdfs:label "Electric Charge" ;
+    dcterms:description "\"Electric Charge\" is a fundamental conserved property of some subatomic particles, which determines their electromagnetic interaction. Electrically charged matter is influenced by, and produces, electromagnetic fields. The electric charge on a body may be positive or negative. Two positively charged bodies experience a mutual repulsive force, as do two negatively charged bodies. A positively charged body and a negatively charged body experience an attractive force. Electric charge is carried by discrete particles and can be positive or negative. The sign convention is such that the elementary electric charge \\(e\\), that is, the charge of the proton, is positive. The SI derived unit of electric charge is the coulomb."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/A-HR>,
+        <http://qudt.org/vocab/unit/AttoC>,
+        <http://qudt.org/vocab/unit/C>,
+        <http://qudt.org/vocab/unit/C_Ab>,
+        <http://qudt.org/vocab/unit/C_Stat>,
+        <http://qudt.org/vocab/unit/CentiC>,
+        <http://qudt.org/vocab/unit/DecaC>,
+        <http://qudt.org/vocab/unit/DeciC>,
+        <http://qudt.org/vocab/unit/E>,
+        <http://qudt.org/vocab/unit/ElementaryCharge>,
+        <http://qudt.org/vocab/unit/ExaC>,
+        <http://qudt.org/vocab/unit/F>,
+        <http://qudt.org/vocab/unit/FR>,
+        <http://qudt.org/vocab/unit/FemtoC>,
+        <http://qudt.org/vocab/unit/GigaC>,
+        <http://qudt.org/vocab/unit/HectoC>,
+        <http://qudt.org/vocab/unit/KiloC>,
+        <http://qudt.org/vocab/unit/MegaC>,
+        <http://qudt.org/vocab/unit/MicroC>,
+        <http://qudt.org/vocab/unit/MilliC>,
+        <http://qudt.org/vocab/unit/NanoC>,
+        <http://qudt.org/vocab/unit/PetaC>,
+        <http://qudt.org/vocab/unit/PicoC>,
+        <http://qudt.org/vocab/unit/PlanckCharge>,
+        <http://qudt.org/vocab/unit/TeraC>,
+        <http://qudt.org/vocab/unit/YoctoC>,
+        <http://qudt.org/vocab/unit/YottaC>,
+        <http://qudt.org/vocab/unit/ZeptoC>,
+        <http://qudt.org/vocab/unit/ZettaC> ;
+    qudt:baseUnitDimensions "A \\cdot s",
+        "I \\cdot T" ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E1L0I0M0H0T1D0> ;
+    qudt:informativeReference "http://en.wikipedia.org/wiki/Electric_charge"^^xsd:anyURI,
+        "http://en.wikipedia.org/wiki/Electric_charge?oldid=492961669"^^xsd:anyURI,
+        "http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=31891"^^xsd:anyURI ;
+    qudt:latexDefinition "\\(dQ = Idt\\), where \\(I\\) is electric current." ;
+    qudt:symbol "Q" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    rdfs:seeAlso qk:ElectricCurrent .
+
+qk:Energy a qudt:QuantityKind ;
+    rdfs:label "Energy" ;
+    dcterms:description "Energy is the quantity characterizing the ability of a system to do work."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/J> ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Energy"^^xsd:anyURI ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L2I0M1H0T-2D0> ;
+    qudt:isoNormativeReference "http://www.iso.org/iso/catalogue_detail?csnumber=31890"^^xsd:anyURI ;
+    qudt:symbol "E" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    rdfs:seeAlso qk:Enthalpy,
+        qk:Entropy,
+        qk:GibbsEnergy,
+        qk:HelmholtzEnergy,
+        qk:InternalEnergy ;
+    skos:broader qk:EnergyAndWork .
+
+qk:EnergyDensity a qudt:QuantityKind ;
+    rdfs:label "Energy Density" ;
+    dcterms:description "Energy density is defined as energy per unit volume. The SI unit for energy density is the joule per cubic meter."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/BTU_IT-PER-FT3>,
+        <http://qudt.org/vocab/unit/BTU_TH-PER-FT3>,
+        <http://qudt.org/vocab/unit/ERG-PER-CentiM3>,
+        <http://qudt.org/vocab/unit/J-PER-M3> ;
+    qudt:baseISOUnitDimensions "m^{-1} \\cdot kg \\cdot s^{-2}" ;
+    qudt:baseImperialUnitDimensions "ft^{-1} \\cdot lb \\cdot s^{-2}" ;
+    qudt:baseSIUnitDimensions "m^{-1} \\cdot kg \\cdot s^{-2}" ;
+    qudt:baseUSCustomaryUnitDimensions "L^{-1} \\cdot M \\cdot T^{-2}" ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Energy_density"^^xsd:anyURI ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L-1I0M1H0T-2D0> ;
+    qudt:informativeReference "http://en.wikipedia.org/wiki/Energy_density"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:Force a qudt:QuantityKind ;
+    rdfs:label "Force" ;
+    dcterms:description "\"Force\" is an influence that causes mass to accelerate. It may be experienced as a lift, a push, or a pull. Force is defined by Newton's Second Law as \\(F = m \\times a \\), where \\(F\\) is force, \\(m\\) is mass and \\(a\\) is acceleration. Net force is mathematically equal to the time rate of change of the momentum of the body on which it acts. Since momentum is a vector quantity (has both a magnitude and direction), force also is a vector quantity."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/DYN>,
+        <http://qudt.org/vocab/unit/KIP_F>,
+        <http://qudt.org/vocab/unit/KiloGM_F>,
+        <http://qudt.org/vocab/unit/KiloP>,
+        <http://qudt.org/vocab/unit/LB_F>,
+        <http://qudt.org/vocab/unit/MegaLB_F>,
+        <http://qudt.org/vocab/unit/N>,
+        <http://qudt.org/vocab/unit/OZ_F>,
+        <http://qudt.org/vocab/unit/PDL>,
+        <http://qudt.org/vocab/unit/PlanckForce> ;
+    qudt:baseUnitDimensions "L \\cdot M/T^2",
+        "kg \\cdot m/s^2" ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Force"^^xsd:anyURI ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L1I0M1H0T-2D0> ;
+    qudt:informativeReference "http://en.wikipedia.org/wiki/Force"^^xsd:anyURI ;
+    qudt:isoNormativeReference "http://www.iso.org/iso/catalogue_detail?csnumber=43012"^^xsd:anyURI ;
+    qudt:latexDefinition "\\(F = \\frac{dp}{dt}\\), where \\(F\\) is the resultant force acting on a body, \\(p\\) is momentum of a body, and \\(t\\) is time." ;
+    qudt:symbol "F" ;
+    qudt:url "http://en.wikipedia.org/wiki/Force"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:Frequency a qudt:QuantityKind ;
+    rdfs:label "Frequency" ;
+    dcterms:description "\"Frequency\" is the number of occurrences of a repeating event per unit time. The repetition of the events may be periodic (that is. the length of time between event repetitions is fixed) or aperiodic (i.e. the length of time between event repetitions varies). Therefore, we distinguish between periodic and aperiodic frequencies. In the SI system, periodic frequency is measured in hertz (Hz) or multiples of hertz, while aperiodic frequency is measured in becquerel (Bq).  In spectroscopy, \\(\\nu\\) is mostly used. Light passing through different media keeps its frequency, but not its wavelength or wavenumber."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/GigaHZ>,
+        <http://qudt.org/vocab/unit/HZ>,
+        <http://qudt.org/vocab/unit/KiloHZ>,
+        <http://qudt.org/vocab/unit/MegaHZ>,
+        <http://qudt.org/vocab/unit/NUM-PER-YR>,
+        <http://qudt.org/vocab/unit/PER-HR>,
+        <http://qudt.org/vocab/unit/PER-MIN>,
+        <http://qudt.org/vocab/unit/PER-SEC>,
+        <http://qudt.org/vocab/unit/PlanckFrequency>,
+        <http://qudt.org/vocab/unit/SAMPLE-PER-SEC> ;
+    qudt:baseUnitDimensions "/T",
+        "/s" ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Frequency"^^xsd:anyURI ;
+    qudt:expression "f" ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T-1D0> ;
+    qudt:latexDefinition """\\(f = 1/T\\), where \\(T\\) is a period.
+
+Alternatively,
+
+\\(\\nu = 1/T\\)""" ;
+    qudt:symbol "\\nu, f" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:HeatFlowRate a qudt:QuantityKind ;
+    rdfs:label "Heat Flow Rate" ;
+    dcterms:description "The rate of heat flow between two systems is measured in watts (joules per second). The formula for rate of heat flow is \\(\\bigtriangleup Q / \\bigtriangleup t = -K \\times A \\times \\bigtriangleup T/x\\), where \\(\\bigtriangleup Q / \\bigtriangleup t\\) is the rate of heat flow; \\(-K\\) is the thermal conductivity factor; A is the surface area; \\(\\bigtriangleup T\\) is the change in temperature and \\(x\\) is the thickness of the material. \\(\\bigtriangleup  T/ x\\) is called the temperature gradient and is always negative because of the heat of flow always goes from more thermal energy to less)."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/BTU_IT-PER-HR>,
+        <http://qudt.org/vocab/unit/BTU_IT-PER-SEC>,
+        <http://qudt.org/vocab/unit/KiloCAL-PER-MIN>,
+        <http://qudt.org/vocab/unit/KiloCAL-PER-SEC>,
+        <http://qudt.org/vocab/unit/TON_FG>,
+        <http://qudt.org/vocab/unit/W> ;
+    qudt:expression "heat-flow-rate" ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L2I0M1H0T-3D0> ;
+    qudt:informativeReference "http://en.wikipedia.org/wiki/Rate_of_heat_flow"^^xsd:anyURI ;
+    qudt:latexSymbol "\\Phi" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    skos:broader qk:Power .
+
+qk:Illuminance a qudt:QuantityKind ;
+    rdfs:label "Illuminance" ;
+    dcterms:description "Illuminance is the total luminous flux incident on a surface, per unit area. It is a measure of the intensity of the incident light, wavelength-weighted by the luminosity function to correlate with human brightness perception."^^rdf:HTML ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Illuminance"^^xsd:anyURI ;
+    qudt:latexDefinition "\\(E_v = \\frac{d\\Phi}{dA}\\), where \\(d\\Phi\\) is the luminous flux incident on an element of the surface with area \\(dA\\)." ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    skos:broader qk:LuminousFluxPerArea ;
+    skos:exactMatch <http://en.wikipedia.org/wiki/Illuminance> .
+
+qk:Inductance a qudt:QuantityKind ;
+    rdfs:label "Inductance" ;
+    dcterms:description "\"Inductance\" is an electromagentic quantity that characterizes a circuit's resistance to any change of electric current; a change in the electric current through induces an opposing electromotive force (EMF). Quantitatively, inductance is proportional to the magnetic flux per unit of electric current."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/H>,
+        <http://qudt.org/vocab/unit/H_Ab>,
+        <http://qudt.org/vocab/unit/H_Stat>,
+        <http://qudt.org/vocab/unit/MicroH>,
+        <http://qudt.org/vocab/unit/MilliH> ;
+    qudt:baseUnitDimensions "L^2 \\cdot M/I^2 \\cdot T^2",
+        "kg \\cdot m^2/A^2 \\cdot s^2" ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Inductance"^^xsd:anyURI ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E-2L2I0M1H0T-2D0> ;
+    qudt:informativeReference "http://www.electropedia.org/iev/iev.nsf/display?openform&ievref=131-12-19"^^xsd:anyURI,
+        "http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=31891"^^xsd:anyURI ;
+    qudt:latexDefinition "\\(L =\\frac{\\Psi}{I}\\), where \\(I\\) is an electric current in a thin conducting loop, and \\(\\Psi\\) is the linked flux caused by that electric current." ;
+    qudt:symbol "L" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    rdfs:seeAlso qk:MutualInductance .
+
+qk:Length a qudt:QuantityKind ;
+    rdfs:label "Length" ;
+    dcterms:description "In geometric measurements, length most commonly refers to the est dimension of an object. In some contexts, the term \"length\" is reserved for a certain dimension of an object along which the length is measured."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/ANGSTROM>,
+        <http://qudt.org/vocab/unit/AU>,
+        <http://qudt.org/vocab/unit/CH>,
+        <http://qudt.org/vocab/unit/CentiM>,
+        <http://qudt.org/vocab/unit/DeciM>,
+        <http://qudt.org/vocab/unit/FATH>,
+        <http://qudt.org/vocab/unit/FM>,
+        <http://qudt.org/vocab/unit/FT>,
+        <http://qudt.org/vocab/unit/FT_US>,
+        <http://qudt.org/vocab/unit/FUR>,
+        <http://qudt.org/vocab/unit/FUR_Long>,
+        <http://qudt.org/vocab/unit/FemtoM>,
+        <http://qudt.org/vocab/unit/IN>,
+        <http://qudt.org/vocab/unit/KiloM>,
+        <http://qudt.org/vocab/unit/LY>,
+        <http://qudt.org/vocab/unit/M>,
+        <http://qudt.org/vocab/unit/MI>,
+        <http://qudt.org/vocab/unit/MI_N>,
+        <http://qudt.org/vocab/unit/MI_US>,
+        <http://qudt.org/vocab/unit/MicroIN>,
+        <http://qudt.org/vocab/unit/MicroM>,
+        <http://qudt.org/vocab/unit/MilLength>,
+        <http://qudt.org/vocab/unit/MilliM>,
+        <http://qudt.org/vocab/unit/PARSEC>,
+        <http://qudt.org/vocab/unit/PCA>,
+        <http://qudt.org/vocab/unit/PT>,
+        <http://qudt.org/vocab/unit/PlanckLength>,
+        <http://qudt.org/vocab/unit/ROD>,
+        <http://qudt.org/vocab/unit/YD> ;
+    qudt:baseUnitDimensions "L",
+        "m" ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Length"^^xsd:anyURI ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L1I0M0H0T0D0> ;
+    qudt:informativeReference "http://en.wikipedia.org/wiki/Length"^^xsd:anyURI ;
+    qudt:symbol "l" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:LuminousFlux a qudt:QuantityKind ;
+    rdfs:label "Luminous Flux" ;
+    dcterms:description "Luminous Flux or Luminous Power is the measure of the perceived power of light. It differs from radiant flux, the measure of the total power of light emitted, in that luminous flux is adjusted to reflect the varying sensitivity of the human eye to different wavelengths of light."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/LM> ;
+    qudt:baseUnitDimensions "J \\cdot U",
+        "cd" ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Luminous_flux"^^xsd:anyURI ;
+    qudt:informativeReference "http://en.wikipedia.org/wiki/Luminous_flux"^^xsd:anyURI ;
+    qudt:isoNormativeReference "http://www.iso.org/iso/catalogue_detail?csnumber=43012"^^xsd:anyURI ;
+    qudt:latexDefinition "\\(\\Phi_v = K_m \\int_{0}^{\\infty}{\\Phi_\\lambda(\\lambda)}{V(\\lambda)d\\lambda}\\), where \\(K_m\\) is the maximum spectral luminous efficacy, \\(\\Phi_\\lambda(\\lambda)\\) is the spectral radiant flux, \\(V(\\lambda)\\) is the spectral luminous efficiency, and \\(\\lambda\\) is the wavelength." ;
+    qudt:symbol "F" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    skos:exactMatch <http://en.wikipedia.org/wiki/Luminous_flux> .
+
+qk:LuminousIntensity a qudt:QuantityKind ;
+    rdfs:label "Luminous Intensity" ;
+    dcterms:description "Luminous Intensity is a measure of the wavelength-weighted power emitted by a light source in a particular direction per unit solid angle. The weighting is determined by the luminosity function, a standardized model of the sensitivity of the human eye to different wavelengths."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/CD>,
+        <http://qudt.org/vocab/unit/CP> ;
+    qudt:baseUnitDimensions "J",
+        "cd" ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Luminous_intensity"^^xsd:anyURI ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L0I1M0H0T0D0> ;
+    qudt:symbol "J" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:MagneticFlux a qudt:QuantityKind ;
+    rdfs:label "Magnetic Flux" ;
+    dcterms:description "\"Magnetic Flux\" is the product of the average magnetic field times the perpendicular area that it penetrates."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/MX>,
+        <http://qudt.org/vocab/unit/UnitPole>,
+        <http://qudt.org/vocab/unit/V_Ab-SEC>,
+        <http://qudt.org/vocab/unit/WB> ;
+    qudt:baseUnitDimensions "L^2 \\cdot M/I \\cdot T^2",
+        "kg \\cdot m^2/A \\cdot s^2" ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Magnetic_flux"^^xsd:anyURI ;
+    qudt:expression "magnetic-flux" ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E-1L2I0M1H0T-2D0> ;
+    qudt:informativeReference "http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=31891"^^xsd:anyURI,
+        "http://www.oxfordreference.com/view/10.1093/acref/9780199233991.001.0001/acref-9780199233991-e-1800"^^xsd:anyURI ;
+    qudt:latexDefinition "\\(\\Phi = \\int_S B \\cdot e_n d A\\), over a surface \\(S\\), where \\(B\\) is magnetic flux density and \\(e_n dA\\) is the vector surface element." ;
+    qudt:latexSymbol "\\Phi",
+        "\\phi" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:Mass a qudt:QuantityKind ;
+    rdfs:label "Mass" ;
+    dcterms:description "In physics, mass, more specifically inertial mass, can be defined as a quantitative measure of an object's resistance to acceleration. The SI unit of mass is the kilogram (\\(kg\\))"^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/AMU>,
+        <http://qudt.org/vocab/unit/CARAT>,
+        <http://qudt.org/vocab/unit/CWT_LONG>,
+        <http://qudt.org/vocab/unit/CWT_SHORT>,
+        <http://qudt.org/vocab/unit/DWT>,
+        <http://qudt.org/vocab/unit/EarthMass>,
+        <http://qudt.org/vocab/unit/GM>,
+        <http://qudt.org/vocab/unit/GRAIN>,
+        <http://qudt.org/vocab/unit/KiloGM>,
+        <http://qudt.org/vocab/unit/LB_M>,
+        <http://qudt.org/vocab/unit/LB_T>,
+        <http://qudt.org/vocab/unit/LunarMass>,
+        <http://qudt.org/vocab/unit/OZ_M>,
+        <http://qudt.org/vocab/unit/OZ_TROY>,
+        <http://qudt.org/vocab/unit/PlanckMass>,
+        <http://qudt.org/vocab/unit/SLUG>,
+        <http://qudt.org/vocab/unit/SolarMass>,
+        <http://qudt.org/vocab/unit/TON_Assay>,
+        <http://qudt.org/vocab/unit/TON_LONG>,
+        <http://qudt.org/vocab/unit/TON_M>,
+        <http://qudt.org/vocab/unit/TON_SHORT>,
+        <http://qudt.org/vocab/unit/U> ;
+    qudt:baseUnitDimensions "M",
+        "kg" ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Mass"^^xsd:anyURI ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L0I0M1H0T0D0> ;
+    qudt:informativeReference "http://en.wikipedia.org/wiki/Mass"^^xsd:anyURI ;
+    qudt:symbol "m" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:Permeability a qudt:QuantityKind ;
+    rdfs:label "Permeability" ;
+    dcterms:description "\"Permeability} is the degree of magnetization of a material that responds linearly to an applied magnetic field. In general permeability is a tensor-valued quantity. The definition given applies to an isotropic medium. For an anisotropic medium permeability is a second order tensor. In electromagnetism, permeability is the measure of the ability of a material to support the formation of a magnetic field within itself. In other words, it is the degree of magnetization that a material obtains in response to an applied magnetic field. Magnetic permeability is typically represented by the Greek letter \\(\\mu\\). The term was coined in September, 1885 by Oliver Heaviside. The reciprocal of magnetic permeability is \\textit{Magnetic Reluctivity\"."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/H-PER-M>,
+        <http://qudt.org/vocab/unit/H_Stat-PER-CentiM>,
+        <http://qudt.org/vocab/unit/PERMEABILITY_REL> ;
+    qudt:baseUnitDimensions "L \\cdot M/I^2 \\cdot T^2",
+        "kg \\cdot m/A^2 \\cdot s^2" ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Permeability"^^xsd:anyURI ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E-2L1I0M1H0T-2D0> ;
+    qudt:informativeReference "http://en.wikipedia.org/wiki/Permeability_(electromagnetism)"^^xsd:anyURI,
+        "http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=31891"^^xsd:anyURI ;
+    qudt:latexDefinition "\\(\\mu = \\frac{B}{H}\\),  where \\(B\\) is magnetic flux density,  and \\(H\\) is magnetic field strength." ;
+    qudt:latexSymbol "\\mu" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    rdfs:seeAlso qk:MagneticConstant,
+        qk:MagneticFieldStrength,
+        qk:MagneticFluxDensity,
+        qk:PermeabilityOfVacuum .
+
+qk:Pressure a qudt:QuantityKind ;
+    rdfs:label "Pressure" ;
+    dcterms:description "Pressure is an effect which occurs when a force is applied on a surface. Pressure is the amount of force acting on a unit area. Pressure is distinct from stress, as the former is the ratio of the component of force normal to a surface to the surface area. Stress is a tensor that relates the vector force to the vector area."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/BARYE>,
+        <http://qudt.org/vocab/unit/N-PER-M2>,
+        <http://qudt.org/vocab/unit/PA> ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Pressure"^^xsd:anyURI ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L-1I0M1H0T-2D0> ;
+    qudt:informativeReference "http://en.wikipedia.org/wiki/Pressure"^^xsd:anyURI ;
+    qudt:isoNormativeReference "http://www.iso.org/iso/catalogue_detail?csnumber=31889"^^xsd:anyURI ;
+    qudt:latexDefinition "\\(p = \\frac{dF}{dA}\\), where \\(dF\\) is the force component perpendicular to the surface element of area \\(dA\\)." ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    skos:broader qk:ForcePerArea .
+
+qk:Resistivity a qudt:QuantityKind ;
+    rdfs:label "Resistivity" ;
+    dcterms:description "\"Resistivity\" is the inverse of the conductivity when this inverse exists."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/OHM-M> ;
+    qudt:informativeReference "http://www.electropedia.org/iev/iev.nsf/display?openform&ievref=121-12-04"^^xsd:anyURI,
+        "http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=31891"^^xsd:anyURI ;
+    qudt:latexDefinition "\\(\\rho = \\frac{1}{\\sigma}\\), if it exists, where \\(\\sigma\\) is conductivity." ;
+    qudt:latexSymbol "\\rho" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    rdfs:seeAlso qk:Conductivity .
+
+qk:Temperature a qudt:QuantityKind ;
+    rdfs:label "Temperature" ;
+    dcterms:description "Temperature is a physical property of matter that quantitatively expresses the common notions of hot and cold. Objects of low temperature are cold, while various degrees of higher temperatures are referred to as warm or hot. Heat spontaneously flows from bodies of a higher temperature to bodies of lower temperature, at a rate that increases with the temperature difference and the thermal conductivity."^^rdf:HTML ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Temperature"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Temperature#Temperature_scales> .
+
+qk:Time a qudt:QuantityKind ;
+    rdfs:label "Time" ;
+    dcterms:description "Time is a basic component of the measuring system used to sequence events, to compare the durations of events and the intervals between them, and to quantify the motions of objects."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/DAY>,
+        <http://qudt.org/vocab/unit/DAY_Sidereal>,
+        <http://qudt.org/vocab/unit/HR>,
+        <http://qudt.org/vocab/unit/HR_Sidereal>,
+        <http://qudt.org/vocab/unit/KiloSEC>,
+        <http://qudt.org/vocab/unit/MIN>,
+        <http://qudt.org/vocab/unit/MIN_Sidereal>,
+        <http://qudt.org/vocab/unit/MO>,
+        <http://qudt.org/vocab/unit/MO_MeanGREGORIAN>,
+        <http://qudt.org/vocab/unit/MO_MeanJulian>,
+        <http://qudt.org/vocab/unit/MO_Synodic>,
+        <http://qudt.org/vocab/unit/MicroSEC>,
+        <http://qudt.org/vocab/unit/MilliSEC>,
+        <http://qudt.org/vocab/unit/NanoSEC>,
+        <http://qudt.org/vocab/unit/PlanckTime>,
+        <http://qudt.org/vocab/unit/SEC>,
+        <http://qudt.org/vocab/unit/SH>,
+        <http://qudt.org/vocab/unit/WK>,
+        <http://qudt.org/vocab/unit/YR>,
+        <http://qudt.org/vocab/unit/YR_365Day>,
+        <http://qudt.org/vocab/unit/YR_Sidereal>,
+        <http://qudt.org/vocab/unit/YR_TROPICAL> ;
+    qudt:baseUnitDimensions "T",
+        "s" ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Time"^^xsd:anyURI ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T1D0> ;
+    qudt:symbol "t" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:Velocity a qudt:QuantityKind ;
+    rdfs:label "Velocity" ;
+    dcterms:description "In kinematics, velocity is the speed of an object and a specification of its direction of motion. Speed describes only how fast an object is moving, whereas velocity gives both how fast and in what direction the object is moving."^^rdf:HTML ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Velocity"^^xsd:anyURI ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L1I0M0H0T-1D0> ;
+    qudt:informativeReference "http://en.wikipedia.org/wiki/Velocity"^^xsd:anyURI ;
+    qudt:symbol "v" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:Viscosity a qudt:QuantityKind ;
+    rdfs:label "Viscosity" ;
+    dcterms:description "Viscosity is a measure of the resistance of a fluid which is being deformed by either shear stress or extensional stress. In general terms it is the resistance of a liquid to flow, or its \"thickness\". Viscosity describes a fluid's internal resistance to flow and may be thought of as a measure of fluid friction. [Wikipedia]"^^rdf:HTML ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Viscosity"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:Voltage a qudt:QuantityKind ;
+    rdfs:label "Voltage" ;
+    dcterms:description "\"Voltage\" is"^^rdf:HTML ;
+    qudt:description """\\(\\textit{Voltage}\\), also referred to as \\(\\textit{Electric Tension}\\), is the difference between electrical potentials of two points. For an electric field within a medium, \\(U_{ab} = - \\int_{r_a}^{r_b} E . {dr}\\), where \\(E\\) is electric field strength.
+
+For an irrotational electric field, the voltage is independent of the path between the two points \\(a\\) and \\(b\\)."""^^rdf:HTML ;
+    qudt:exactMatch qk:EnergyPerElectricCharge ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E-1L2I0M1H0T-3D0> ;
+    qudt:informativeReference "http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=31891"^^xsd:anyURI ;
+    qudt:latexDefinition "\\(U_{ab} = V_a - V_b\\), where \\(V_a\\) and \\(V_b\\) are electric potentials at points \\(a\\) and \\(b\\), respectively." ;
+    qudt:symbol "U",
+        "\\(U_{ab}\\)" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    skos:broader qk:EnergyPerElectricCharge .
+
+qk:VolumeFlowRate a qudt:QuantityKind ;
+    rdfs:label "Volume Flow Rate" ;
+    dcterms:description "Volumetric Flow Rate, (also known as volume flow rate, rate of fluid flow or volume velocity) is the volume of fluid which passes through a given surface per unit time."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/M3-PER-SEC> ;
+    qudt:baseUnitDimensions "m sec^{-1}" ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L3I0M0H0T-1D0> ;
+    qudt:informativeReference "http://en.wikipedia.org/wiki/Volumetric_flow_rate"^^xsd:anyURI ;
+    qudt:isoNormativeReference "http://www.iso.org/iso/catalogue_detail?csnumber=31889"^^xsd:anyURI ;
+    qudt:latexDefinition "\\(q_V = \\frac{dV}{dt}\\), where \\(V\\) is volume and \\(t\\) is time." ;
+    qudt:symbol "q_V" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    skos:broader qk:Volume .
+
+qk:Weight a qudt:QuantityKind ;
+    rdfs:label "Weight" ;
+    dcterms:description "The force with which a body is attracted toward an astronomical body.  Or, the product of the mass of a body and the acceleration acting on a body.  In a dynamic situation, the weight can be a multiple of that under resting conditions. Weight also varies on other planets in accordance with their gravity."^^rdf:HTML ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Weight"^^xsd:anyURI ;
+    qudt:symbol "bold letter W" ;
+    qudt:url "http://en.wikipedia.org/wiki/Weight"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:Work a qudt:QuantityKind ;
+    rdfs:label "Work" ;
+    dcterms:description "A force is said to do Work when it acts on a body so that there is a displacement of the point of application, however small, in the direction of the force. "^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/J>,
+        <http://qudt.org/vocab/unit/N-M> ;
+    qudt:baseUnitDimensions "n m" ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L2I0M1H0T-2D0> ;
+    qudt:informativeReference "http://en.wikipedia.org/wiki/Work_(physics)"^^xsd:anyURI ;
+    qudt:isoNormativeReference "http://www.iso.org/iso/catalogue_detail?csnumber=31889"^^xsd:anyURI ;
+    qudt:latexDefinition "\\(A = \\int Pdt\\), where \\(P\\) is power and \\(t\\) is time." ;
+    qudt:symbol "A" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:Conductivity a qudt:QuantityKind ;
+    rdfs:label "Conductivity" ;
+    dcterms:description "\"Conductivity\" is a scalar or tensor quantity the product of which by the electric field strength in a medium is equal to the electric current density. For an isotropic medium the conductivity is a scalar quantity; for an anisotropic medium it is a tensor quantity."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/S-PER-M> ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E2L-3I0M-1H0T3D0> ;
+    qudt:informativeReference "http://www.electropedia.org/iev/iev.nsf/display?openform&ievref=121-12-03"^^xsd:anyURI,
+        "http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=31891"^^xsd:anyURI ;
+    qudt:latexDefinition "\\(\\mathbf{J} = \\sigma \\mathbf{E}\\), where \\(\\mathbf{J}\\) is electric current density, and \\(\\mathbf{E}\\) is electric field strength." ;
+    qudt:latexSymbol "\\gamma",
+        "\\sigma" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    rdfs:seeAlso qk:ElectricCurrentDensity,
+        qk:ElectricFieldStrength .
+
+qk:ElectricCurrent a qudt:QuantityKind ;
+    rdfs:label "Electric Current" ;
+    dcterms:description "\"Electric Current\" is the flow (movement) of electric charge. The amount of electric current through some surface, for example, a section through a copper conductor, is defined as the amount of electric charge flowing through that surface over time. Current is a scalar-valued quantity. Electric current is one of the base quantities in the International System of Quantities, ISQ, on which the International System of Units, SI, is based. "^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/A>,
+        <http://qudt.org/vocab/unit/A_Ab>,
+        <http://qudt.org/vocab/unit/A_Stat>,
+        <http://qudt.org/vocab/unit/BIOT>,
+        <http://qudt.org/vocab/unit/KiloA>,
+        <http://qudt.org/vocab/unit/MicroA>,
+        <http://qudt.org/vocab/unit/MilliA>,
+        <http://qudt.org/vocab/unit/NanoA>,
+        <http://qudt.org/vocab/unit/PicoA>,
+        <http://qudt.org/vocab/unit/PlanckCurrent> ;
+    qudt:baseUnitDimensions "A",
+        "I" ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Electric_current"^^xsd:anyURI ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E1L0I0M0H0T0D0> ;
+    qudt:informativeReference "http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=31891"^^xsd:anyURI ;
+    qudt:symbol "I" ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:MagneticFluxDensity a qudt:QuantityKind ;
+    rdfs:label "Magnetic Flux Density",
+        "Magnetic flux density" ;
+    dcterms:description "\"Magnetic Flux Density\" is a vector quantity and is the magnetic flux per unit area of a magnetic field at right angles to the magnetic force. It can be defined in terms of the effects the field has, for example by \\(B = F/q v \\sin \\theta\\), where \\(F\\) is the force a moving charge \\(q\\) would experience if it was travelling at a velocity \\(v\\) in a direction making an angle θ with that of the field. The magnetic field strength is also a vector quantity and is related to \\(B\\) by: \\(H = B/\\mu\\), where \\(\\mu\\) is the permeability of the medium."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/Gamma>,
+        <http://qudt.org/vocab/unit/Gs>,
+        <http://qudt.org/vocab/unit/T>,
+        <http://qudt.org/vocab/unit/T_Ab> ;
+    qudt:baseUnitDimensions "kg/A \\cdot s^2" ;
+    qudt:expression "magnetic-flux-density" ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E-1L0I0M1H0T-2D0> ;
+    qudt:informativeReference "http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=31891"^^xsd:anyURI,
+        "http://www.oxfordreference.com/view/10.1093/acref/9780199233991.001.0001/acref-9780199233991-e-1798"^^xsd:anyURI ;
+    qudt:latexDefinition "\\(\\mathbf{F}  = qv \\times B\\), where \\(F\\) is force and \\(v\\) is velocity of any test particle with electric charge \\(q\\)." ;
+    qudt:symbol "\"\\textbf{B}\" " ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:Power a qudt:QuantityKind ;
+    rdfs:label "Power" ;
+    dcterms:description "Power is the rate at which work is performed or energy is transmitted, or the amount of energy required or expended for a given unit of time. As a rate of change of work done or the energy of a subsystem, power is: \\(P = W/t\\), where \\(P\\) is power, \\(W\\) is work and {t} is time."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/BTU_IT-PER-HR>,
+        <http://qudt.org/vocab/unit/BTU_IT-PER-SEC>,
+        <http://qudt.org/vocab/unit/ERG-PER-SEC>,
+        <http://qudt.org/vocab/unit/FT-LB_F-PER-HR>,
+        <http://qudt.org/vocab/unit/FT-LB_F-PER-MIN>,
+        <http://qudt.org/vocab/unit/FT-LB_F-PER-SEC>,
+        <http://qudt.org/vocab/unit/HP>,
+        <http://qudt.org/vocab/unit/HP-PER-M>,
+        <http://qudt.org/vocab/unit/HP-PER-V>,
+        <http://qudt.org/vocab/unit/HP_Boiler>,
+        <http://qudt.org/vocab/unit/HP_Water>,
+        <http://qudt.org/vocab/unit/KiloCAL-PER-MIN>,
+        <http://qudt.org/vocab/unit/KiloCAL-PER-SEC>,
+        <http://qudt.org/vocab/unit/KiloW>,
+        <http://qudt.org/vocab/unit/MegaW>,
+        <http://qudt.org/vocab/unit/MilliW>,
+        <http://qudt.org/vocab/unit/PlanckPower>,
+        <http://qudt.org/vocab/unit/TON_FG>,
+        <http://qudt.org/vocab/unit/W> ;
+    qudt:baseUnitDimensions "L^2 \\cdot M/T^3",
+        "kg \\cdot m^2/s^3" ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Power"^^xsd:anyURI ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L2I0M1H0T-3D0> ;
+    qudt:informativeReference "http://en.wikipedia.org/wiki/Power"^^xsd:anyURI ;
+    qudt:isoNormativeReference "http://www.iso.org/iso/catalogue_detail?csnumber=31889"^^xsd:anyURI ;
+    qudt:latexDefinition "\\(P = F \\cdot v\\), where \\(F\\) is force and \\(v\\) is velocity." ;
+    qudt:symbol "P",
+        "p" ;
+    qudt:url "http://en.wikipedia.org/wiki/Power_%28physics%29"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
+qk:Volume a qudt:QuantityKind ;
+    rdfs:label "Volume" ;
+    dcterms:description "The volume of a solid object is the three-dimensional concept of how much space it occupies, often quantified numerically. One-dimensional figures (such as lines) and two-dimensional shapes (such as squares) are assigned zero volume in the three-dimensional space."^^rdf:HTML ;
+    qudt:applicableUnit <http://qudt.org/vocab/unit/AC-FT>,
+        <http://qudt.org/vocab/unit/BBL>,
+        <http://qudt.org/vocab/unit/CentiM3>,
+        <http://qudt.org/vocab/unit/FBM>,
+        <http://qudt.org/vocab/unit/FT3>,
+        <http://qudt.org/vocab/unit/IN3>,
+        <http://qudt.org/vocab/unit/M3>,
+        <http://qudt.org/vocab/unit/MI3>,
+        <http://qudt.org/vocab/unit/MilliM3>,
+        <http://qudt.org/vocab/unit/OZ>,
+        <http://qudt.org/vocab/unit/PINT>,
+        <http://qudt.org/vocab/unit/PlanckVolume>,
+        <http://qudt.org/vocab/unit/QT>,
+        <http://qudt.org/vocab/unit/RT>,
+        <http://qudt.org/vocab/unit/ST>,
+        <http://qudt.org/vocab/unit/TBSP>,
+        <http://qudt.org/vocab/unit/TSP>,
+        <http://qudt.org/vocab/unit/YD3> ;
+    qudt:baseUnitDimensions "L^3",
+        "m^3" ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Volume"^^xsd:anyURI ;
+    qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L3I0M0H0T0D0> ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
+
