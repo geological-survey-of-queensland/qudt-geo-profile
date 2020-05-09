@@ -1,9 +1,9 @@
 <img src="style/gsq.jpg" style="width:25%" />  
 
 # Geo Profile of QUDT Ontology
-This ontology is a profile of the [Quantities, Units, Dimensions & Types (QUDT)](http://qudt.org/) ontology that includes terms relevant to geoscience. In addition to term inclusion, this profile also created new collections containing the included units to list them in ways familiar to geo sceintists.
+This is a profile of the [Quantities, Units, Dimensions & Types (QUDT)](http://qudt.org/) ontology, that is a specialisation of that specification, that only includes terms relevant to geoscience. In addition to term inclusion, this profile also includes  new collections containing the included units in lists grouped to be familiar to geo sceintists.
 
-The profile elements are described using the [Profiles Vocabulary](https://www.w3.org/TR/dx-prof/).
+The profile aspects of this are described using the [Profiles Vocabulary](https://www.w3.org/TR/dx-prof/).
 
 
 ## Repository Contents
@@ -21,7 +21,7 @@ The content of this API is licensed for use under the [Creative Commons 4.0 Lice
 ## Citation
 If you wish to cite this profile, please do so like this:
 
-Geological Survey of Queensland (2019) "Geo Profile of QUDT Ontology". An OWL ontology profile of the Quantities, Units, Dimensions & Types (QUDT) ontology. https://github.com/geological-survey-of-queensland/qudt-geo-profile-ont
+Geological Survey of Queensland (2019) "Geo Profile of QUDT Ontology". An profile of the Quantities, Units, Dimensions & Types (QUDT) ontology. https://github.com/geological-survey-of-queensland/qudt-geo-profile
 
 
 ## Contacts
@@ -34,6 +34,6 @@ Geological Survey of Queensland (2019) "Geo Profile of QUDT Ontology". An OWL on
 
 *author*:  
 **Nicholas Car**  
-SURROUND Australia Pty Ltd  
+[SURROUND Australia Pty Ltd](https://surroundaustralia.com)  
 <nicholas.car@surroundaustralia.com>  
 <http://orcid.org/0000-0002-8742-7730>  
