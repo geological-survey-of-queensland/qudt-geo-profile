@@ -12,7 +12,7 @@ g.bind("geou", Namespace("http://linked.data.gov.au/def/geou/"))
 
 # load target onts
 g.parse("../resources/qudt-quantitykinds.ttl", format="turtle")
-# g.parse("../resources/time-gregorian.ttl", format="turtle")
+g.parse("../resources/result-type.ttl", format="turtle")
 
 g_out = Graph()
 # g_out.bind("unit", Namespace("http://qudt.org/vocab/unit/"))
@@ -30,21 +30,36 @@ for f in glob.glob("../inputs/qk-*.txt"):
     for l in open(f).readlines():
         # replace prefix with URI
         l2 = l.replace("qk:", "http://qudt.org/vocab/quantitykind/") \
-            .replace("res:", "http://linked.data.gov.au/def/geoqk/")
+            .replace("rslt:", "http://linked.data.gov.au/def/geoqk/")
             # .replace("greg:", "http://www.w3.org/ns/time/gregorian/")\
 
         l2 = l2.strip()
         if (URIRef(l2), RDF.type, None) in g:
             for s, p, o in g.triples((URIRef(l2), None, None)):
                 g_out.add((s, p, o))
+                if (s, QUDT.hasDimensionVector, None) not in g:
+                    g_out.add((s, QUDT.hasDimensionVector, Literal("")))
+                if (s, QUDT.applicableUnit, None) not in g:
+                    g_out.add((s, QUDT.applicableUnit, Literal("")))
         else:
             g_out.add((URIRef(l2), RDF.type, QUDT.QuantityKind))
             g_out.add((URIRef(l2), RDFS.label, Literal("", lang="en")))
             g_out.add((URIRef(l2), DCTERMS.description, Literal("", lang="en")))
-            g_out.add((URIRef(l2), QUDT.hasDimensionVector, Literal("")))
             g_out.add((URIRef(l2), SKOS.broader, OWL.Thing))
             g_out.add((URIRef(l2), QUDT.symbol, Literal("")))
             g_out.add((URIRef(l2), RDFS.isDefinedBy, URIRef("http://linked.data.gov.au/def/geoqk")))
+
+for s, o in g_out.subject_objects(predicate=SKOS.prefLabel):
+    g_out.remove((s, SKOS.prefLabel, o))
+    g_out.add((s, RDFS.label, o))
+
+for s, o in g_out.subject_objects(predicate=SKOS.definition):
+    g_out.remove((s, SKOS.definition, o))
+    g_out.add((s, DCTERMS.description, o))
+
+for s in g_out.subjects(predicate=RDF.type, object=SKOS.Concept):
+    g_out.remove((s, RDF.type, SKOS.Concept))
+    g_out.add((s, RDF.type, QUDT.QuantityKind))
 
 # add in profile bit
 g_out.parse("../inputs/profile-qk.ttl", format="turtle")

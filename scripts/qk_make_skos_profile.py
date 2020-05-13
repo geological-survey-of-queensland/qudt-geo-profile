@@ -104,7 +104,7 @@ def qudt_expand_graph(g):
 
     for s in g.subjects(RDF.type, QUDT.QuantityKind):
         g.add((s, RDF.type, SKOS.Concept))
-        # g.add((s, RDFS.isDefinedBy, URIRef("http://linked.data.gov.au/def/geou")))
+        # g.add((s, RDFS.isDefinedBy, URIRef("http://linked.data.gov.au/def/geoqk")))
 
     # for s, p, o in g:
     #     if p in [QUDT.symbol, QUDT.ucumCaseInsensitiveCode, QUDT.ucumCode, QUDT.uneceCommonCode]:
@@ -121,7 +121,7 @@ def qudt_expand_graph(g):
             g.remove((s, p, o))
             g.add((s, p, Literal(str(o), lang="en")))
 
-    cs = URIRef("http://linked.data.gov.au/def/geou")
+    cs = URIRef("http://linked.data.gov.au/def/geoqk")
     g.remove((cs, RDF.type, URIRef("http://www.w3.org/ns/dx/prof/Profile")))
     g.add((cs, RDF.type, SKOS.ConceptScheme))
 
