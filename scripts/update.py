@@ -3,10 +3,10 @@ import requests
 from rdflib import Graph, Namespace, URIRef
 from rdflib.namespace import DCTERMS, SKOS
 
-# # get the latest all-units RDF file
+# get the latest all-units RDF file
 THIS_DIR = dirname(realpath(__file__))
-QUDT_UNITS_FILE_PATH = join(THIS_DIR, 'resources', 'qudt-units.ttl')
-QUDT_QKS_FILE_PATH = join(THIS_DIR, 'resources', 'qudt-quantitykinds.ttl')
+QUDT_UNITS_FILE_PATH = join(THIS_DIR, "..", 'resources', 'qudt-units.ttl')
+QUDT_QKS_FILE_PATH = join(THIS_DIR, "..", 'resources', 'qudt-quantitykinds.ttl')
 
 
 def update_qudt_units_file():
@@ -85,10 +85,10 @@ def create_geoprofile_quantitykinds():
 
 
 if __name__ == '__main__':
-    # update_qudt_units_file()
-    # update_qudt_quantitykinds_file()
+    update_qudt_units_file()
+    update_qudt_quantitykinds_file()
 
-    create_geoprofile_units()
-    create_geoprofile_quantitykinds()
+    # create_geoprofile_units()
+    # create_geoprofile_quantitykinds()
 
     print('All complete')
