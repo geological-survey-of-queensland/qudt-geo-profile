@@ -141,6 +141,13 @@ def qudt_expand_graph(g):
     for s, p, o in g.triples((None, DCTERMS.conformsTo, None)):
         g.remove((s, None, None))  # BNs
 
+    for s, p, o in g:
+        if (s, SKOS.broader, o) in g:
+            g.remove((s, SKOS.topConceptOf, None))
+            g.remove((None, SKOS.hasTopConcept, s))
+
+            g.add((s, SKOS.inScheme, cs))
+
 
 def slim_down_graph(g, g_out):
     for s, p, o in g:

@@ -5,6 +5,293 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<http://linked.data.gov.au/def/geoqk/age> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/api-gravity> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/casing-weight> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/colour> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/composition> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/compressive-strength> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/cost> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/count> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/curvature> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/data> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/descriptive> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/dog-leg-severity> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/drill-rate> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/electrical-conductivity> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/elevation> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/flow-rate> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/fluid-density> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/gas-content> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/grain-shape> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/grain-size> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/heat> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/magnetic-susceptibility> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/measured-depth> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/oil-quality> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/porosity> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/radioactivity> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/rotation> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/saturation> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/sorting> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/spacing> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/sphericity> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/stiffness> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/strain> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/stress> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/tensile-strength> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/thermal-conductivity> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/true-vertical-depth> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/wavelength> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/weight-on-bit> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/width> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
+<http://linked.data.gov.au/def/geoqk/yield-point> a skos:Concept ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
+    skos:broader owl:Thing ;
+    skos:definition ""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel ""@en .
+
 <http://qudt.org/vocab/quantitykind/Area> a skos:Concept ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
     skos:definition "Area is a quantity expressing the two-dimensional size of a defined part of a surface, typically a region bounded by a closed curve."@en ;
@@ -48,6 +335,18 @@
     skos:prefLabel "Electric Charge"@en ;
     skos:topConceptOf <http://linked.data.gov.au/def/geou> .
 
+<http://qudt.org/vocab/quantitykind/Energy> a skos:Concept ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    rdfs:seeAlso <http://qudt.org/vocab/quantitykind/Enthalpy>,
+        <http://qudt.org/vocab/quantitykind/Entropy>,
+        <http://qudt.org/vocab/quantitykind/GibbsEnergy>,
+        <http://qudt.org/vocab/quantitykind/HelmholtzEnergy>,
+        <http://qudt.org/vocab/quantitykind/InternalEnergy> ;
+    skos:broader <http://qudt.org/vocab/quantitykind/EnergyAndWork> ;
+    skos:definition "Energy is the quantity characterizing the ability of a system to do work."@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel "Energy"@en .
+
 <http://qudt.org/vocab/quantitykind/EnergyAndWork> skos:narrower <http://qudt.org/vocab/quantitykind/Energy> .
 
 <http://qudt.org/vocab/quantitykind/EnergyDensity> a skos:Concept ;
@@ -71,6 +370,21 @@
     skos:definition "\"Frequency\" is the number of occurrences of a repeating event per unit time. The repetition of the events may be periodic (that is. the length of time between event repetitions is fixed) or aperiodic (i.e. the length of time between event repetitions varies). Therefore, we distinguish between periodic and aperiodic frequencies. In the SI system, periodic frequency is measured in hertz (Hz) or multiples of hertz, while aperiodic frequency is measured in becquerel (Bq).  In spectroscopy, \\(\\nu\\) is mostly used. Light passing through different media keeps its frequency, but not its wavelength or wavenumber."@en ;
     skos:prefLabel "Frequency"@en ;
     skos:topConceptOf <http://linked.data.gov.au/def/geou> .
+
+<http://qudt.org/vocab/quantitykind/HeatFlowRate> a skos:Concept ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    skos:broader <http://qudt.org/vocab/quantitykind/Power> ;
+    skos:definition "The rate of heat flow between two systems is measured in watts (joules per second). The formula for rate of heat flow is \\(\\bigtriangleup Q / \\bigtriangleup t = -K \\times A \\times \\bigtriangleup T/x\\), where \\(\\bigtriangleup Q / \\bigtriangleup t\\) is the rate of heat flow; \\(-K\\) is the thermal conductivity factor; A is the surface area; \\(\\bigtriangleup T\\) is the change in temperature and \\(x\\) is the thickness of the material. \\(\\bigtriangleup  T/ x\\) is called the temperature gradient and is always negative because of the heat of flow always goes from more thermal energy to less)."@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel "Heat Flow Rate"@en .
+
+<http://qudt.org/vocab/quantitykind/Illuminance> a skos:Concept ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    skos:broader <http://qudt.org/vocab/quantitykind/LuminousFluxPerArea> ;
+    skos:definition "Illuminance is the total luminous flux incident on a surface, per unit area. It is a measure of the intensity of the incident light, wavelength-weighted by the luminosity function to correlate with human brightness perception."@en ;
+    skos:exactMatch <http://en.wikipedia.org/wiki/Illuminance> ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel "Illuminance"@en .
 
 <http://qudt.org/vocab/quantitykind/Inductance> a skos:Concept ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
@@ -122,6 +436,20 @@
 
 <http://qudt.org/vocab/quantitykind/PowerPerArea> skos:narrower <http://qudt.org/vocab/quantitykind/Radiosity> .
 
+<http://qudt.org/vocab/quantitykind/Pressure> a skos:Concept ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    skos:broader <http://qudt.org/vocab/quantitykind/ForcePerArea> ;
+    skos:definition "Pressure is an effect which occurs when a force is applied on a surface. Pressure is the amount of force acting on a unit area. Pressure is distinct from stress, as the former is the ratio of the component of force normal to a surface to the surface area. Stress is a tensor that relates the vector force to the vector area."@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel "Pressure"@en .
+
+<http://qudt.org/vocab/quantitykind/Radiosity> a skos:Concept ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    skos:broader <http://qudt.org/vocab/quantitykind/PowerPerArea> ;
+    skos:definition "Radiosity is the total emitted and reflected radiation leaving a surface."@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel "Radiosity"@en .
+
 <http://qudt.org/vocab/quantitykind/Resistivity> a skos:Concept ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
     rdfs:seeAlso <http://qudt.org/vocab/quantitykind/Conductivity> ;
@@ -134,6 +462,20 @@
     skos:definition "The Shear Modulus or modulus of rigidity, denoted by \\(G\\), or sometimes \\(S\\) or \\(\\mu\\), is defined as the ratio of shear stress to the shear strain."@en ;
     skos:prefLabel "Shear Modulus"@en ;
     skos:topConceptOf <http://linked.data.gov.au/def/geou> .
+
+<http://qudt.org/vocab/quantitykind/ShearStrain> a skos:Concept ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    skos:broader <http://qudt.org/vocab/quantitykind/Strain> ;
+    skos:definition "Shear Strain is the amount of deformation perpendicular to a given line rather than parallel to it. "@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel "Shear Strain"@en .
+
+<http://qudt.org/vocab/quantitykind/ShearStress> a skos:Concept ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    skos:broader <http://qudt.org/vocab/quantitykind/Stress> ;
+    skos:definition "Shear stress occurs when the force  occurs in shear, or perpendicular to the normal."@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel "Normal Stress"@en .
 
 <http://qudt.org/vocab/quantitykind/Strain> skos:narrower <http://qudt.org/vocab/quantitykind/ShearStrain> .
 
@@ -164,6 +506,21 @@
     skos:prefLabel "Viscosity"@en ;
     skos:topConceptOf <http://linked.data.gov.au/def/geou> .
 
+<http://qudt.org/vocab/quantitykind/Voltage> a skos:Concept ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    skos:broader <http://qudt.org/vocab/quantitykind/EnergyPerElectricCharge> ;
+    skos:definition """\\(\\textit{Voltage}\\), also referred to as \\(\\textit{Electric Tension}\\), is the difference between electrical potentials of two points. For an electric field within a medium, \\(U_{ab} = - \\int_{r_a}^{r_b} E . {dr}\\), where \\(E\\) is electric field strength.
+For an irrotational electric field, the voltage is independent of the path between the two points \\(a\\) and \\(b\\)."""@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel "Voltage"@en .
+
+<http://qudt.org/vocab/quantitykind/VolumeFlowRate> a skos:Concept ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
+    skos:broader <http://qudt.org/vocab/quantitykind/Volume> ;
+    skos:definition "Volumetric Flow Rate, (also known as volume flow rate, rate of fluid flow or volume velocity) is the volume of fluid which passes through a given surface per unit time."@en ;
+    skos:inScheme <http://linked.data.gov.au/def/geou> ;
+    skos:prefLabel "Volume Flow Rate"@en .
+
 <http://qudt.org/vocab/quantitykind/Weight> a skos:Concept ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
     skos:definition "The force with which a body is attracted toward an astronomical body.  Or, the product of the mass of a body and the acceleration acting on a body.  In a dynamic situation, the weight can be a multiple of that under resting conditions. Weight also varies on other planets in accordance with their gravity."@en ;
@@ -174,293 +531,6 @@
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
     skos:definition "A force is said to do Work when it acts on a body so that there is a displacement of the point of application, however small, in the direction of the force. "@en ;
     skos:prefLabel "Work"@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/age> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/api-gravity> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/casing-weight> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/colour> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/composition> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/compressive-strength> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/cost> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/count> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/curvature> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/data> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/descriptive> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/dog-leg-severity> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/drill-rate> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/electrical-conductivity> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/elevation> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/flow-rate> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/fluid-density> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/gas-content> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/grain-shape> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/grain-size> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/heat> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/magnetic-susceptibility> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/measured-depth> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/oil-quality> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/porosity> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/radioactivity> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/rotation> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/saturation> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/sorting> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/spacing> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/sphericity> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/stiffness> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/strain> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/stress> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/tensile-strength> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/thermal-conductivity> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/true-vertical-depth> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/wavelength> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/weight-on-bit> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/width> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://linked.data.gov.au/def/geoqk/yield-point> a skos:Concept ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing ;
-    skos:definition ""@en ;
-    skos:prefLabel ""@en ;
     skos:topConceptOf <http://linked.data.gov.au/def/geou> .
 
 <http://linked.data.gov.au/org/gsq> a sdo:Organization ;
@@ -479,33 +549,6 @@
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
     skos:definition "\"Electric Current\" is the flow (movement) of electric charge. The amount of electric current through some surface, for example, a section through a copper conductor, is defined as the amount of electric charge flowing through that surface over time. Current is a scalar-valued quantity. Electric current is one of the base quantities in the International System of Quantities, ISQ, on which the International System of Units, SI, is based. "@en ;
     skos:prefLabel "Electric Current"@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://qudt.org/vocab/quantitykind/Energy> a skos:Concept ;
-    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
-    rdfs:seeAlso <http://qudt.org/vocab/quantitykind/Enthalpy>,
-        <http://qudt.org/vocab/quantitykind/Entropy>,
-        <http://qudt.org/vocab/quantitykind/GibbsEnergy>,
-        <http://qudt.org/vocab/quantitykind/HelmholtzEnergy>,
-        <http://qudt.org/vocab/quantitykind/InternalEnergy> ;
-    skos:broader <http://qudt.org/vocab/quantitykind/EnergyAndWork> ;
-    skos:definition "Energy is the quantity characterizing the ability of a system to do work."@en ;
-    skos:prefLabel "Energy"@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://qudt.org/vocab/quantitykind/HeatFlowRate> a skos:Concept ;
-    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
-    skos:broader <http://qudt.org/vocab/quantitykind/Power> ;
-    skos:definition "The rate of heat flow between two systems is measured in watts (joules per second). The formula for rate of heat flow is \\(\\bigtriangleup Q / \\bigtriangleup t = -K \\times A \\times \\bigtriangleup T/x\\), where \\(\\bigtriangleup Q / \\bigtriangleup t\\) is the rate of heat flow; \\(-K\\) is the thermal conductivity factor; A is the surface area; \\(\\bigtriangleup T\\) is the change in temperature and \\(x\\) is the thickness of the material. \\(\\bigtriangleup  T/ x\\) is called the temperature gradient and is always negative because of the heat of flow always goes from more thermal energy to less)."@en ;
-    skos:prefLabel "Heat Flow Rate"@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://qudt.org/vocab/quantitykind/Illuminance> a skos:Concept ;
-    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
-    skos:broader <http://qudt.org/vocab/quantitykind/LuminousFluxPerArea> ;
-    skos:definition "Illuminance is the total luminous flux incident on a surface, per unit area. It is a measure of the intensity of the incident light, wavelength-weighted by the luminosity function to correlate with human brightness perception."@en ;
-    skos:exactMatch <http://en.wikipedia.org/wiki/Illuminance> ;
-    skos:prefLabel "Illuminance"@en ;
     skos:topConceptOf <http://linked.data.gov.au/def/geou> .
 
 <http://qudt.org/vocab/quantitykind/LuminousFluxPerArea> a skos:Concept ;
@@ -529,54 +572,11 @@
     skos:prefLabel "Power"@en ;
     skos:topConceptOf <http://linked.data.gov.au/def/geou> .
 
-<http://qudt.org/vocab/quantitykind/Pressure> a skos:Concept ;
-    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
-    skos:broader <http://qudt.org/vocab/quantitykind/ForcePerArea> ;
-    skos:definition "Pressure is an effect which occurs when a force is applied on a surface. Pressure is the amount of force acting on a unit area. Pressure is distinct from stress, as the former is the ratio of the component of force normal to a surface to the surface area. Stress is a tensor that relates the vector force to the vector area."@en ;
-    skos:prefLabel "Pressure"@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://qudt.org/vocab/quantitykind/Radiosity> a skos:Concept ;
-    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
-    skos:broader <http://qudt.org/vocab/quantitykind/PowerPerArea> ;
-    skos:definition "Radiosity is the total emitted and reflected radiation leaving a surface."@en ;
-    skos:prefLabel "Radiosity"@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://qudt.org/vocab/quantitykind/ShearStrain> a skos:Concept ;
-    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
-    skos:broader <http://qudt.org/vocab/quantitykind/Strain> ;
-    skos:definition "Shear Strain is the amount of deformation perpendicular to a given line rather than parallel to it. "@en ;
-    skos:prefLabel "Shear Strain"@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://qudt.org/vocab/quantitykind/ShearStress> a skos:Concept ;
-    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
-    skos:broader <http://qudt.org/vocab/quantitykind/Stress> ;
-    skos:definition "Shear stress occurs when the force  occurs in shear, or perpendicular to the normal."@en ;
-    skos:prefLabel "Normal Stress"@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://qudt.org/vocab/quantitykind/Voltage> a skos:Concept ;
-    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
-    skos:broader <http://qudt.org/vocab/quantitykind/EnergyPerElectricCharge> ;
-    skos:definition """\\(\\textit{Voltage}\\), also referred to as \\(\\textit{Electric Tension}\\), is the difference between electrical potentials of two points. For an electric field within a medium, \\(U_{ab} = - \\int_{r_a}^{r_b} E . {dr}\\), where \\(E\\) is electric field strength.
-For an irrotational electric field, the voltage is independent of the path between the two points \\(a\\) and \\(b\\)."""@en ;
-    skos:prefLabel "Voltage"@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
 <http://qudt.org/vocab/quantitykind/Volume> a skos:Concept ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
     skos:definition "The volume of a solid object is the three-dimensional concept of how much space it occupies, often quantified numerically. One-dimensional figures (such as lines) and two-dimensional shapes (such as squares) are assigned zero volume in the three-dimensional space."@en ;
     skos:narrower <http://qudt.org/vocab/quantitykind/VolumeFlowRate> ;
     skos:prefLabel "Volume"@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/geou> .
-
-<http://qudt.org/vocab/quantitykind/VolumeFlowRate> a skos:Concept ;
-    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> ;
-    skos:broader <http://qudt.org/vocab/quantitykind/Volume> ;
-    skos:definition "Volumetric Flow Rate, (also known as volume flow rate, rate of fluid flow or volume velocity) is the volume of fluid which passes through a given surface per unit time."@en ;
-    skos:prefLabel "Volume Flow Rate"@en ;
     skos:topConceptOf <http://linked.data.gov.au/def/geou> .
 
 owl:Thing skos:narrower <http://linked.data.gov.au/def/geoqk/age>,
@@ -628,48 +628,7 @@ owl:Thing skos:narrower <http://linked.data.gov.au/def/geoqk/age>,
     dcterms:publisher <http://linked.data.gov.au/org/gsq> ;
     dcterms:source "Derived from the geo-profile of QUDT (http://linked.data.gov.au/def/geou)"@en ;
     skos:definition "This profile of the Quantities, Units, Dimensions & Types ontology and vocabularies lists those elements deemed by the profile creators to be of relevance to the geosciences." ;
-    skos:hasTopConcept <http://linked.data.gov.au/def/geoqk/age>,
-        <http://linked.data.gov.au/def/geoqk/api-gravity>,
-        <http://linked.data.gov.au/def/geoqk/casing-weight>,
-        <http://linked.data.gov.au/def/geoqk/colour>,
-        <http://linked.data.gov.au/def/geoqk/composition>,
-        <http://linked.data.gov.au/def/geoqk/compressive-strength>,
-        <http://linked.data.gov.au/def/geoqk/cost>,
-        <http://linked.data.gov.au/def/geoqk/count>,
-        <http://linked.data.gov.au/def/geoqk/curvature>,
-        <http://linked.data.gov.au/def/geoqk/data>,
-        <http://linked.data.gov.au/def/geoqk/descriptive>,
-        <http://linked.data.gov.au/def/geoqk/dog-leg-severity>,
-        <http://linked.data.gov.au/def/geoqk/drill-rate>,
-        <http://linked.data.gov.au/def/geoqk/electrical-conductivity>,
-        <http://linked.data.gov.au/def/geoqk/elevation>,
-        <http://linked.data.gov.au/def/geoqk/flow-rate>,
-        <http://linked.data.gov.au/def/geoqk/fluid-density>,
-        <http://linked.data.gov.au/def/geoqk/gas-content>,
-        <http://linked.data.gov.au/def/geoqk/grain-shape>,
-        <http://linked.data.gov.au/def/geoqk/grain-size>,
-        <http://linked.data.gov.au/def/geoqk/heat>,
-        <http://linked.data.gov.au/def/geoqk/magnetic-susceptibility>,
-        <http://linked.data.gov.au/def/geoqk/measured-depth>,
-        <http://linked.data.gov.au/def/geoqk/oil-quality>,
-        <http://linked.data.gov.au/def/geoqk/porosity>,
-        <http://linked.data.gov.au/def/geoqk/radioactivity>,
-        <http://linked.data.gov.au/def/geoqk/rotation>,
-        <http://linked.data.gov.au/def/geoqk/saturation>,
-        <http://linked.data.gov.au/def/geoqk/sorting>,
-        <http://linked.data.gov.au/def/geoqk/spacing>,
-        <http://linked.data.gov.au/def/geoqk/sphericity>,
-        <http://linked.data.gov.au/def/geoqk/stiffness>,
-        <http://linked.data.gov.au/def/geoqk/strain>,
-        <http://linked.data.gov.au/def/geoqk/stress>,
-        <http://linked.data.gov.au/def/geoqk/tensile-strength>,
-        <http://linked.data.gov.au/def/geoqk/thermal-conductivity>,
-        <http://linked.data.gov.au/def/geoqk/true-vertical-depth>,
-        <http://linked.data.gov.au/def/geoqk/wavelength>,
-        <http://linked.data.gov.au/def/geoqk/weight-on-bit>,
-        <http://linked.data.gov.au/def/geoqk/width>,
-        <http://linked.data.gov.au/def/geoqk/yield-point>,
-        <http://qudt.org/vocab/quantitykind/Area>,
+    skos:hasTopConcept <http://qudt.org/vocab/quantitykind/Area>,
         <http://qudt.org/vocab/quantitykind/Capacitance>,
         <http://qudt.org/vocab/quantitykind/Compressibility>,
         <http://qudt.org/vocab/quantitykind/Concentration>,
@@ -678,12 +637,9 @@ owl:Thing skos:narrower <http://linked.data.gov.au/def/geoqk/age>,
         <http://qudt.org/vocab/quantitykind/Distance>,
         <http://qudt.org/vocab/quantitykind/ElectricCharge>,
         <http://qudt.org/vocab/quantitykind/ElectricCurrent>,
-        <http://qudt.org/vocab/quantitykind/Energy>,
         <http://qudt.org/vocab/quantitykind/EnergyDensity>,
         <http://qudt.org/vocab/quantitykind/Force>,
         <http://qudt.org/vocab/quantitykind/Frequency>,
-        <http://qudt.org/vocab/quantitykind/HeatFlowRate>,
-        <http://qudt.org/vocab/quantitykind/Illuminance>,
         <http://qudt.org/vocab/quantitykind/Inductance>,
         <http://qudt.org/vocab/quantitykind/Length>,
         <http://qudt.org/vocab/quantitykind/LuminousFlux>,
@@ -694,19 +650,13 @@ owl:Thing skos:narrower <http://linked.data.gov.au/def/geoqk/age>,
         <http://qudt.org/vocab/quantitykind/Mass>,
         <http://qudt.org/vocab/quantitykind/Permeability>,
         <http://qudt.org/vocab/quantitykind/Power>,
-        <http://qudt.org/vocab/quantitykind/Pressure>,
-        <http://qudt.org/vocab/quantitykind/Radiosity>,
         <http://qudt.org/vocab/quantitykind/Resistivity>,
         <http://qudt.org/vocab/quantitykind/ShearModulus>,
-        <http://qudt.org/vocab/quantitykind/ShearStrain>,
-        <http://qudt.org/vocab/quantitykind/ShearStress>,
         <http://qudt.org/vocab/quantitykind/Temperature>,
         <http://qudt.org/vocab/quantitykind/Time>,
         <http://qudt.org/vocab/quantitykind/Velocity>,
         <http://qudt.org/vocab/quantitykind/Viscosity>,
-        <http://qudt.org/vocab/quantitykind/Voltage>,
         <http://qudt.org/vocab/quantitykind/Volume>,
-        <http://qudt.org/vocab/quantitykind/VolumeFlowRate>,
         <http://qudt.org/vocab/quantitykind/Weight>,
         <http://qudt.org/vocab/quantitykind/Work> ;
     skos:prefLabel "Geoscience Profile of QUDT"@en .
