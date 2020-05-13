@@ -1,561 +1,563 @@
 @prefix : <http://linked.data.gov.au/def/geou> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geou: <http://linked.data.gov.au/def/geou/> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix qudts: <http://qudt.org/schema/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix sdo: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-geou:BBLOE a unit:Unit ;
+geou:BBLOE a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:BBL_US-PER-HR a unit:Unit ;
+geou:BBL_US-PER-HR a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:BBL_US-PER-MIN a unit:Unit ;
+geou:BBL_US-PER-MIN a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:BTU-PER-MegaL a unit:Unit ;
+geou:BTU-PER-MegaL a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:BWOC a unit:Unit ;
+geou:BWOC a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:BWOW a unit:Unit ;
+geou:BWOW a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:COUNT a unit:Unit ;
+geou:COUNT a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:CentiM3-PER-TON_M a unit:Unit ;
+geou:CentiM3-PER-TON_M a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:D a unit:Unit ;
+geou:D a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:DEG-PER-100F a unit:Unit ;
+geou:DEG-PER-100F a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:DEG-PER-30M a unit:Unit ;
+geou:DEG-PER-30M a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:DEG-PER-F a unit:Unit ;
+geou:DEG-PER-F a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:DEG-PER-M a unit:Unit ;
+geou:DEG-PER-M a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:DecaREV-PER-MIN a unit:Unit ;
+geou:DecaREV-PER-MIN a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:ExaBYTE a unit:Unit ;
+geou:ExaBYTE a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:FRAC a unit:Unit ;
+geou:FRAC a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:FT-PER-MilliSEC a unit:Unit ;
+geou:FT-PER-MilliSEC a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:FT3-PER-TON a unit:Unit ;
+geou:FT3-PER-TON a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:FT3-PER-TON_M a unit:Unit ;
+geou:FT3-PER-TON_M a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:GAL_IMP-PER-50SACK a unit:Unit ;
+geou:GAL_IMP-PER-50SACK a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:GM-PER-KiloGM a unit:Unit ;
+geou:GM-PER-KiloGM a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:GM-PER-TON_M a unit:Unit ;
+geou:GM-PER-TON_M a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:GigaJ a unit:Unit ;
+geou:GigaJ a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:GigaJ-PER-MegaL a unit:Unit ;
+geou:GigaJ-PER-MegaL a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:HR-PER-FT a unit:Unit ;
+geou:HR-PER-FT a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:KiloBBL a unit:Unit ;
+geou:KiloBBL a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:KiloBBLOE a unit:Unit ;
+geou:KiloBBLOE a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:KiloBTU a unit:Unit ;
+geou:KiloBTU a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:KiloBTU-PER-MegaL a unit:Unit ;
+geou:KiloBTU-PER-MegaL a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:KiloL a unit:Unit ;
+geou:KiloL a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:KiloL-PER-DAY a unit:Unit ;
+geou:KiloL-PER-DAY a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:KiloLB_F a unit:Unit ;
+geou:KiloLB_F a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:KiloLB_M a unit:Unit ;
+geou:KiloLB_M a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:KiloREV-PER-MIN a unit:Unit ;
+geou:KiloREV-PER-MIN a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:L-PER-50SACK a unit:Unit ;
+geou:L-PER-50SACK a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:LB_F-PER-100FT2 a unit:Unit ;
+geou:LB_F-PER-100FT2 a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:LB_M-PER-100FT2 a unit:Unit ;
+geou:LB_M-PER-100FT2 a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:LB_M-PER-50SACK a unit:Unit ;
+geou:LB_M-PER-50SACK a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:LB_M-PER-BBL a unit:Unit ;
+geou:LB_M-PER-BBL a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:M2-PER-N a unit:Unit ;
+geou:M2-PER-N a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:M3-PER-TON_M a unit:Unit ;
+geou:M3-PER-TON_M a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:MegaBBLOE a unit:Unit ;
+geou:MegaBBLOE a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:MegaBTU a unit:Unit ;
+geou:MegaBTU a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:MegaBTU-PER-MegaL a unit:Unit ;
+geou:MegaBTU-PER-MegaL a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:MegaF3-PER-DAY a unit:Unit ;
+geou:MegaF3-PER-DAY a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:MegaFT3 a unit:Unit ;
+geou:MegaFT3 a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:MegaL-PER-DAY a unit:Unit ;
+geou:MegaL-PER-DAY a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:MegaM3 a unit:Unit ;
+geou:MegaM3 a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:MegaTON_M a unit:Unit ;
+geou:MegaTON_M a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:MicroS-PER-CentiM a unit:Unit ;
+geou:MicroS-PER-CentiM a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:MicroS-PER-M a unit:Unit ;
+geou:MicroS-PER-M a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:MilliD a unit:Unit ;
+geou:MilliD a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:MilliGM a unit:Unit ;
+geou:MilliGM a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:MilliGM-PER-TOC a unit:Unit ;
+geou:MilliGM-PER-TOC a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:MilliGM-PER-TON_M a unit:Unit ;
+geou:MilliGM-PER-TON_M a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:MilliM-PER-SEC a unit:Unit ;
+geou:MilliM-PER-SEC a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:OZ-PER-TON_LONG a unit:Unit ;
+geou:OZ-PER-TON_LONG a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:OZ-PER-TON_M a unit:Unit ;
+geou:OZ-PER-TON_M a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:PER-N a unit:Unit ;
+geou:PER-N a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:PERCENT-PER-VOL a unit:Unit ;
+geou:PERCENT-PER-VOL a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:PERCENT-PER-WEIGHT a unit:Unit ;
+geou:PERCENT-PER-WEIGHT a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:PetaJ a unit:Unit ;
+geou:PetaJ a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:PetaJ-PER-MegaL a unit:Unit ;
+geou:PetaJ-PER-MegaL a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:RATIO a unit:Unit ;
+geou:RATIO a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:SHOTS-PER-FT a unit:Unit ;
+geou:SHOTS-PER-FT a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:SHOTS-PER-M a unit:Unit ;
+geou:SHOTS-PER-M a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:TOC a unit:Unit ;
+geou:TOC a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-geou:TON_M-PER-M a unit:Unit ;
+geou:TON_M-PER-M a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
 unit:ATM a qudt:CGS-Unit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Standard Atmosphere" ;
     dcterms:description "<p class=\"lm-para\">The standard atmosphere (symbol: atm) is an international reference pressure defined as \\(101.325 \\,kPa\\) and formerly used as unit of pressure. For practical purposes it has been replaced by the bar which is \\(100 kPa\\). The difference of about 1% is not significant for many applications, and is within the error range of common pressure gauges.</p>"^^qudt:LatexString ;
     qudt:conversionMultiplier 1.01325e+05 ;
@@ -572,8 +574,7 @@ unit:ATM a qudt:CGS-Unit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:BAR a qudt:CGS-Unit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Bar" ;
     dcterms:description """<p class="lm-para">The bar is a non-SI unit of pressure, defined by the IUPAC as exactly equal to \\(100,000\\,Pa\\). It is about equal to the atmospheric pressure on Earth at sea level, and since 1982 the IUPAC has recommended that the standard for atmospheric pressure should be harmonized to \\(100,000\\,Pa = 1 \\,bar \\approx 750.0616827\\, Torr\\). </p>
 <p class="lm-para">Units derived from the bar are the megabar (symbol: Mbar), kilobar (symbol: kbar), decibar (symbol: dbar), centibar (symbol: cbar), and millibar (symbol: mbar or mb). They are not SI or cgs units, but they are accepted for use with the SI.</p>"""^^qudt:LatexString ;
@@ -593,8 +594,7 @@ unit:BAR a qudt:CGS-Unit,
     qudt:uneceCommonCode "BAR" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:BBL a qudt:Unit,
-        unit:Unit ;
+unit:BBL a qudt:Unit ;
     rdfs:label "Barrel" ;
     dcterms:description "A barrel is one of several units of volume, with dry barrels, fluid barrels (UK beer barrel, U.S. beer barrel), oil barrel, etc. The volume of some barrel units is double others, with various volumes in the range of about 100-200 litres (22-44 impÂ gal; 26-53 USÂ gal)."^^rdf:HTML ;
     qudt:conversionOffset 0e+00 ;
@@ -610,8 +610,7 @@ unit:BBL a qudt:Unit,
     qudt:uneceCommonCode "BLL" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:BBL_US-PER-DAY a qudt:Unit,
-        unit:Unit ;
+unit:BBL_US-PER-DAY a qudt:Unit ;
     rdfs:label "BBL_US PER DAY" ;
     qudt:conversionMultiplier 1.84e-06 ;
     qudt:conversionOffset 0e+00 ;
@@ -623,8 +622,7 @@ unit:BBL_US-PER-DAY a qudt:Unit,
     skos:prefLabel "barrel (US) per day" .
 
 unit:BTU_IT a qudt:ImperialUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "British Thermal Unit (International Definition)" ;
     dcterms:description "\\(\\textit{British Thermal Unit}\\) (BTU or Btu) is a traditional unit of energy equal to about \\(1.0550558526 \\textit{ kilojoule}\\). It is approximately the amount of energy needed to heat 1 pound (0.454 kg) of water from \\(39 \\,^{\\circ}{\\rm F}\\)  to \\(40 \\,^{\\circ}{\\rm F}\\) . The unit is most often used in the power, steam generation, heating and air conditioning industries. In scientific contexts the BTU has largely been replaced by the SI unit of energy, the \\(joule\\), though it may be used as a measure of agricultural energy production (BTU/kg). It is still used unofficially in metric English-speaking countries (such as Canada), and remains the standard unit of classification for air conditioning units manufactured and sold in many non-English-speaking metric countries."^^qudt:LatexString ;
     qudt:conversionMultiplier 1.055056e+03 ;
@@ -642,8 +640,7 @@ unit:CentiM a qudt:BaseUnit,
         qudt:CGS-Unit,
         qudt:DecimalScaledUnit,
         qudt:DerivedUnit,
-        qudt:SI-Unit,
-        unit:Unit ;
+        qudt:SI-Unit ;
     rdfs:label "Centimeter" ;
     dcterms:description "A centimetre is a unit of length in the metric system, equal to one hundredth of a metre, which is the SI base unit of length. Centi is the SI prefix for a factor of 10.  The centimetre is the base unit of length in the now deprecated centimetre-gram-second (CGS) system of units."^^rdf:HTML ;
     qudt:conversionMultiplier 1e-02 ;
@@ -664,8 +661,7 @@ unit:CentiM a qudt:BaseUnit,
 
 unit:CentiM3 a qudt:DerivedUnit,
         qudt:SI-Unit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "cubic centimeter" ;
     dcterms:description "The CGS unit of volume, equal to 10-6 cubic meter, 1 milliliter, or about 0.061 023 7 cubic inch"^^rdf:HTML ;
     qudt:conversionMultiplier 1e-06 ;
@@ -681,8 +677,7 @@ unit:CentiM3 a qudt:DerivedUnit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:CentiP a qudt:CGS-Unit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Centipoise" ;
     dcterms:description "<p class=\"lm-para\"><em>Centipoise</em> is a C.G.S System unit for  'Dynamic Viscosity' expressed as \\(cP\\).</p>"^^qudt:LatexString ;
     qudt:conversionMultiplier 1e-02 ;
@@ -693,8 +688,7 @@ unit:CentiP a qudt:CGS-Unit,
     qudt:uneceCommonCode "C7" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:DAY a qudt:Unit,
-        unit:Unit ;
+unit:DAY a qudt:Unit ;
     rdfs:label "Day" ;
     dcterms:description "Mean solar day"^^rdf:HTML ;
     qudt:conversionMultiplier 8.64e+04 ;
@@ -710,8 +704,7 @@ unit:DAY a qudt:Unit,
     qudt:uneceCommonCode "DAY" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:DEG a qudt:Unit,
-        unit:Unit ;
+unit:DEG a qudt:Unit ;
     rdfs:label "Degree" ;
     dcterms:description "A degree (in full, a degree of arc, arc degree, or arcdegree), usually denoted by \\(^\\circ\\) (the degree symbol), is a measurement of plane angle, representing 1/360 of a full rotation; one degree is equivalent to  \\(2\\pi /360 rad\\), \\(0.017453 rad\\). It is not an SI unit, as the SI unit for angles is radian, but is an accepted SI unit."^^qudt:LatexString ;
     qudt:conversionMultiplier 1.745329e-02 ;
@@ -731,8 +724,7 @@ unit:DEG a qudt:Unit,
 unit:DEG_C a qudt:CGS-Unit,
         qudt:DerivedUnit,
         qudt:SI-Unit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Degree Celsius" ;
     dcterms:description "\\(\\textit{Celsius}\\), also known as centigrade, is a scale and unit of measurement for temperature. It can refer to a specific temperature on the Celsius scale as well as a unit to indicate a temperature interval, a difference between two temperatures or an uncertainty. This definition fixes the magnitude of both the degree Celsius and the kelvin as precisely 1 part in 273.16 (approximately 0.00366) of the difference between absolute zero and the triple point of water. Thus, it sets the magnitude of one degree Celsius and that of one kelvin as exactly the same. Additionally, it establishes the difference between the two scales' null points as being precisely \\(273.15\\,^{\\circ}{\\rm C}\\).</p>"^^qudt:LatexString ;
     qudt:conversionMultiplier 1e+00 ;
@@ -751,8 +743,7 @@ unit:DEG_C a qudt:CGS-Unit,
     skos:altLabel "degree-centigrade" .
 
 unit:DEG_F a qudt:ImperialUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Degree Fahrenheit" ;
     dcterms:description "<em>Degree Fahrenheit</em> is an Imperial unit for 'Thermodynamic Temperature' expressed as \\(\\,^{\\circ}{\\rm F}\\)"^^qudt:LatexString ;
     qudt:conversionMultiplier 5.555556e-01 ;
@@ -766,8 +757,7 @@ unit:DEG_F a qudt:ImperialUnit,
 
 unit:FT a qudt:ImperialUnit,
         qudt:US-CustomaryUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Foot" ;
     dcterms:description "A foot is a unit of length defined as being 0.3048Â m exactly and used in the imperial system of units and United States customary units. It is subdivided into 12Â inches. The foot is still officially used in Canada and still commonly used in the United Kingdom, although the latter has partially metricated its units of measurement. "^^rdf:HTML ;
     qudt:conversionMultiplier 3.048e-01 ;
@@ -784,8 +774,7 @@ unit:FT a qudt:ImperialUnit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:FT-PER-HR a qudt:ImperialUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Foot per Hour" ;
     dcterms:description "\"Foot per Hour\" is an Imperial unit for  'Linear Velocity' expressed as \\(ft/hr\\)."^^qudt:LatexString ;
     qudt:conversionMultiplier 8.466667e-05 ;
@@ -805,8 +794,7 @@ unit:FT-PER-HR a qudt:ImperialUnit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:FT-PER-SEC a qudt:ImperialUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Foot per Second" ;
     dcterms:description "\\(\\textit{foot per second}\\) (plural \\(\\textit{feet per second}\\)) is a unit of both speed (scalar) and velocity (vector quantity, which includes direction). It expresses the distance in feet (\\(ft\\)) traveled or displaced, divided by the time in seconds (\\(s\\), or \\(sec\\)). The corresponding unit in the International System of Units (SI) is the \\(\\textit{metre per second}\\). Abbreviations include \\(ft/s\\), \\(ft/sec\\) and \\(fps\\), and the rarely used scientific notation \\(ft\\,s\\)."^^qudt:LatexString ;
     qudt:conversionMultiplier 3.048e-01 ;
@@ -829,8 +817,7 @@ unit:FT-PER-SEC a qudt:ImperialUnit,
 
 unit:FT3 a qudt:DerivedUnit,
         qudt:ImperialUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Cubic Foot" ;
     dcterms:description "The cubic foot is an Imperial and US customary unit of volume, used in the United States and the United Kingdom. It is defined as the volume of a cube with sides of one foot (0.3048 m) in length. To calculate cubic feet multiply length X width X height. "^^rdf:HTML ;
     qudt:conversionMultiplier 2.831685e-02 ;
@@ -849,8 +836,7 @@ unit:FT3 a qudt:DerivedUnit,
     qudt:uneceCommonCode "FTQ" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:FT3-PER-DAY a qudt:Unit,
-        unit:Unit ;
+unit:FT3-PER-DAY a qudt:Unit ;
     rdfs:label "FT3 PER DAY" ;
     qudt:conversionMultiplier 3.277413e-07 ;
     qudt:conversionOffset 0e+00 ;
@@ -861,8 +847,7 @@ unit:FT3-PER-DAY a qudt:Unit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
     skos:prefLabel "cubic foot per day" .
 
-unit:FT3-PER-HR a qudt:Unit,
-        unit:Unit ;
+unit:FT3-PER-HR a qudt:Unit ;
     rdfs:label "FT3 PER HR" ;
     qudt:conversionMultiplier 7.865792e-06 ;
     qudt:conversionOffset 0e+00 ;
@@ -874,8 +859,7 @@ unit:FT3-PER-HR a qudt:Unit,
     skos:prefLabel "cubic foot per hour" .
 
 unit:GAL_IMP a qudt:ImperialUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Imperial Gallon" ;
     dcterms:description "\"Imperial Gallon\" is an Imperial unit for  'Liquid Volume' expressed as \\(galIMP\\)."^^qudt:LatexString ;
     qudt:conversionMultiplier 4.54609e-03 ;
@@ -888,8 +872,7 @@ unit:GAL_IMP a qudt:ImperialUnit,
         "[gal_br]" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:GAL_US a qudt:Unit,
-        unit:Unit ;
+unit:GAL_US a qudt:Unit ;
     rdfs:label "US Gallon" ;
     dcterms:description "\"US Gallon\" is a unit for  'Liquid Volume' expressed as \\(galUS\\)."^^qudt:LatexString ;
     qudt:conversionMultiplier 3.785412e-03 ;
@@ -906,8 +889,7 @@ unit:GAL_US a qudt:Unit,
 unit:GM a qudt:BaseUnit,
         qudt:CGS-Unit,
         qudt:SI-Unit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Gram" ;
     dcterms:description "A unit of mass in the metric system. The name comes from the Greek gramma, a small weight identified in later Roman and Byzantine times with the Latin scripulum or scruple (the English scruple is equal to about 1.3 grams). The gram was originally defined to be the mass of one cubic centimeter of pure water, but to provide precise standards it was necessary to construct physical objects of specified mass. One gram is now defined to be 1/1000 of the mass of the standard kilogram, a platinum-iridium bar carefully guarded by the International Bureau of Weights and Measures in Paris for more than a century. (The kilogram, rather than the gram, is considered the base unit of mass in the SI.) The gram is a small mass, equal to about 15.432 grains or 0.035 273 966 ounce. "^^rdf:HTML ;
     qudt:conversionMultiplier 1e-03 ;
@@ -925,8 +907,7 @@ unit:GM a qudt:BaseUnit,
     qudt:uneceCommonCode "GRM" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:GM-PER-CentiM3 a qudt:Unit,
-        unit:Unit ;
+unit:GM-PER-CentiM3 a qudt:Unit ;
     rdfs:label "GM PER CentiM3" ;
     qudt:conversionMultiplier 1e+03 ;
     qudt:conversionOffset 0e+00 ;
@@ -937,8 +918,7 @@ unit:GM-PER-CentiM3 a qudt:Unit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
     skos:prefLabel "gram per centimetre cubed" .
 
-unit:GRAD a qudt:Unit,
-        unit:Unit ;
+unit:GRAD a qudt:Unit ;
     rdfs:label "Grad" ;
     dcterms:description "\"Grad\" is a unit for  'Plane Angle' expressed as \\(grad\\)."^^qudt:LatexString ;
     qudt:conversionMultiplier 1.570796e-02 ;
@@ -952,17 +932,16 @@ unit:GRAD a qudt:Unit,
     qudt:uneceCommonCode "A91" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:G_REL a unit:Unit ;
+unit:G_REL a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
 unit:GigaBYTE a qudt:DecimalScaledUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "GigaByte" ;
     dcterms:description "The gigabyte is a multiple of the unit byte for digital information storage. The prefix giga means 10 in the International System of Units (SI), therefore 1 gigabyte is \\(1,000,000,000 \\; bytes\\). The unit symbol for the gigabyte is \\(GB\\) or \\(Gbyte\\), but not \\(Gb\\) (lower case b) which is typically used for the gigabit. Historically, the term has also been used in some fields of computer science and information technology to denote the \\(gibibyte\\), or \\(1073741824 \\; bytes\\)."^^qudt:LatexString ;
     qudt:conversionMultiplier 1.073742e+09 ;
@@ -979,8 +958,7 @@ unit:GigaBYTE a qudt:DecimalScaledUnit,
     skos:altLabel "gbyte" .
 
 unit:HR a qudt:SI-Unit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Hour" ;
     dcterms:description "The hour (common symbol: h or hr) is a unit of measurement of time. In modern usage, an hour comprises 60 minutes, or 3,600 seconds. It is approximately 1/24 of a mean solar day. An hour in the Universal Coordinated Time (UTC) time standard can include a negative or positive leap second, and may therefore have a duration of 3,599 or 3,601 seconds for adjustment purposes. Although it is not a standard defined by the International System of Units, the hour is a unit accepted for use with SI, represented by the symbol h."^^rdf:HTML ;
     qudt:conversionMultiplier 3.6e+03 ;
@@ -1000,8 +978,7 @@ unit:HR a qudt:SI-Unit,
 
 unit:HZ a qudt:DerivedCoherentUnit,
         qudt:DerivedUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Hertz" ;
     dcterms:description "The hertz (symbol Hz) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. The word \"hertz\" is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves."^^rdf:HTML ;
     qudt:conversionMultiplier 1e+00 ;
@@ -1019,8 +996,7 @@ unit:HZ a qudt:DerivedCoherentUnit,
 
 unit:IN a qudt:ImperialUnit,
         qudt:US-CustomaryUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Inch" ;
     dcterms:description "An inch is the name of a unit of length in a number of different systems, including Imperial units, and United States customary units. There are 36Â inches in a yard and 12Â inches in a foot. Corresponding units of area and volume are the square inch and the cubic inch."^^rdf:HTML ;
     qudt:conversionMultiplier 2.54e-02 ;
@@ -1038,8 +1014,7 @@ unit:IN a qudt:ImperialUnit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:J a qudt:DerivedUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Joule" ;
     dcterms:description "The SI unit of work or energy, defined to be the work done by a force of one newton acting to move an object through a distance of one meter in the direction in which the force is applied. Equivalently, since kinetic energy is one half the mass times the square of the velocity, one joule is the kinetic energy of a mass of two kilograms moving at a velocity of \\(1 m/s\\)."^^qudt:LatexString ;
     qudt:conversionMultiplier 1e+00 ;
@@ -1060,8 +1035,7 @@ unit:J a qudt:DerivedUnit,
 
 unit:K a qudt:BaseUnit,
         qudt:SI-Unit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Kelvin" ;
     dcterms:description "<p>The SI base unit of temperature, previously called the degree Kelvin. One kelvin represents the same temperature difference as one degree Celsius. In 1967 the General Conference on Weights and Measures defined the temperature of the triple point of water (the temperature at which water exists simultaneously in the gaseous, liquid, and solid states) to be exactly 273.16 kelvins. Since this temperature is also equal to 0.01 u00b0C, the temperature in kelvins is always equal to 273.15 plus the temperature in degrees Celsius. The kelvin equals exactly 1.8 degrees Fahrenheit. The unit is named for the British mathematician and physicist William Thomson (1824-1907), later known as Lord Kelvin after he was named Baron Kelvin of Largs.</p>"^^rdf:HTML ;
     qudt:conversionMultiplier 1e+00 ;
@@ -1077,8 +1051,7 @@ unit:K a qudt:BaseUnit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:KiloBYTE a qudt:BinaryScaledUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Kilo Byte" ;
     dcterms:description "The kilobyte is a multiple of the unit byte for digital information equivalent to 1024 bytes. Although the prefix kilo- means 1000, the term kilobyte and symbol kB have historically been used to refer to either 1024 (210) bytes or 1000 (103) bytes, dependent upon context, in the fields of computer science and information technology."^^rdf:HTML ;
     qudt:conversionMultiplier 1.024e+03 ;
@@ -1091,19 +1064,18 @@ unit:KiloBYTE a qudt:BinaryScaledUnit,
     qudt:symbol "kB" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:KiloFT3 a unit:Unit ;
+unit:KiloFT3 a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
 unit:KiloGM a qudt:BaseUnit,
         qudt:CGS-Unit,
         qudt:SI-Unit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Kilogram" ;
     dcterms:plainTextDescription "The kilogram or kilogramme (SI symbol: kg), also known as the kilo, is the base unit of mass in the International System of Units and is defined as being equal to the mass of the International Prototype Kilogram (IPK), which is almost exactly equal to the mass of one liter of water. The avoirdupois (or international) pound, used in both the Imperial system and U.S. customary units, is defined as exactly 0.45359237 kg, making one kilogram approximately equal to 2.2046 avoirdupois pounds."^^rdf:HTML ;
     qudt:conversionMultiplier 1e+00 ;
@@ -1121,8 +1093,7 @@ unit:KiloGM a qudt:BaseUnit,
     qudt:uneceCommonCode "KGM" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:KiloGM-PER-L a qudt:Unit,
-        unit:Unit ;
+unit:KiloGM-PER-L a qudt:Unit ;
     rdfs:label "KiloGM PER L" ;
     qudt:conversionMultiplier 1e+03 ;
     qudt:conversionOffset 0e+00 ;
@@ -1135,8 +1106,7 @@ unit:KiloGM-PER-L a qudt:Unit,
 
 unit:KiloGM-PER-M a qudt:DerivedCoherentUnit,
         qudt:DerivedUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Kilogram per Meter" ;
     dcterms:description "Kilogram Per Meter (kg/m) is a unit in the category of Linear mass density. It is also known as kilogram/meter, kilogram/metre, kilograms per meter, kilogram per metre, kilograms per metre. This unit is commonly used in the SI unit system. Kilogram Per Meter (kg/m) has a dimension of ML-1 where M is mass, and L is length. This unit is the standard SI unit in this category. "^^rdf:HTML ;
     qudt:conversionMultiplier 1e+00 ;
@@ -1148,8 +1118,7 @@ unit:KiloGM-PER-M a qudt:DerivedCoherentUnit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:KiloGM-PER-M3 a qudt:DerivedUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Kilogram per Cubic Meter" ;
     dcterms:description "Kilogram per cubic metre is an SI derived unit of density, defined by mass in kilograms divided by volume in cubic metres. The official SI symbolic abbreviation is \\(kg \\cdot m^{-3}\\), or equivalently either \\(kg/m^3\\)."^^qudt:LatexString ;
     qudt:conversionMultiplier 1e+00 ;
@@ -1160,8 +1129,7 @@ unit:KiloGM-PER-M3 a qudt:DerivedUnit,
     qudt:uneceCommonCode "KMQ" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:KiloL a qudt:Unit,
-        unit:Unit ;
+unit:KiloL a qudt:Unit ;
     rdfs:label "KiloL" ;
     qudt:conversionMultiplier 1e+00 ;
     qudt:conversionOffset 0e+00 ;
@@ -1172,16 +1140,15 @@ unit:KiloL a qudt:Unit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
     skos:prefLabel "kilolitre" .
 
-unit:KiloLB_M-PER-IN2 a unit:Unit ;
+unit:KiloLB_M-PER-IN2 a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
-unit:KiloN a qudt:Unit,
-        unit:Unit ;
+unit:KiloN a qudt:Unit ;
     rdfs:label "KiloN" ;
     qudt:conversionMultiplier 1e+03 ;
     qudt:conversionOffset 0e+00 ;
@@ -1195,8 +1162,7 @@ unit:KiloN a qudt:Unit,
 unit:KiloPA a qudt:DerivedUnit,
         qudt:SI-Unit,
         qudt:ScaledUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Kilopascal" ;
     dcterms:description "Kilopascal is a unit of pressure. 1 kPa is approximately the pressure exerted by a 10-g mass resting on a 1-cm2 area. 101.3 kPa = 1 atm. There are 1,000 pascals in 1 kilopascal."^^rdf:HTML ;
     qudt:conversionMultiplier 1e+03 ;
@@ -1209,8 +1175,7 @@ unit:KiloPA a qudt:DerivedUnit,
     qudt:uneceCommonCode "KPA" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:L-PER-DAY a qudt:Unit,
-        unit:Unit ;
+unit:L-PER-DAY a qudt:Unit ;
     rdfs:label "L PER DAY" ;
     qudt:conversionMultiplier 1.157407e-08 ;
     qudt:conversionOffset 0e+00 ;
@@ -1221,8 +1186,7 @@ unit:L-PER-DAY a qudt:Unit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
     skos:prefLabel "litre per day" .
 
-unit:L-PER-HR a qudt:Unit,
-        unit:Unit ;
+unit:L-PER-HR a qudt:Unit ;
     rdfs:label "L PER HR" ;
     qudt:conversionMultiplier 2.777778e-07 ;
     qudt:conversionOffset 0e+00 ;
@@ -1233,8 +1197,7 @@ unit:L-PER-HR a qudt:Unit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
     skos:prefLabel "litre per hour" .
 
-unit:L-PER-MIN a qudt:Unit,
-        unit:Unit ;
+unit:L-PER-MIN a qudt:Unit ;
     rdfs:label "L PER MIN" ;
     qudt:conversionMultiplier 1.666667e-05 ;
     qudt:conversionOffset 0e+00 ;
@@ -1246,8 +1209,7 @@ unit:L-PER-MIN a qudt:Unit,
     skos:prefLabel "litre per minute" .
 
 unit:LB_F a qudt:ImperialUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Pound Force" ;
     dcterms:description "\"Pound Force\" is an Imperial unit for  'Force' expressed as \\(lbf\\)."^^qudt:LatexString ;
     qudt:conversionMultiplier 4.448222e+00 ;
@@ -1264,8 +1226,7 @@ unit:LB_F a qudt:ImperialUnit,
 
 unit:LB_M a qudt:CGS-Unit,
         qudt:ImperialUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Pound Mass" ;
     dcterms:description "A pound of mass, based on the international standard definition of the pound as exactly 0.45359237 kg."^^rdf:HTML ;
     qudt:conversionMultiplier 4.535924e-01 ;
@@ -1275,8 +1236,7 @@ unit:LB_M a qudt:CGS-Unit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:LB_M-PER-FT a qudt:ImperialUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Pound per Foot" ;
     dcterms:description "\"Pound per Foot\" is an Imperial unit for  'Mass Per Length' expressed as \\(lb/ft\\)."^^qudt:LatexString ;
     qudt:conversionMultiplier 1.488164e+00 ;
@@ -1286,8 +1246,7 @@ unit:LB_M-PER-FT a qudt:ImperialUnit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:LB_M-PER-FT3 a qudt:ImperialUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Pound per Cubic Foot" ;
     dcterms:description "\"Pound per Cubic Foot\" is an Imperial unit for  'Density' expressed as \\(lb/ft^{3}\\)."^^qudt:LatexString ;
     qudt:conversionMultiplier 1.601846e+01 ;
@@ -1297,8 +1256,7 @@ unit:LB_M-PER-FT3 a qudt:ImperialUnit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:LB_M-PER-GAL a qudt:ImperialUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Pound per Gallon" ;
     dcterms:description "\"Pound per Gallon\" is an Imperial unit for  'Density' expressed as \\(lb/gal\\)."^^qudt:LatexString ;
     qudt:conversionMultiplier 9.977637e+01 ;
@@ -1307,8 +1265,7 @@ unit:LB_M-PER-GAL a qudt:ImperialUnit,
     qudt:hasQuantityKind <http://qudt.org/vocab/quantitykind/Density> ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:LB_M-PER-IN2 a qudt:Unit,
-        unit:Unit ;
+unit:LB_M-PER-IN2 a qudt:Unit ;
     rdfs:label "LB_M PER IN2" ;
     qudts:baseUnitDimensions <http://qudt.org/vocab/dimensionvector/A0E0L-2I0M1H0T0D0> ;
     qudts:hasQuantityKind <http://qudt.org/vocab/quantitykind/MassPerArea>,
@@ -1323,8 +1280,7 @@ unit:LB_M-PER-IN2 a qudt:Unit,
     skos:prefLabel "pound (avoirdupois) per square inch" .
 
 unit:M-PER-HR a qudt:DerivedUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Meter per Hour" ;
     dcterms:description "Metre per hour is a metric unit of both speed (scalar) and velocity (Vector (geometry)). Its symbol is m/h or mu00b7h-1 (not to be confused with the imperial unit symbol mph. By definition, an object travelling at a speed of 1 m/h for an hour would move 1 metre."^^rdf:HTML ;
     qudt:conversionMultiplier 2.777778e-04 ;
@@ -1344,8 +1300,7 @@ unit:M-PER-HR a qudt:DerivedUnit,
 
 unit:M-PER-SEC a qudt:DerivedCoherentUnit,
         qudt:DerivedUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Meter per Second" ;
     dcterms:description """Metre per second is an SI derived unit of both speed (scalar) and velocity (vector quantity which specifies both magnitude and a specific direction), defined by distance in metres divided by time in seconds.
 The official SI symbolic abbreviation is mu00b7s-1, or equivalently either m/s."""^^rdf:HTML ;
@@ -1366,8 +1321,7 @@ The official SI symbolic abbreviation is mu00b7s-1, or equivalently either m/s."
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:M3 a qudt:DerivedUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Cubic Meter" ;
     dcterms:description "The SI unit of volume, equal to 1.0e6 cm3, 1000 liters, 35.3147 ft3, or 1.30795 yd3. A cubic meter holds about 264.17 U.S. liquid gallons or 219.99 British Imperial gallons."^^rdf:HTML ;
     qudt:conversionMultiplier 1e+00 ;
@@ -1384,8 +1338,7 @@ unit:M3 a qudt:DerivedUnit,
     qudt:uneceCommonCode "MTQ" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:M3-PER-DAY a qudt:Unit,
-        unit:Unit ;
+unit:M3-PER-DAY a qudt:Unit ;
     rdfs:label "M3 PER DAY" ;
     qudt:conversionMultiplier 1.157407e-05 ;
     qudt:conversionOffset 0e+00 ;
@@ -1398,8 +1351,7 @@ unit:M3-PER-DAY a qudt:Unit,
 
 unit:M3-PER-HR a qudt:DerivedUnit,
         qudt:SI-Unit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Cubic Meter per Hour" ;
     dcterms:description "Cubic Meter Per Hour (m3/h) is a unit in the category of Volume flow rate. It is also known as cubic meters per hour, cubic metre per hour, cubic metres per hour, cubic meter/hour, cubic metre/hour, cubic meter/hr, cubic metre/hr, flowrate. Cubic Meter Per Hour (m3/h) has a dimension of L3T-1 where L is length, and T is time. It can be converted to the corresponding standard SI unit m3/s by multiplying its value by a factor of 0.00027777777."^^rdf:HTML ;
     qudt:conversionMultiplier 2.777778e-04 ;
@@ -1418,8 +1370,7 @@ unit:M3-PER-HR a qudt:DerivedUnit,
     qudt:uneceCommonCode "MQH" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:MO a qudt:Unit,
-        unit:Unit ;
+unit:MO a qudt:Unit ;
     rdfs:label "Month" ;
     dcterms:description "A unit of time corresponding approximately to one cycle of the moon's phases, or about 30 days or 4 weeks. Also known as the 'Synodic Month' and calculated as 29.53059 days."^^rdf:HTML ;
     qudt:conversionMultiplier 2.551443e+06 ;
@@ -1440,8 +1391,7 @@ unit:MO a qudt:Unit,
     qudt:uneceCommonCode "MON" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:MegaL a qudt:Unit,
-        unit:Unit ;
+unit:MegaL a qudt:Unit ;
     rdfs:label "MegaL" ;
     qudt:conversionMultiplier 1e+06 ;
     qudt:conversionOffset 0e+00 ;
@@ -1452,8 +1402,7 @@ unit:MegaL a qudt:Unit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
     skos:prefLabel "megalitre" .
 
-unit:MegaLB_F a qudt:Unit,
-        unit:Unit ;
+unit:MegaLB_F a qudt:Unit ;
     rdfs:label "Mega Pound Force" ;
     qudt:conversionMultiplier 4.448222e+03 ;
     qudt:conversionOffset 0e+00 ;
@@ -1463,8 +1412,7 @@ unit:MegaLB_F a qudt:Unit,
     qudt:symbol "Mlbf" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:MegaPA a qudt:Unit,
-        unit:Unit ;
+unit:MegaPA a qudt:Unit ;
     rdfs:label "MegaPA" ;
     qudt:conversionMultiplier 1e+06 ;
     qudt:conversionOffset 0e+00 ;
@@ -1475,8 +1423,7 @@ unit:MegaPA a qudt:Unit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
     skos:prefLabel "megapascal" .
 
-unit:MilliGM a qudt:Unit,
-        unit:Unit ;
+unit:MilliGM a qudt:Unit ;
     rdfs:label "MilliGM" ;
     qudt:conversionMultiplier 1e-06 ;
     qudt:conversionOffset 0e+00 ;
@@ -1488,8 +1435,7 @@ unit:MilliGM a qudt:Unit,
     skos:prefLabel "milligram" .
 
 unit:MilliM a qudt:DerivedUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Millimeter" ;
     dcterms:description "The millimetre (International spelling as used by the International Bureau of Weights and Measures) or millimeter (American spelling) (SI unit symbol mm) is a unit of length in the metric system, equal to one thousandth of a metre, which is the SI base unit of length. It is equal to 1000 micrometres or 1000000 nanometres. A millimetre is equal to exactlyâ5/127 (approximately 0.039370) of an inch."^^rdf:HTML ;
     qudt:conversionMultiplier 1e-03 ;
@@ -1508,8 +1454,7 @@ unit:MilliM a qudt:DerivedUnit,
 
 unit:MilliRAD a qudt:DecimalScaledUnit,
         qudt:DerivedUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "milliradian" ;
     qudt:conversionMultiplier 1e-03 ;
     qudt:conversionOffset 0e+00 ;
@@ -1526,8 +1471,7 @@ unit:MilliRAD a qudt:DecimalScaledUnit,
     qudt:uneceCommonCode "C25" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:MilliS a qudt:Unit,
-        unit:Unit ;
+unit:MilliS a qudt:Unit ;
     rdfs:label "MilliS" ;
     qudt:conversionMultiplier 1e-03 ;
     qudt:conversionOffset 0e+00 ;
@@ -1540,8 +1484,7 @@ unit:MilliS a qudt:Unit,
 
 unit:N a qudt:DerivedCoherentUnit,
         qudt:DerivedUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Newton" ;
     dcterms:description "The \"Newton\" is the SI unit of force. A force of one newton will accelerate a mass of one kilogram at the rate of one meter per second per second. The newton is named for Isaac Newton (1642-1727), the British mathematician, physicist, and natural philosopher. He was the first person to understand clearly the relationship between force (F), mass (m), and acceleration (a) expressed by the formula \\(F = m \\cdot a\\)."^^qudt:LatexString ;
     qudt:conversionMultiplier 1e+00 ;
@@ -1560,8 +1503,7 @@ unit:N a qudt:DerivedCoherentUnit,
 unit:NanoSEC a qudt:DecimalScaledUnit,
         qudt:DerivedUnit,
         qudt:ImperialUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "nanosecond" ;
     dcterms:description "A nanosecond is a SI unit of time equal to one billionth of a second (10â9 or 1/1,000,000,000 s). One nanosecond is to one second as one second is to 31.69 years. The word nanosecond is formed by the prefix nano and the unit second."^^rdf:HTML ;
     qudt:conversionMultiplier 1e-09 ;
@@ -1580,8 +1522,7 @@ unit:NanoSEC a qudt:DecimalScaledUnit,
     qudt:uneceCommonCode "C47" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:OHM-M a qudt:Unit,
-        unit:Unit ;
+unit:OHM-M a qudt:Unit ;
     rdfs:label "Ohm Meter" ;
     qudt:conversionOffset 0e+00 ;
     qudt:hasQuantityKind <http://qudt.org/vocab/quantitykind/ResidualResistivity> ;
@@ -1590,17 +1531,16 @@ unit:OHM-M a qudt:Unit,
     qudt:uneceCommonCode "C61" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:OZ a unit:Unit ;
+unit:OZ a qudt:Unit ;
     rdfs:label ""@en ;
     dcterms:description ""@en ;
-    unit:conversionOffset "" ;
-    unit:hasQuantityKind "" ;
-    unit:symbol "" ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "" ;
     rdfs:isDefinedBy : .
 
 unit:PA-PER-SEC a qudt:DerivedCoherentUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Pascal per Second" ;
     dcterms:description "A rate of change of pressure measured as the number of Pascals in a period of one second."^^rdf:HTML ;
     qudt:conversionMultiplier 1e+00 ;
@@ -1610,8 +1550,7 @@ unit:PA-PER-SEC a qudt:DerivedCoherentUnit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:PERCENT a qudt:CountingUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Percent" ;
     dcterms:description "\"Percent\" is a unit for  'Dimensionless Ratio' expressed as \\(\\%\\)."^^qudt:LatexString ;
     qudt:conversionOffset 0e+00 ;
@@ -1626,8 +1565,7 @@ unit:PERCENT a qudt:CountingUnit,
     qudt:uneceCommonCode "P1" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:PPB a qudt:Unit,
-        unit:Unit ;
+unit:PPB a qudt:Unit ;
     rdfs:label "Parts per billion" ;
     dcterms:description "Dimensionless unit for concentration. Recommended practice is to use specific units such as \\(ug/l\\)."^^qudt:LatexString ;
     qudt:conversionMultiplier 1e-09 ;
@@ -1637,8 +1575,7 @@ unit:PPB a qudt:Unit,
     qudt:symbol "ppb" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:PPM a qudt:Unit,
-        unit:Unit ;
+unit:PPM a qudt:Unit ;
     rdfs:label "Parts per million" ;
     dcterms:description "Dimensionless unit for concentration. Recommended practice is to use specific units such as \\(ug/l\\)."^^qudt:LatexString ;
     qudt:conversionMultiplier 1e-06 ;
@@ -1650,8 +1587,7 @@ unit:PPM a qudt:Unit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:PetaBYTE a qudt:DecimalScaledUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "PetaByte" ;
     dcterms:description "A petabyte is a unit of information equal to one quadrillion bytes, or 1024 terabytes. The unit symbol for the petabyte is PB. The prefix peta (P) indicates the fifth power to 1000: 1 PB = 1000000000000000B, 1 million gigabytes = 1 thousand terabytes The pebibyte (PiB), using a binary prefix, is the corresponding power of 1024, which is more than \\(12\\% \\)greater (\\(2^{50} bytes = 1,125,899,906,842,624 bytes\\))."^^qudt:LatexString ;
     qudt:conversionMultiplier 1e+15 ;
@@ -1666,8 +1602,7 @@ unit:PetaBYTE a qudt:DecimalScaledUnit,
     qudt:uneceCommonCode "E36" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:REV-PER-HR a qudt:Unit,
-        unit:Unit ;
+unit:REV-PER-HR a qudt:Unit ;
     rdfs:label "Revolution per Hour" ;
     dcterms:description "\"Revolution per Hour\" is a unit for  'Angular Velocity' expressed as \\(rev/h\\)."^^qudt:LatexString ;
     qudt:conversionMultiplier 1.745329e-03 ;
@@ -1677,8 +1612,7 @@ unit:REV-PER-HR a qudt:Unit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:REV-PER-MIN a qudt:DerivedUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Revolution per Minute" ;
     dcterms:description "\"Revolution per Minute\" is a unit for  'Angular Velocity' expressed as \\(rev/min\\)."^^qudt:LatexString ;
     qudt:conversionMultiplier 1.047198e-01 ;
@@ -1688,8 +1622,7 @@ unit:REV-PER-MIN a qudt:DerivedUnit,
     qudt:iec61360Code "0112/2///62720#UAB231" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:TOE a qudt:Unit,
-        unit:Unit ;
+unit:TOE a qudt:Unit ;
     rdfs:label "Ton of Oil Equivalent" ;
     dcterms:description """<p class="lm-para">The tonne of oil equivalent (toe) is a unit of energy: the amount of energy released by burning one tonne of crude oil, approximately 42 GJ (as different crude oils have different calorific values, the exact value of the toe is defined by convention; unfortunately there are several slightly different definitions as discussed below). The toe is sometimes used for large amounts of energy, as it can be more intuitive to visualise, say, the energy released by burning 1000 tonnes of oil than 42,000 billion joules (the SI unit of energy).</p>
 <p class="lm-para">Multiples of the toe are used, in particular the megatoe (Mtoe, one million toe) and the gigatoe (Gtoe, one billion toe).</p>"""^^rdf:HTML ;
@@ -1701,8 +1634,7 @@ unit:TOE a qudt:Unit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:TON_LONG a qudt:ImperialUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Long Ton" ;
     dcterms:description """<p class="lm-para">Long ton (weight ton or imperial ton) is the name for the unit called the "ton" in the avoirdupois or Imperial system of measurements, as used in the United Kingdom and several other Commonwealth countries. One long ton is equal to 2,240 pounds (1,016 kg), 1.12 times as much as a short ton, or 35 cubic feet (0.9911 m3) of salt water with a density of 64 lb/ft3 (1.025 g/ml).</p>
 <p class="lm-para">It has some limited use in the United States, most commonly in measuring the displacement of ships, and was the unit prescribed for warships by the Washington Naval Treaty 1922-for example battleships were limited to a mass of 35,000 long tons (36,000 t; 39,000 short tons).</p>"""^^rdf:HTML ;
@@ -1719,8 +1651,7 @@ unit:TON_LONG a qudt:ImperialUnit,
 
 unit:TON_M a qudt:CGS-Unit,
         qudt:SI-Unit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Metric Ton" ;
     dcterms:description "The tonne (SI unit symbol: t) is a metric system unit of mass equal to 1,000 kilograms (2,204.6 pounds). It is a non-SI unit accepted for use with SI. To avoid confusion with the ton, it is also known as the metric tonne and metric ton in the United States[3] and occasionally in the United Kingdom. In SI units and prefixes, the tonne is a megagram (Mg), a rarely-used symbol, easily confused with mg, for milligram."^^rdf:HTML ;
     qudt:conversionMultiplier 1e+03 ;
@@ -1737,8 +1668,7 @@ unit:TON_M a qudt:CGS-Unit,
     skos:altLabel "metric-tonne" .
 
 unit:TeraBYTE a qudt:DecimalScaledUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "TeraByte" ;
     dcterms:description "The terabyte is a multiple of the unit byte for digital information. The prefix tera means 10 in the International System of Units (SI), and therefore 1 terabyte is 1000000000000bytes, or 1 trillion bytes, or 1000 gigabytes. 1 terabyte in binary prefixes is 0.9095 tebibytes, or 931.32 gibibytes. The unit symbol for the terabyte is TB or TByte, but not Tb (lower case b) which refers to terabit."^^rdf:HTML ;
     qudt:conversionMultiplier 1.048576e+06 ;
@@ -1753,8 +1683,7 @@ unit:TeraBYTE a qudt:DecimalScaledUnit,
     qudt:uneceCommonCode "E35" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:WK a qudt:Unit,
-        unit:Unit ;
+unit:WK a qudt:Unit ;
     rdfs:label "Week" ;
     dcterms:description "Mean solar week"^^rdf:HTML ;
     qudt:conversionMultiplier 6.048e+05 ;
@@ -1772,8 +1701,7 @@ unit:WK a qudt:Unit,
     qudt:uneceCommonCode "WEE" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:YR a qudt:Unit,
-        unit:Unit ;
+unit:YR a qudt:Unit ;
     rdfs:label "Year" ;
     dcterms:description "A year is any of the various periods equated with one passage of Earth about the Sun, and hence of roughly 365 days. The familiar calendar has a mixture of 365- and 366-day years, reflecting the fact that the time for one complete passage takes about 365Â¼ days; the precise value for this figure depends on the manner of defining the year."^^rdf:HTML ;
     qudt:conversionMultiplier 3.15576e+07 ;
@@ -1791,8 +1719,7 @@ unit:YR a qudt:Unit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:ARCSEC a qudt:DerivedUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "ArcSecond" ;
     dcterms:description "\"Arc Second\" is a unit of angular measure, also called the \\(\\textit{second of arc}\\), equal to \\(1/60 \\; arcminute\\). One arcsecond is a very small angle: there are 1,296,000 in a circle. The SI recommends \\(\\textit{double prime}\\) (\\(''\\)) as the symbol for the arcsecond. The symbol has become common in astronomy, where very small angles are stated in milliarcseconds (\\(mas\\))."^^qudt:LatexString ;
     qudt:conversionMultiplier 4.848137e-06 ;
@@ -1807,8 +1734,7 @@ unit:ARCSEC a qudt:DerivedUnit,
     qudt:uneceCommonCode "D62" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:L a qudt:Unit,
-        unit:Unit ;
+unit:L a qudt:Unit ;
     rdfs:label "Liter" ;
     dcterms:description "<p class=\"lm-para\">The \\(litre\\) (American spelling: \\(\\textit{liter}\\); SI symbol \\(l\\) or \\(L\\)) is a non-SI metric system unit of volume equal to \\(1 \\textit{cubic decimetre}\\) (\\(dm^3\\)), 1,000 cubic centimetres (\\(cm^3\\)) or \\(1/1000 \\textit{cubic metre}\\). If the lower case \"L\" is used as the symbol, it is sometimes rendered as a cursive \"l\" to help distinguish it from the capital \"I\", although this usage has no official approval by any international bureau.</p>"^^qudt:LatexString ;
     qudt:conversionMultiplier 1e-03 ;
@@ -1828,8 +1754,7 @@ unit:L a qudt:Unit,
 
 unit:M a qudt:BaseUnit,
         qudt:MKS-Unit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Meter" ;
     dcterms:description "The metric and SI base unit of distance.  The 17th General Conference on Weights and Measures in 1983 defined the meter as that distance that makes the speed of light in a vacuum equal to exactly 299 792 458 meters per second. The speed of light in a vacuum, \\(c\\), is one of the fundamental constants of nature. The meter is equal to approximately 1.093 613 3 yards, 3.280 840 feet, or 39.370 079 inches."^^qudt:LatexString ;
     qudt:conversionMultiplier 1e+00 ;
@@ -1848,8 +1773,7 @@ unit:M a qudt:BaseUnit,
     qudt:uneceCommonCode "MTR" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-unit:MIN a qudt:Unit,
-        unit:Unit ;
+unit:MIN a qudt:Unit ;
     rdfs:label "Minute" ;
     dcterms:description "A minute is a unit of measurement of time. The minute is a unit of time equal to 1/60 (the first sexagesimal fraction of an hour or 60 seconds. In the UTC time scale, a minute on rare occasions has 59 or 61 seconds; see leap second. The minute is not an SI unit; however, it is accepted for use with SI units. The SI symbol for minute or minutes is min (for time measurement) or the prime symbol after a number, e.g. 5' (for angle measurement, even if it is informally used for time)."^^rdf:HTML ;
     qudt:conversionMultiplier 6e+01 ;
@@ -1867,8 +1791,7 @@ unit:MIN a qudt:Unit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:MegaBYTE a qudt:DecimalScaledUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Mega byte" ;
     dcterms:description "The megabyte is a multiple of the unit byte for digital information equivalent to \\(2^{6} bytes\\). Although the prefix mega means \\(10^{6}\\), the term megabyte and symbol \\(mB\\) have historically been used to refer to \\(1024^{3} bytes\\) or \\(2^{30} bytes\\). The megabyte is a multiple of the unit byte for digital information storage or transmission with three different values depending on context: 1048576 bytes generally for computer memory; and one million bytes (10, see prefix mega-) generally for computer storage. In rare cases, it is used to mean \\(1000 \\times 1024 (1024,000) bytes\\). The IEEE Standards Board has confirmed that mega means \\(1000,000\\), with exceptions allowed for the base-two meaning."^^qudt:LatexString ;
     qudt:conversionMultiplier 1.048576e+06 ;
@@ -1883,8 +1806,7 @@ unit:MegaBYTE a qudt:DecimalScaledUnit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:PA a qudt:DerivedUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Pascal" ;
     dcterms:description "The SI unit of pressure. The pascal is the standard pressure unit in the MKS metric system, equal to one newton per square meter or one \"kilogram per meter per second per second.\" The unit is named for Blaise Pascal (1623-1662), French philosopher and mathematician, who was the first person to use a barometer to measure differences in altitude."^^rdf:HTML ;
     qudt:conversionMultiplier 1e+00 ;
@@ -1906,8 +1828,7 @@ unit:PA a qudt:DerivedUnit,
 unit:SEC a qudt:BaseUnit,
         qudt:CGS-Unit,
         qudt:SI-Unit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Second" ;
     dcterms:description """The \\(Second\\) (symbol: \\(s\\)) is the base unit of time in the International System of Units (SI) and is also a unit of time in other systems of measurement. Between the years1000 (when al-Biruni used seconds) and 1960 the second was defined as \\(1/86400\\) of a mean solar day (that definition still applies in some astronomical and legal contexts). Between 1960 and 1967, it was defined in terms of the period of the Earth's orbit around the Sun in 1900, but it is now defined more precisely in atomic terms.  
 Under the International System of Units (via the International Committee for Weights and Measures, or CIPM), since 1967 the second has been defined as the duration of \\({9192631770}\\) periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom.In 1997 CIPM added that the periods would be defined for a caesium atom at rest, and approaching the theoretical temperature of absolute zero, and in 1999, it included corrections from ambient radiation."""^^qudt:LatexString ;
@@ -1927,9 +1848,12 @@ Under the International System of Units (via the International Committee for Wei
     qudt:uneceCommonCode "SEC" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
+<http://linked.data.gov.au/org/gsq> a sdo:Organization ;
+    sdo:name "Geological Survey of Queensland" ;
+    sdo:url <https://www.business.qld.gov.au/industries/mining-energy-water/resources/geoscience-information/gsq> .
+
 unit:ARCMIN a qudt:DerivedUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "ArcMinute" ;
     dcterms:description "A minute of arc, arcminute, or minute arc (MOA), is a unit of angular measurement equal to one sixtieth (1/60) of one degree (circle/21,600), or \\(\\pi /10,800 radians\\). In turn, a second of arc or arcsecond is one sixtieth (1/60) of one minute of arc. Since one degree is defined as one three hundred and sixtieth (1/360) of a rotation, one minute of arc is 1/21,600 of a rotation. "^^qudt:LatexString ;
     qudt:conversionMultiplier 2.908882e-04 ;
@@ -1949,8 +1873,7 @@ unit:ARCMIN a qudt:DerivedUnit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:RAD a qudt:DerivedUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Radian" ;
     dcterms:description "The radian is the standard unit of angular measure, used in many areas of mathematics. It describes the plane angle subtended by a circular arc as the length of the arc divided by the radius of the arc. In the absence of any symbol radians are assumed, and when degrees are meant the symbol \\(^{\\ circ}\\) is used. "^^qudt:LatexString ;
     qudt:conversionMultiplier 1e+00 ;
@@ -1969,12 +1892,10 @@ unit:RAD a qudt:DerivedUnit,
     qudt:ucumCode "RAD",
         "rad" ;
     qudt:uneceCommonCode "C81" ;
-    rdfs:comment "The radian and steradian are special names for the number one that may be used to convey information about the quantity concerned. In practice the symbols rad and sr are used where appropriate, but the symbol for the derived unit one is generally omitted in specifying the values of dimensionless quantities." ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:BYTE a qudt:DerivedUnit,
-        qudt:Unit,
-        unit:Unit ;
+        qudt:Unit ;
     rdfs:label "Byte" ;
     dcterms:description "The byte is a unit of digital information in computing and telecommunications that most commonly consists of eight bits."^^rdf:HTML ;
     qudt:conversionMultiplier 5.545177e+00 ;
@@ -1987,4 +1908,17 @@ unit:BYTE a qudt:DerivedUnit,
     qudt:symbol "B" ;
     qudt:uneceCommonCode "AD" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
+
+: a prof:Profile ;
+    dcterms:created "2020-04-15"^^xsd:date ;
+    dcterms:creator <http://linked.data.gov.au/org/gsq> ;
+    dcterms:modified "2020-05-13"^^xsd:date ;
+    dcterms:publisher <http://linked.data.gov.au/org/gsq> ;
+    skos:definition "This profile of the Quantities, Units, Dimensions & Types ontology and vocabularies lists those elements deemed by the profile creators to be of relevance to the geosciences." ;
+    skos:prefLabel "Geoscience Profile of QUDT" ;
+    prof:hasResource [ dcterms:conformsTo <https://qudt.org> ;
+            dcterms:format "text/turtle" ;
+            prof:hasArtifact :.ttl ;
+            prof:hasRole role:vocabulary ] ;
+    prof:isProfileOf <https://qudt.org> .
 

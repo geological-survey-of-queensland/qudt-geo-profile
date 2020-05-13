@@ -13,7 +13,7 @@ from rdflib.namespace import DCTERMS, RDF, RDFS, SKOS, OWL, TIME
 g = Graph()
 
 # bind prefixes
-QUDT = Namespace("http://qudt.org/vocab/unit/")
+QUDT = Namespace("http://qudt.org/schema/qudt/")
 g.bind("unit", QUDT)
 # g.bind("greg", Namespace("http://www.w3.org/ns/time/gregorian/"))
 g.bind("geou", Namespace("http://linked.data.gov.au/def/geou/"))
@@ -23,7 +23,7 @@ g.parse("../resources/qudt-units.ttl", format="turtle")
 # g.parse("../resources/time-gregorian.ttl", format="turtle")
 
 g_out = Graph()
-g_out.bind("unit", Namespace("http://qudt.org/vocab/unit/"))
+# g_out.bind("unit", Namespace("http://qudt.org/vocab/unit/"))
 # g_out.bind("greg", Namespace("http://www.w3.org/ns/time/gregorian/"))
 g_out.bind("geou", Namespace("http://linked.data.gov.au/def/geou/"))
 g_out.bind("qudt", Namespace("http://qudt.org/schema/qudt/"))
@@ -45,7 +45,6 @@ for f in glob.glob("../inputs/units-*.txt"):
         if (URIRef(l2), RDF.type, None) in g:
             for s, p, o in g.triples((URIRef(l2), None, None)):
                 g_out.add((s, p, o))
-            g_out.add((URIRef(l2), RDF.type, QUDT.Unit))  # just to ensure all Months are also Units
         else:
             g_out.add((URIRef(l2), RDF.type, QUDT.Unit))
             g_out.add((URIRef(l2), RDFS.label, Literal("", lang="en")))
@@ -55,5 +54,8 @@ for f in glob.glob("../inputs/units-*.txt"):
             g_out.add((URIRef(l2), QUDT.symbol, Literal("")))
             g_out.add((URIRef(l2), RDFS.isDefinedBy, URIRef("http://linked.data.gov.au/def/geou")))
 
-with open("../geoprofile/units.ttl", "w") as f:
+# add in profile bit
+g_out.parse("../inputs/profile.ttl", format="turtle")
+
+with open("../geoprofile/geounits.ttl", "w") as f:
     f.write(g_out.serialize(format="turtle").decode("utf-8"))
