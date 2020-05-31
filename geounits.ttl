@@ -557,6 +557,14 @@ geou:TON_M-PER-M a qudt:Unit ;
     qudt:symbol "t/m3" ;
     rdfs:isDefinedBy : .
 
+geou:MYR a qudt:Unit ;
+    rdfs:label "Millions of Years"@en ;
+    dcterms:description "The number of years divided by one million. Commonly used in disciplines that describe events over long periods, such as astronomy and geology."@en ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "Ma" ;
+    rdfs:isDefinedBy : .
+
 unit:ATM a qudt:CGS-Unit,
         qudt:Unit ;
     rdfs:label "Standard Atmosphere" ;
