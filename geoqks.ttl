@@ -1,4 +1,4 @@
-@prefix : <http://linked.data.gov.au/def/geou> .
+@prefix geou: <http://linked.data.gov.au/def/geou> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geoqk: <http://linked.data.gov.au/def/geoqk/> .
 @prefix ns1: <http://www.linkedmodel.org/schema/vaem#> .
@@ -12,11 +12,31 @@
 @prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+geoqk:angle a qudt:QuantityKind ;
+    rdfs:label "Angle"@en ;
+    dcterms:description "In plane geometry, an angle is the figure formed by two rays, called the sides of the angle, sharing a common endpoint, called the vertex of the angle."@en ;
+    qudt:applicableUnit unit:DEG,
+        unit:RAD,
+        unit:MilliRAD,
+        unit:GRAD,
+        unit:ARCMIN,
+        unit:ARCSEC ;
+    qudt:hasDimensionVector "" ;
+    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
+    skos:notation "rang" ;
+    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+
 geoqk:age a qudt:QuantityKind ;
     rdfs:label "Age"@en ;
-    dcterms:description "The time before a reference time. Commonly referenced to time before present (BP), before current era (BCE), or represented as Millions of Years Ago (Ma) in geological disciplines"@en ;
-    qudt:applicableUnit "" ;
-    qudt:hasDimensionVector "" ;
+    dcterms:description "The time before a reference time. Commonly referenced to time before present (BP), before current era (BCE), or represented as Millions of Years Ago (Ma) in geological disciplines."@en ;
+    qudt:applicableUnit unit:DAY,
+        unit:HR,
+        unit:MIN,
+        unit:SEC,
+        unit:WK,
+        unit:YR,
+        geou:MYR ;
+    qudt:hasDimensionVector "A0E0L0I0M0H0T1D0" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rage" ;
     skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
@@ -24,7 +44,7 @@ geoqk:age a qudt:QuantityKind ;
 geoqk:api-gravity a qudt:QuantityKind ;
     rdfs:label "API Gravity"@en ;
     dcterms:description "A measure of how heavy or light a petroleum liquid is compared to water: if its API gravity is greater than 10, it is lighter and floats on water; if less than 10, it is heavier and sinks."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Oil Gravity"@en ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
@@ -34,8 +54,9 @@ geoqk:api-gravity a qudt:QuantityKind ;
 geoqk:casing-weight a qudt:QuantityKind ;
     rdfs:label "Casing Weight"@en ;
     dcterms:description "The mass per unit of length of a length of tubular installed in a borehole."@en ;
-    qudt:applicableUnit "" ;
-    qudt:hasDimensionVector "" ;
+    qudt:applicableUnit unit:KiloGM-PER-M,
+        unit:LB_M-PER-FT ;
+    qudt:hasDimensionVector "A0E0L-1I0M1H0T1D0" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rcsw" ;
     skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
@@ -43,7 +64,7 @@ geoqk:casing-weight a qudt:QuantityKind ;
 geoqk:colour a qudt:QuantityKind ;
     rdfs:label "Colour"@en ;
     dcterms:description "The qualitative description of the colour of an object."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rcol" ;
@@ -52,7 +73,9 @@ geoqk:colour a qudt:QuantityKind ;
 geoqk:composition a qudt:QuantityKind ;
     rdfs:label "Composition"@en ;
     dcterms:description "A description of the component parts of a sample or object. Typically given as a component with its percentage or ratio within a bulk sample."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit geou:FRAC,
+        unit:PERCENT,
+        geou:RATIO ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rcmp" ;
@@ -61,7 +84,13 @@ geoqk:composition a qudt:QuantityKind ;
 geoqk:compressive-strength a qudt:QuantityKind ;
     rdfs:label "Compressive Strength"@en ;
     dcterms:description "The capacity to withstand axially directed pushing forces"@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:ATM,
+        unit:BAR,
+        unit:KiloPA,
+        unit:MegaPA,
+        unit:PA,
+        unit:LB_M-PER-IN2,
+        unit:KiloLB_M-PER-IN2 ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rcps" ;
@@ -70,7 +99,190 @@ geoqk:compressive-strength a qudt:QuantityKind ;
 geoqk:cost a qudt:QuantityKind ;
     rdfs:label "Cost"@en ;
     dcterms:description "The monetary value, cost, or price (in a unit of currency) for goods, services, or items."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:AFN,
+        unit:AMD,
+        unit:ARS,
+        unit:AUD,
+        unit:AWG,
+        unit:AZN,
+        unit:BBD,
+        unit:BDT,
+        unit:BHD,
+        unit:BSD,
+        unit:BYR,
+        unit:BelizeDollar,
+        unit:BermudaDollar,
+        unit:BolivianMvdol,
+        unit:Boliviano,
+        unit:BrazilianReal,
+        unit:BruneiDollar,
+        unit:BulgarianLev,
+        unit:BurundianFranc,
+        unit:CAD,
+        unit:CapeVerdeEscudo,
+        unit:CaymanIslandsDollar,
+        unit:Cedi,
+        unit:ChileanPeso,
+        unit:ColombianPeso,
+        unit:ComoroFranc,
+        unit:ConvertibleMark,
+        unit:CordobaOro,
+        unit:CostaRicanColon,
+        unit:CroatianKuna,
+        unit:CubanPeso,
+        unit:CyprusPound,
+        unit:CzechKoruna,
+        unit:DZD,
+        unit:Dalasi,
+        unit:DanishKrone,
+        unit:Deka,
+        unit:Denar,
+        unit:DjiboutiFranc,
+        unit:Dobra,
+        unit:DominicanPeso,
+        unit:EastCaribbeanDollar,
+        unit:EgyptianPound,
+        unit:EthiopianBirr,
+        unit:Euro,
+        unit:EuropeanCompositeUnit,
+        unit:EuropeanMonetaryUnit,
+        unit:EuropeanUnitOfAccount17,
+        unit:EuropeanUnitOfAccount9,
+        unit:FalklandIslandsPound,
+        unit:FijiDollar,
+        unit:Flight,
+        unit:Forint,
+        unit:FrancCongolais,
+        unit:GibraltarPound,
+        unit:Gold-OunceTroy,
+        unit:GoldFranc,
+        unit:Guarani,
+        unit:GuineaFranc,
+        unit:GuyanaDollar,
+        unit:HaitiGourde,
+        unit:HeartBeat,
+        unit:HongKongDollar,
+        unit:Hryvnia,
+        unit:IcelandKrona,
+        unit:IndianRupee,
+        unit:IranianRial,
+        unit:IraqiDinar,
+        unit:JamaicanDollar,
+        unit:JapaneseYen,
+        unit:JordanianDinar,
+        unit:KenyanShilling,
+        unit:KiloGM-SEC2,
+        unit:Kina,
+        unit:Kroon,
+        unit:KuwaitiDinar,
+        unit:Kwanza,
+        unit:Kyat,
+        unit:LaoKip,
+        unit:Lari,
+        unit:LatvianLats,
+        unit:LebanesePound,
+        unit:Lek,
+        unit:Lempira,
+        unit:Leone,
+        unit:LiberianDollar,
+        unit:LibyanDinar,
+        unit:Lilangeni,
+        unit:LithuanianLitas,
+        unit:Loti,
+        unit:MalagasyAriary,
+        unit:MalawiKwacha,
+        unit:MalaysianRinggit,
+        unit:MalteseLira,
+        unit:Manat,
+        unit:MauritiusRupee,
+        unit:Metical,
+        unit:MexicanPeso,
+        unit:MexicanUnidadDeInversion,
+        unit:MillionUSD,
+        unit:MoldovanLeu,
+        unit:MoroccanDirham,
+        unit:Naira,
+        unit:Nakfa,
+        unit:NamibianDollar,
+        unit:NepaleseRupee,
+        unit:NetherlandsAntillianGuilder,
+        unit:NewIsraeliShekel,
+        unit:NewTaiwanDollar,
+        unit:NewTurkishLira,
+        unit:NewZealandDollar,
+        unit:Ngultrum,
+        unit:NorthKoreanWon,
+        unit:NorwegianKrone,
+        unit:NuevoSol,
+        unit:OmaniRial,
+        unit:Ouguiya,
+        unit:PAB,
+        unit:PER-H,
+        unit:Paanga,
+        unit:PakistanRupee,
+        unit:Palladium-OunceTroy,
+        unit:Pataca,
+        unit:PhilippinePeso,
+        unit:Pico,
+        unit:Platinum-OunceTroy,
+        unit:PoundSterling,
+        unit:Pula,
+        unit:QatariRial,
+        unit:Quetzal,
+        unit:Riel,
+        unit:RomanianNeLeu,
+        unit:Rufiyaa,
+        unit:Rupiah,
+        unit:RussianRuble,
+        unit:RwandaFranc,
+        unit:SaintHelenaPound,
+        unit:SamoanTala,
+        unit:SaudiRiyal,
+        unit:SerbianDinar,
+        unit:SeychellesRupee,
+        unit:Silver-OunceTroy,
+        unit:SingaporeDollar,
+        unit:SlovakKoruna,
+        unit:SolomonIslandsDollar,
+        unit:Som,
+        unit:SomaliShilling,
+        unit:Somoni,
+        unit:SouthAfricanRand,
+        unit:SouthKoreanWon,
+        unit:SpecialDrawingRights,
+        unit:SriLankaRupee,
+        unit:SudanesePound,
+        unit:SurinamDollar,
+        unit:SwedishKrona,
+        unit:SwissFranc,
+        unit:SyrianPound,
+        unit:THB,
+        unit:TanzanianShilling,
+        unit:Tenge,
+        unit:TrinidadAndTobagoDollar,
+        unit:Tugrik,
+        unit:TunisianDinar,
+        unit:UAEDirham,
+        unit:UICFranc,
+        unit:USDollar,
+        unit:UgandaShilling,
+        unit:UnidadDeValorReal,
+        unit:UnidadesDeFormento,
+        unit:UruguayPeso,
+        unit:UzbekistanSom,
+        unit:Vatu,
+        unit:VenezuelanBolvar,
+        unit:VietnameseDong,
+        unit:WIREuro,
+        unit:WIRFranc,
+        unit:XAF,
+        unit:XOF,
+        unit:XPF,
+        unit:YemeniRial,
+        unit:YuanRenminbi,
+        unit:ZambianKwacha,
+        unit:ZimbabweDollar,
+        unit:Zloty ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rcst" ;
@@ -79,7 +291,7 @@ geoqk:cost a qudt:QuantityKind ;
 geoqk:count a qudt:QuantityKind ;
     rdfs:label "Count"@en ;
     dcterms:description "A quanitifation of the absolute number of discrete objects, groups, or sets."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit geou:COUNT ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rcnt" ;
@@ -88,7 +300,10 @@ geoqk:count a qudt:QuantityKind ;
 geoqk:curvature a qudt:QuantityKind ;
     rdfs:label "Curvature"@en ;
     dcterms:description "The curvature of a line or length of material. The change in angle per unit of length. Used in oil and gas to describe the curvature of a wellbore."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit geou:DEG-PER-30M,
+        geou:DEG-PER-100F,
+        geou:DEG-PER-M,
+        geou:DEG-PER-F ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Dog Leg Severity"@en ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
@@ -98,7 +313,13 @@ geoqk:curvature a qudt:QuantityKind ;
 geoqk:data a qudt:QuantityKind ;
     rdfs:label "Data"@en ;
     dcterms:description "The amount of data or information held by an electronic and measurable means. Typically reported in bytes or a derivative unit."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:BYTE,
+        unit:KiloBYTE,
+        unit:MegaBYTE,
+        unit:GigaBYTE,
+        unit:TeraBYTE,
+        unit:PetaBYTE,
+        geou:ExaBYTE ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rdat" ;
@@ -107,23 +328,19 @@ geoqk:data a qudt:QuantityKind ;
 geoqk:descriptive a qudt:QuantityKind ;
     rdfs:label "Descriptive"@en ;
     dcterms:description "A decription of a subject or object of interest."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rdsc" ;
     skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
 
-geoqk:dog-leg-severity a qudt:QuantityKind ;
-    rdfs:label ""@en ;
-    dcterms:description ""@en ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy <http://linked.data.gov.au/def/geoqk> ;
-    skos:broader owl:Thing .
-
 geoqk:drill-rate a qudt:QuantityKind ;
     rdfs:label "Drill Rate"@en ;
     dcterms:description "The rate that a drillbit penetrates the subsurface substrate and creates wellbore length."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit geou:HR-PER-FT,
+        geou:HR-PER-FT,
+        unit:FT-PER-HR,
+        unit:M-PER-HR ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Rate of Penetration"@en ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
@@ -133,7 +350,9 @@ geoqk:drill-rate a qudt:QuantityKind ;
 geoqk:electrical-conductivity a qudt:QuantityKind ;
     rdfs:label "Conductivity"@en ;
     dcterms:description "A measure of a material's ability to conduct an electric current."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:S-PER-M,
+        geou:MicroS-PER-CentiM,
+        geou:MicroS-PER-M ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Electrical Conductance"@en ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
@@ -143,7 +362,8 @@ geoqk:electrical-conductivity a qudt:QuantityKind ;
 geoqk:elevation a qudt:QuantityKind ;
     rdfs:label "Elevation"@en ;
     dcterms:description "The distance vertically upward from a reference point, surface, or datum."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:FT,
+        unit:M ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Height",
         "Altitude"@en ;
@@ -154,7 +374,19 @@ geoqk:elevation a qudt:QuantityKind ;
 geoqk:flow-rate a qudt:QuantityKind ;
     rdfs:label "Flow Rate"@en ;
     dcterms:description "The volume of fluid which passes a point or region per unit time."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:BBL_US-PER-DAY,
+        geou:BBL_US-PER-HR,
+        geou:BBL_US-PER-MIN,
+        unit:FT3-PER-HR,
+        unit:FT3-PER-DAY,
+        unit:M3-PER-DAY,
+        unit:M3-PER-HR,
+        geou:KiloL-PER-DAY,
+        unit:L-PER-DAY,
+        unit:L-PER-HR,
+        unit:L-PER-MIN,
+        geou:MegaL-PER-DAY,
+        geou:MegaF3-PER-DAY ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Volumetric Flow Rate"@en ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
@@ -164,7 +396,10 @@ geoqk:flow-rate a qudt:QuantityKind ;
 geoqk:fluid-density a qudt:QuantityKind ;
     rdfs:label "Fluid Density"@en ;
     dcterms:description "The mass per unit volume of a fluid. Commonly used as a quantity for drilling fluids and cement in relation to boreholes."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:LB_M-PER-GAL,
+        unit:G_REL,
+        geou:LB_M-PER-BBL,
+        unit:KiloGM-PER-L ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Mud Weight"@en ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
@@ -174,7 +409,8 @@ geoqk:fluid-density a qudt:QuantityKind ;
 geoqk:gas-content a qudt:QuantityKind ;
     rdfs:label "Gas Content"@en ;
     dcterms:description "The amount of gas, typically hydrocarbon, contained or within solid or liquid. Commonly used to describe to the amount of gas adsorbed to a mass of coal."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit geou:FT3-PER-TON,
+        geou:M3-PER-TON_M ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rgsc" ;
@@ -183,7 +419,7 @@ geoqk:gas-content a qudt:QuantityKind ;
 geoqk:grain-shape a qudt:QuantityKind ;
     rdfs:label "Grain Shape"@en ;
     dcterms:description "The degree of smoothing due to abrasion of sedimentary particles i.e. well-rounded, rounded, sub-rounded, sub-angular, angular, very angular."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:UNITLESS,
     qudt:hasDimensionVector "" ;
     skos:altLabel "Roundness"@en ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
@@ -193,7 +429,9 @@ geoqk:grain-shape a qudt:QuantityKind ;
 geoqk:grain-size a qudt:QuantityKind ;
     rdfs:label "Grain Size"@en ;
     dcterms:description "The diameter of individual grains of sediment, or the lithified particles in clastic rocks. The term may also be applied to other granular materials."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:UNITLESS,
+        unit:MicroM,
+        unit:MilliM ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rgrz" ;
@@ -202,7 +440,12 @@ geoqk:grain-size a qudt:QuantityKind ;
 geoqk:heat a qudt:QuantityKind ;
     rdfs:label "Heat"@en ;
     dcterms:description "Energy in transfer to or from a thermodynamic system, by mechanisms other than thermodynamic work or transfer of matter."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:BTU_IT-PER-HR,
+        unit:BTU_IT-PER-SEC,
+        unit:KiloCAL-PER-MIN,
+        unit:KiloCAL-PER-SEC,
+        unit:TON_FG,
+        unit:W ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rhet" ;
@@ -211,7 +454,7 @@ geoqk:heat a qudt:QuantityKind ;
 geoqk:magnetic-susceptibility a qudt:QuantityKind ;
     rdfs:label "Magnetic Susceptibility"@en ;
     dcterms:description "A measure of how much a material will become magnetized in an applied magnetic field. Mathematically, it is the ratio of magnetization M (magnetic moment per unit volume) to the applied magnetizing field intensity H."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rmsc" ;
@@ -220,7 +463,8 @@ geoqk:magnetic-susceptibility a qudt:QuantityKind ;
 geoqk:measured-depth a qudt:QuantityKind ;
     rdfs:label "Measured Depth"@en ;
     dcterms:description "The depth below a reference point or reference datum along a defined path. Commonly used along the path of a wellbore."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:FT,
+        unit:M ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "MD",
@@ -230,7 +474,15 @@ geoqk:measured-depth a qudt:QuantityKind ;
 geoqk:oil-quality a qudt:QuantityKind ;
     rdfs:label "Oil Quality"@en ;
     dcterms:description "Value for the thermal quality of oil reported. This is often recorded in British Thermal Units (BTUs) and can be used to calculate the Barrel of Oil Equivalent (BOE)."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit geou:GigaJ-PER-MegaL,
+        geou:PetaJ-PER-MegaL,
+        geou:BBLOE,
+        geou:KiloBBLOE,
+        geou:MegaBBLOE,
+        geou:BTU-PER-MegaL,
+        geou:KiloBTU-PER-MegaL,
+        geou:MegaBTU-PER-MegaL,
+        unit:TOE ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rolq" ;
@@ -239,7 +491,8 @@ geoqk:oil-quality a qudt:QuantityKind ;
 geoqk:porosity a qudt:QuantityKind ;
     rdfs:label "Porosity"@en ;
     dcterms:description "A measure of the void (i.e. 'empty') spaces in a material, and is a fraction of the volume of voids over the total volume, between 0 and 1, or as a percentage between 0% and 100%."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit geou:FRAC,
+        unit:PERCENT ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rpor" ;
@@ -248,8 +501,10 @@ geoqk:porosity a qudt:QuantityKind ;
 geoqk:radioactivity a qudt:QuantityKind ;
     rdfs:label "Radioactivity"@en ;
     dcterms:description "The process by which an unstable atomic nucleus loses energy by radiation. A material containing unstable nuclei is considered radioactive."@en ;
-    qudt:applicableUnit "" ;
-    qudt:hasDimensionVector "" ;
+    qudt:applicableUnit unit:BQ,
+        unit:Ci,
+        unit:MicroCi ;
+    qudt:hasDimensionVector "A0E0L0I0M0H0T-1D0" ;
     skos:altLabel "nuclear decay"@en,
         "nuclear disintegration"@en,
         "radioactive decay"@en,
@@ -261,17 +516,39 @@ geoqk:radioactivity a qudt:QuantityKind ;
 geoqk:rotation a qudt:QuantityKind ;
     rdfs:label "Rotation"@en ;
     dcterms:description "A measure of the rate of circular movement of an object around a center (or point) of rotation."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:REV-PER-MIN,
+        unit:REV-PER-HR,
+        geou:KiloREV-PER-MIN,
+        geou:DecaREV-PER-MIN ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Rotation Rate"@en ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rrtt" ;
     skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
 
+geoqk:sales-volumetric a qudt:QuantityKind ;
+    rdfs:Label "Sales Volumetric"@en ;
+    dcterms:description "A measure of the amount of a commodity in its unit of sale. A measure of a reserve or resource volume."@en ;
+    skos:scopeNote "Sales volumes are represented by commodity specific units of measure that are internally inconsistent within a standard result type and refer specifically to the context of marketable quantities i.e. a sales quantity may be a volume, energy unit, mass, or other result type."@en ;
+    qudt:applicableUnit unit:BBL,
+        geou:MegaTON_M,
+        geou:PetaJ,
+        geou:BOE,
+        geou:MMBOE,
+        unit:MegaL,
+        geou:MegaM3,
+        geou:MegaFT3 ;
+    qudt:hasDimensionVector "" ;
+    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
+    skos:notation "rsal" ;
+
+    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+
 geoqk:saturation a qudt:QuantityKind ;
     rdfs:label "Saturation"@en ;
     dcterms:description "A measure of the amount of a substance contained within a volume or another material relative to the maximum theoretical amount of substance that could be contained under the same conditions."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit geou:FRAC,
+        unit:PERCENT ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rsat" ;
@@ -280,7 +557,7 @@ geoqk:saturation a qudt:QuantityKind ;
 geoqk:sorting a qudt:QuantityKind ;
     rdfs:label "Sorting"@en ;
     dcterms:description "The distribution of grain size of sediments, either in unconsolidated deposits or in sedimentary rocks. Very poorly sorted indicates that the sediment sizes are mixed (large variance); whereas well sorted indicates that the sediment sizes are similar (low variance)."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Sedimentary Sorting"@en ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
@@ -290,7 +567,9 @@ geoqk:sorting a qudt:QuantityKind ;
 geoqk:spacing a qudt:QuantityKind ;
     rdfs:label "Spacing"@en ;
     dcterms:description "The regular, or average, distance between recurrences of a feature along a transect or across an object."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit geou:SHOTS-PER-FT,
+        geou:SHOTS-PER-M,
+        unit:PER-M ;         ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rspc" ;
@@ -299,7 +578,7 @@ geoqk:spacing a qudt:QuantityKind ;
 geoqk:sphericity a qudt:QuantityKind ;
     rdfs:label "Sphericity"@en ;
     dcterms:description "A measure of how closely the shape of an object resembles that of a perfect sphere."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rsph" ;
@@ -308,7 +587,8 @@ geoqk:sphericity a qudt:QuantityKind ;
 geoqk:stiffness a qudt:QuantityKind ;
     rdfs:label "Stiffness"@en ;
     dcterms:description "The extent to which an object resists deformation in response to an applied force."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit geou:LB_F-PER-IN,
+        geou:N-PER-M ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rstf" ;
@@ -317,7 +597,7 @@ geoqk:stiffness a qudt:QuantityKind ;
 geoqk:strain a qudt:QuantityKind ;
     rdfs:label "Strain"@en ;
     dcterms:description "Strain is a measure of deformation representing the displacement between particles in the body relative to a reference length."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rstn" ;
@@ -326,7 +606,11 @@ geoqk:strain a qudt:QuantityKind ;
 geoqk:stress a qudt:QuantityKind ;
     rdfs:label "Stress"@en ;
     dcterms:description "A physical quantity that expresses the internal forces that neighbouring particles of a continuous material exert on each other, while strain is the measure of the deformation of the material."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:KiloPA,
+        unit:MegaPA,
+        unit:PA,
+        unit:LB_M-PER-IN2,
+        unit:KiloLB_M-PER-IN2 ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rsts" ;
@@ -335,7 +619,11 @@ geoqk:stress a qudt:QuantityKind ;
 geoqk:tensile-strength a qudt:QuantityKind ;
     rdfs:label "Tensile Strength"@en ;
     dcterms:description "The maximum stress that a material can withstand while being stretched or pulled before breaking."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:KiloPA,
+        unit:MegaPA,
+        unit:PA,
+        unit:LB_M-PER-IN2,
+        unit:KiloLB_M-PER-IN2 ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rtns" ;
@@ -344,7 +632,14 @@ geoqk:tensile-strength a qudt:QuantityKind ;
 geoqk:thermal-conductivity a qudt:QuantityKind ;
     rdfs:label "Thermal Conductivity"@en ;
     dcterms:description "A measure of a material's ability to conduct an thermal energy."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:BTU_IT-FT-PER-FT2-HR-DEG_F,
+        unit:BTU_IT-IN-PER-FT2-HR-DEG_F,
+        unit:BTU_IT-IN-PER-FT2-SEC-DEG_F,
+        unit:BTU_TH-FT-PER-FT2-HR-DEG_F,
+        unit:BTU_TH-IN-PER-FT2-HR-DEG_F,
+        unit:BTU_TH-IN-PER-FT2-SEC-DEG_F,
+        unit:KiloCAL-PER-CentiM-SEC-DEG_C,
+        unit:W-PER-M-K ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Thermal Conductance"@en ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
@@ -354,7 +649,8 @@ geoqk:thermal-conductivity a qudt:QuantityKind ;
 geoqk:true-vertical-depth a qudt:QuantityKind ;
     rdfs:label "True Vertical Depth"@en ;
     dcterms:description "The depth below a reference point or reference datum in a direct vertical direction."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:FT,
+        unit:M ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "TVD",
@@ -364,7 +660,12 @@ geoqk:true-vertical-depth a qudt:QuantityKind ;
 geoqk:wavelength a qudt:QuantityKind ;
     rdfs:label "Wavelength"@en ;
     dcterms:description "The wavelength is the spatial period of a periodic wave the distance over which the shape of a wave repeats."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:NanoM,
+        unit:MicroM,
+        unit:MilliM,
+        unit:CenitM,
+        unit:M2,
+        unit:KiloM ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rwvl" ;
@@ -373,7 +674,14 @@ geoqk:wavelength a qudt:QuantityKind ;
 geoqk:weight-on-bit a qudt:QuantityKind ;
     rdfs:label "Weight on Bit"@en ;
     dcterms:description "The weight or force applied to a drill bit in the process of drilling a borehole."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:KiloGM,
+        unit:KiloN,
+        geou:KiloLB_F,
+        unit:N,
+        unit:LB_F,
+        unit:LB_M,
+        geou:KiloLB_M,
+        unit:MegaLB_F ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rwob" ;
@@ -382,7 +690,35 @@ geoqk:weight-on-bit a qudt:QuantityKind ;
 geoqk:width a qudt:QuantityKind ;
     rdfs:label "Width"@en ;
     dcterms:description "The measurement or extent of something from side to side; the lesser of two or the least of three dimensions of a body."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:ANGSTROM,
+        unit:AU,
+        unit:CH,
+        unit:CentiM,
+        unit:DeciM,
+        unit:FATH,
+        unit:FM,
+        unit:FT,
+        unit:FT_US,
+        unit:FUR,
+        unit:FUR_Long,
+        unit:FemtoM,
+        unit:IN,
+        unit:KiloM,
+        unit:LY,
+        unit:M,
+        unit:MI,
+        unit:MI_N,
+        unit:MI_US,
+        unit:MicroIN,
+        unit:MicroM,
+        unit:MilLength,
+        unit:MilliM,
+        unit:PARSEC,
+        unit:PCA,
+        unit:PT,
+        unit:PlanckLength,
+        unit:ROD,
+        unit:YD ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "rwid" ;
@@ -391,7 +727,8 @@ geoqk:width a qudt:QuantityKind ;
 geoqk:yield-point a qudt:QuantityKind ;
     rdfs:label "Yield Point"@en ;
     dcterms:description "The point on a stress-strain curve that indicates the limit of elastic behavior and the beginning of plastic behavior."@en ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit geou:LB_M-PER-100FT2,
+        geou:LB_F-PER-100FT2 ;
     qudt:hasDimensionVector "" ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "ryld" ;
@@ -453,7 +790,8 @@ geoqk:yield-point a qudt:QuantityKind ;
 
 <http://qudt.org/vocab/quantitykind/Compressibility> a qudt:QuantityKind ;
     rdfs:label "Compressibility" ;
-    qudt:applicableUnit unit:PER-PA ;
+    qudt:applicableUnit unit:PER-PA,
+        geou:M2-PER-N ;
     qudt:hasDimensionVector "" ;
     qudt:informativeReference "http://en.wikipedia.org/wiki/Compressibility"^^xsd:anyURI ;
     qudt:isoNormativeReference "http://www.iso.org/iso/catalogue_detail?csnumber=31889"^^xsd:anyURI ;
@@ -464,7 +802,25 @@ geoqk:yield-point a qudt:QuantityKind ;
 
 <http://qudt.org/vocab/quantitykind/Concentration> a qudt:QuantityKind ;
     rdfs:label "Concentration" ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit geou:FT3-PER-TON_M,
+        geou:CentiM3-PER-TON_M,
+        geou:M3-PER-TON_M,
+        geou:GM-PER-KiloGM,
+        geou:GM-PER-TON_M,
+        geou:MilliGM-PER-TOC,
+        geou:MilliGM-PER-TON_M,
+        geou:OZ-PER-TON_LONG,
+        geou:OZ-PER-TON_M,
+        unit:PPB,
+        unit:PPM,
+        geou:PERCENT-PER-VOL,
+        geou:PERCENT-PER-WEIGHT,
+        geou:BWOW,
+        geou:BWOC,
+        geou:GAL_IMP-PER-50SACK,
+        geou:L-PER-50SACK,
+        geou:LB_M-PER-50SACK,
+        geou:TOC ;
     qudt:dbpediaMatch "http://dbpedia.org/resource/Concentration"^^xsd:anyURI ;
     qudt:hasDimensionVector "" ;
     qudt:informativeReference "http://en.wikipedia.org/wiki/Concentration"^^xsd:anyURI ;
@@ -474,7 +830,9 @@ geoqk:yield-point a qudt:QuantityKind ;
 <http://qudt.org/vocab/quantitykind/Density> a qudt:QuantityKind ;
     rdfs:label "Density" ;
     dcterms:description "The mass density or density of a material is defined as its mass per unit volume. The symbol most often used for density is \\(\\rho\\).  Mathematically, density is defined as mass divided by volume: \\(\\rho = m/V\\), where \\(\\rho\\) is the density, \\(m\\) is the mass, and \\(V\\) is the volume. In some cases, density is also defined as its weight per unit volume, although this quantity is more properly called specific weight."^^qudt:LatexString ;
-    qudt:applicableUnit unit:GRAIN-PER-GAL,
+    qudt:applicableUnit geou:TON_M-PER-M,
+        unit:GRAIN-PER-GAL,
+        unit:GM-PER-CentiM3,
         unit:KiloGM-PER-M3,
         unit:LB_M-PER-FT3,
         unit:LB_M-PER-GAL,
@@ -553,7 +911,14 @@ geoqk:yield-point a qudt:QuantityKind ;
 
 <http://qudt.org/vocab/quantitykind/Energy> a qudt:QuantityKind ;
     rdfs:label "Energy" ;
-    qudt:applicableUnit unit:J ;
+    qudt:applicableUnit unit:J,
+        unit:BTU_IT,
+        geou:GigaJ,
+        geou:MegaBTU,
+        geou:PetaJ,
+        geou:KiloBTU,
+        geou:BOE,
+        geou:MMBOE ;
     qudt:dbpediaMatch "http://dbpedia.org/resource/Energy"^^xsd:anyURI ;
     qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L2I0M1H0T-2D0> ;
     qudt:isoNormativeReference "http://www.iso.org/iso/catalogue_detail?csnumber=31890"^^xsd:anyURI ;
@@ -776,9 +1141,12 @@ Alternatively,
         unit:GM,
         unit:GRAIN,
         unit:KiloGM,
+        geou:KiloLB_M,
         unit:LB_M,
         unit:LB_T,
         unit:LunarMass,
+        unit:MilliGM,
+        geou:MegaTON_M,
         unit:OZ_M,
         unit:OZ_TROY,
         unit:PlanckMass,
@@ -800,7 +1168,9 @@ Alternatively,
 <http://qudt.org/vocab/quantitykind/Permeability> a qudt:QuantityKind ;
     rdfs:label "Permeability" ;
     dcterms:description "\"Permeability} is the degree of magnetization of a material that responds linearly to an applied magnetic field. In general permeability is a tensor-valued quantity. The definition given applies to an isotropic medium. For an anisotropic medium permeability is a second order tensor. In electromagnetism, permeability is the measure of the ability of a material to support the formation of a magnetic field within itself. In other words, it is the degree of magnetization that a material obtains in response to an applied magnetic field. Magnetic permeability is typically represented by the Greek letter \\(\\mu\\). The term was coined in September, 1885 by Oliver Heaviside. The reciprocal of magnetic permeability is \\textit{Magnetic Reluctivity\"."^^qudt:LatexString ;
-    qudt:applicableUnit unit:H-PER-M,
+    qudt:applicableUnit geou:D,
+        geou:MilliD,
+        unit:H-PER-M,
         unit:H_Stat-PER-CentiM,
         unit:PERMEABILITY_REL ;
     qudt:baseUnitDimensions "L \\cdot M/I^2 \\cdot T^2",
@@ -819,7 +1189,13 @@ Alternatively,
 
 <http://qudt.org/vocab/quantitykind/Pressure> a qudt:QuantityKind ;
     rdfs:label "Pressure" ;
-    qudt:applicableUnit unit:BARYE,
+    qudt:applicableUnit unit:ATM,
+        unit:BAR,
+        unit:BARYE,
+        unit:KiloLB_M-PER-IN2,
+        unit:KiloPA,
+        unit:LB_M-PER-IN2,
+        unit:MegaPA,
         unit:N-PER-M2,
         unit:PA ;
     qudt:dbpediaMatch "http://dbpedia.org/resource/Pressure"^^xsd:anyURI ;
@@ -891,7 +1267,9 @@ Alternatively,
 
 <http://qudt.org/vocab/quantitykind/Temperature> a qudt:QuantityKind ;
     rdfs:label "Temperature" ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:DEG_C,
+        unit:DEG_F,
+        unit:K ;
     qudt:dbpediaMatch "http://dbpedia.org/resource/Temperature"^^xsd:anyURI ;
     qudt:hasDimensionVector "" ;
     qudt:plainTextDescription "Temperature is a physical property of matter that quantitatively expresses the common notions of hot and cold. Objects of low temperature are cold, while various degrees of higher temperatures are referred to as warm or hot. Heat spontaneously flows from bodies of a higher temperature to bodies of lower temperature, at a rate that increases with the temperature difference and the thermal conductivity." ;
@@ -932,7 +1310,12 @@ Alternatively,
 
 <http://qudt.org/vocab/quantitykind/Velocity> a qudt:QuantityKind ;
     rdfs:label "Velocity" ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:M-PER-SEC,
+        geou:MilliM-PER-SEC,
+        unit:M-PER-HR,
+        unit:FT-PER-SEC,
+        geou:FT-PER-MilliSEC,
+        unit:FT-PER-HR ;
     qudt:dbpediaMatch "http://dbpedia.org/resource/Velocity"^^xsd:anyURI ;
     qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L1I0M0H0T-1D0> ;
     qudt:informativeReference "http://en.wikipedia.org/wiki/Velocity"^^xsd:anyURI ;
@@ -942,7 +1325,8 @@ Alternatively,
 
 <http://qudt.org/vocab/quantitykind/Viscosity> a qudt:QuantityKind ;
     rdfs:label "Viscosity" ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:CentiP,
+        unit:PA-PER-SEC ;
     qudt:dbpediaMatch "http://dbpedia.org/resource/Viscosity"^^xsd:anyURI ;
     qudt:hasDimensionVector "" ;
     qudt:plainTextDescription "Viscosity is a measure of the resistance of a fluid which is being deformed by either shear stress or extensional stress. In general terms it is the resistance of a liquid to flow, or its \"thickness\". Viscosity describes a fluid's internal resistance to flow and may be thought of as a measure of fluid friction. [Wikipedia]" ;
@@ -952,7 +1336,9 @@ Alternatively,
     rdfs:label "Voltage" ;
     dcterms:description """\\(\\textit{Voltage}\\), also referred to as \\(\\textit{Electric Tension}\\), is the difference between electrical potentials of two points. For an electric field within a medium, \\(U_{ab} = - \\int_{r_a}^{r_b} E . {dr}\\), where \\(E\\) is electric field strength.
 For an irrotational electric field, the voltage is independent of the path between the two points \\(a\\) and \\(b\\)."""^^qudt:LatexString ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:V,
+        unit:KiloV,
+        unit:MilliV ;
     qudt:exactMatch <http://qudt.org/vocab/quantitykind/EnergyPerElectricCharge> ;
     qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E-1L2I0M1H0T-3D0> ;
     qudt:informativeReference "http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=31891"^^xsd:anyURI ;
@@ -964,7 +1350,20 @@ For an irrotational electric field, the voltage is independent of the path betwe
 
 <http://qudt.org/vocab/quantitykind/VolumeFlowRate> a qudt:QuantityKind ;
     rdfs:label "Volume Flow Rate" ;
-    qudt:applicableUnit unit:M3-PER-SEC ;
+    qudt:applicableUnit unit:M3-PER-SEC,
+        unit:BBL_US-PER-DAY,
+        geou:BBL_US-PER-HR,
+        geou:BBL_US-PER-MIN,
+        unit:FT3-PER-HR,
+        unit:FT3-PER-DAY,
+        unit:M3-PER-DAY,
+        unit:M3-PER-HR,
+        geou:KiloL-PER-DAY,
+        unit:L-PER-DAY,
+        unit:L-PER-HR,
+        unit:L-PER-MIN,
+        geou:MegaL-PER-DAY,
+        geou:MegaF3-PER-DAY ;
     qudt:baseUnitDimensions "m sec^{-1}" ;
     qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E0L3I0M0H0T-1D0> ;
     qudt:informativeReference "http://en.wikipedia.org/wiki/Volumetric_flow_rate"^^xsd:anyURI ;
@@ -977,7 +1376,7 @@ For an irrotational electric field, the voltage is independent of the path betwe
 
 <http://qudt.org/vocab/quantitykind/Weight> a qudt:QuantityKind ;
     rdfs:label "Weight" ;
-    qudt:applicableUnit "" ;
+    qudt:applicableUnit unit:N ;
     qudt:dbpediaMatch "http://dbpedia.org/resource/Weight"^^xsd:anyURI ;
     qudt:hasDimensionVector "" ;
     qudt:plainTextDescription "The force with which a body is attracted toward an astronomical body.  Or, the product of the mass of a body and the acceleration acting on a body.  In a dynamic situation, the weight can be a multiple of that under resting conditions. Weight also varies on other planets in accordance with their gravity." ;
@@ -1000,7 +1399,9 @@ For an irrotational electric field, the voltage is independent of the path betwe
 
 <http://qudt.org/vocab/quantitykind/Conductivity> a qudt:QuantityKind ;
     rdfs:label "Conductivity" ;
-    qudt:applicableUnit unit:S-PER-M ;
+    qudt:applicableUnit unit:S-PER-M,
+        geou:MicroS-PER-CentiM,
+        geou:MicroS-PER-M ;
     qudt:hasDimensionVector <http://qudt.org/vocab/dimensionvector/A0E2L-3I0M-1H0T3D0> ;
     qudt:informativeReference "http://www.electropedia.org/iev/iev.nsf/display?openform&ievref=121-12-03"^^xsd:anyURI,
         "http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=31891"^^xsd:anyURI ;
@@ -1124,4 +1525,3 @@ For an irrotational electric field, the voltage is independent of the path betwe
 <http://linked.data.gov.au/org/gsq> a sdo:Organization ;
     sdo:name "Geological Survey of Queensland" ;
     sdo:url <https://www.business.qld.gov.au/industries/mining-energy-water/resources/geoscience-information/gsq> .
-
