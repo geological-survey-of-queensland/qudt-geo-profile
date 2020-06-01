@@ -1,4 +1,4 @@
-@prefix : <http://linked.data.gov.au/def/geou> .
+@prefix geou: <http://linked.data.gov.au/def/geou> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geou: <http://linked.data.gov.au/def/geou/> .
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
@@ -18,7 +18,7 @@ geou:BBLOE a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "BOE/ML" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:BBL_US-PER-HR a qudt:Unit ;
     rdfs:label "Barrels per Hour"@en ;
@@ -26,7 +26,7 @@ geou:BBL_US-PER-HR a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "bbl/hr" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:BBL_US-PER-MIN a qudt:Unit ;
     rdfs:label "Barrels per Minute"@en ;
@@ -34,7 +34,15 @@ geou:BBL_US-PER-MIN a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "bbl/min" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
+
+geou:BOE a qudt:Unit ;
+    rdfs:label "Barrel of Oil Equivalent"@en ;
+    dcterms:description "A measure of energy  defined as the energy equivalent to one Barrel of Oil (6.1178632×10e9 J)."@en ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "BOE" ;
+    rdfs:isDefinedBy geou: .
 
 geou:BTU-PER-MegaL a qudt:Unit ;
     rdfs:label "British Thermal Unit per Megalitre"@en ;
@@ -42,7 +50,7 @@ geou:BTU-PER-MegaL a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "BTU/ML" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:BWOC a qudt:Unit ;
     rdfs:label "By Weight of Cement"@en ;
@@ -50,7 +58,7 @@ geou:BWOC a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "BWOC" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:BWOW a qudt:Unit ;
     rdfs:label "By Weight of Water"@en ;
@@ -58,7 +66,7 @@ geou:BWOW a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "BWOW" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:COUNT a qudt:Unit ;
     rdfs:label "Count"@en ;
@@ -66,7 +74,7 @@ geou:COUNT a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "n" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:CentiM3-PER-TON_M a qudt:Unit ;
     rdfs:label "Cubic Centimetres per Tonne"@en ;
@@ -74,7 +82,7 @@ geou:CentiM3-PER-TON_M a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "cm3/t" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:D a qudt:Unit ;
     rdfs:label "Darcy"@en ;
@@ -82,7 +90,7 @@ geou:D a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "D" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:DEG-PER-100F a qudt:Unit ;
     rdfs:label "Degrees per Hundred Feet"@en ;
@@ -90,7 +98,7 @@ geou:DEG-PER-100F a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "°/100ft" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:DEG-PER-30M a qudt:Unit ;
     rdfs:label "Degrees per Thirty Metres"@en ;
@@ -98,7 +106,7 @@ geou:DEG-PER-30M a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "°/30m" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:DEG-PER-F a qudt:Unit ;
     rdfs:label "Degrees per Foot"@en ;
@@ -106,7 +114,7 @@ geou:DEG-PER-F a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "°/ft" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:DEG-PER-M a qudt:Unit ;
     rdfs:label "Degrees per Metre"@en ;
@@ -114,7 +122,7 @@ geou:DEG-PER-M a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "°/m" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:DecaREV-PER-MIN a qudt:Unit ;
     rdfs:label "Hundred Revolutions per Minute"@en ;
@@ -122,7 +130,7 @@ geou:DecaREV-PER-MIN a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "hRPM" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:ExaBYTE a qudt:Unit ;
     rdfs:label "Exabyte"@en ;
@@ -130,7 +138,7 @@ geou:ExaBYTE a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "EB" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:FRAC a qudt:Unit ;
     rdfs:label "Decimal Fraction"@en ;
@@ -138,7 +146,7 @@ geou:FRAC a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "." ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:FT-PER-MilliSEC a qudt:Unit ;
     rdfs:label "Feet per Millisecond"@en ;
@@ -146,7 +154,7 @@ geou:FT-PER-MilliSEC a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "ft/ms" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:FT3-PER-TON a qudt:Unit ;
     rdfs:label "Standard Cubic Feet per Ton"@en ;
@@ -154,7 +162,7 @@ geou:FT3-PER-TON a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "scf/ton" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:FT3-PER-TON_M a qudt:Unit ;
     rdfs:label "Cubic Feet Per Ton"@en ;
@@ -162,7 +170,7 @@ geou:FT3-PER-TON_M a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "ft3/ton" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:GAL_IMP-PER-50SACK a qudt:Unit ;
     rdfs:label "Gallons per 50kg Sack"@en ;
@@ -170,7 +178,7 @@ geou:GAL_IMP-PER-50SACK a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "gal/50kg" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:GM-PER-KiloGM a qudt:Unit ;
     rdfs:label "Grams per Kilogram"@en ;
@@ -178,7 +186,7 @@ geou:GM-PER-KiloGM a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "A measure of concentration. The number of grams of a material of interest within the mass of one kilogram of total material." ;
     qudt:symbol "g/kg" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:GM-PER-TON_M a qudt:Unit ;
     rdfs:label "Grams per Tonne"@en ;
@@ -186,7 +194,7 @@ geou:GM-PER-TON_M a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "g/t" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:GigaJ a qudt:Unit ;
     rdfs:label "Gigajoule"@en ;
@@ -194,7 +202,7 @@ geou:GigaJ a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "GJ" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:GigaJ-PER-MegaL a qudt:Unit ;
     rdfs:label "Gigajoules per Megalitre"@en ;
@@ -202,7 +210,7 @@ geou:GigaJ-PER-MegaL a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "GJ/ML" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:HR-PER-FT a qudt:Unit ;
     rdfs:label "Hours per Foot"@en ;
@@ -210,7 +218,7 @@ geou:HR-PER-FT a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "hr/ft" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:KiloBBL a qudt:Unit ;
     rdfs:label "Thousand Barrels"@en ;
@@ -218,7 +226,7 @@ geou:KiloBBL a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "Mbbl" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:KiloBBLOE a qudt:Unit ;
     rdfs:label "Thousand Barrels of Oil Equivalent per Megalitre"@en ;
@@ -226,7 +234,7 @@ geou:KiloBBLOE a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "MBOE/ML" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:KiloBTU a qudt:Unit ;
     rdfs:label "Thousand British Thermal Unit"@en ;
@@ -234,7 +242,7 @@ geou:KiloBTU a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "MBTU" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:KiloBTU-PER-MegaL a qudt:Unit ;
     rdfs:label "Thousand British Thermal Units per Megalitre"@en ;
@@ -242,7 +250,7 @@ geou:KiloBTU-PER-MegaL a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "MBTU/ML" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:KiloL a qudt:Unit ;
     rdfs:label "Kilolitre"@en ;
@@ -250,7 +258,7 @@ geou:KiloL a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "kl" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:KiloL-PER-DAY a qudt:Unit ;
     rdfs:label "Kilolitre per Day"@en ;
@@ -258,7 +266,7 @@ geou:KiloL-PER-DAY a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "kl/d" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:KiloLB_F a qudt:Unit ;
     rdfs:label "Thousand Pounds Force"@en ;
@@ -267,7 +275,7 @@ geou:KiloLB_F a qudt:Unit ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "klbf" ;
     skos:altLabel "kip"@en ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:KiloLB_M a qudt:Unit ;
     rdfs:label "Thousand Pounds"@en ;
@@ -275,7 +283,7 @@ geou:KiloLB_M a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "klbs" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:KiloREV-PER-MIN a qudt:Unit ;
     rdfs:label "Thousand Revolutions per Minute"@en ;
@@ -283,7 +291,7 @@ geou:KiloREV-PER-MIN a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "kRPM" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:L-PER-50SACK a qudt:Unit ;
     rdfs:label "Litres per 50kg Sack"@en ;
@@ -291,7 +299,7 @@ geou:L-PER-50SACK a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "l/50kg" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:LB_F-PER-100FT2 a qudt:Unit ;
     rdfs:label "Pounds Force per 100 Square Feet"@en ;
@@ -299,7 +307,15 @@ geou:LB_F-PER-100FT2 a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "lbf/100ft2" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
+
+geou:LB_F-PER-IN a qudt:Unit ;
+    rdfs:label "Pounds per Inch"@en ;
+    dcterms:description "A measure of the resistance offered by an elastic body to deformation. the length change of a body, in inches relative to the force applied, in Pounds Force."@en ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "lbf/in" ;
+    rdfs:isDefinedBy geou: .
 
 geou:LB_M-PER-100FT2 a qudt:Unit ;
     rdfs:label "Pounds per 100 Square Feet"@en ;
@@ -307,7 +323,7 @@ geou:LB_M-PER-100FT2 a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "lb/100ft2" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:LB_M-PER-50SACK a qudt:Unit ;
     rdfs:label "Pounds per 50kg Sack"@en ;
@@ -315,7 +331,7 @@ geou:LB_M-PER-50SACK a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "lb/50kg" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:LB_M-PER-BBL a qudt:Unit ;
     rdfs:label "Pounds Per Barrel"@en ;
@@ -323,7 +339,7 @@ geou:LB_M-PER-BBL a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "lbs/bbl" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:M2-PER-N a qudt:Unit ;
     rdfs:label "Metre Squared per Newton"@en ;
@@ -331,7 +347,7 @@ geou:M2-PER-N a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "m2/N" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:M3-PER-TON_M a qudt:Unit ;
     rdfs:label "Cubic Metres per Tonne"@en ;
@@ -339,7 +355,7 @@ geou:M3-PER-TON_M a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "m3/t" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:MegaBBLOE a qudt:Unit ;
     rdfs:label "Million Barrel of Oil Equivalent per Megalitre"@en ;
@@ -347,7 +363,15 @@ geou:MegaBBLOE a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "MMBOE/ML" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
+
+geou:MegaBOE a qudt:Unit ;
+    rdfs:label "Million Barrel of Oil Equivalent"@en ;
+    dcterms:description "A measure of energy  defined as the energy equivalent to one million Barrel of Oil (6.1178632×10e15 J)s."@en ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "MMBOE" ;
+    rdfs:isDefinedBy geou: .
 
 geou:MegaBTU a qudt:Unit ;
     rdfs:label "Million British Thermal Units"@en ;
@@ -355,7 +379,7 @@ geou:MegaBTU a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "MMBTU" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:MegaBTU-PER-MegaL a qudt:Unit ;
     rdfs:label "Million British Thermal Units per Megalitre"@en ;
@@ -363,7 +387,7 @@ geou:MegaBTU-PER-MegaL a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "MMBTU/ML" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:MegaF3-PER-DAY a qudt:Unit ;
     rdfs:label "Million Cubic Feet per Day"@en ;
@@ -371,7 +395,7 @@ geou:MegaF3-PER-DAY a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "MMscf/d" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:MegaFT3 a qudt:Unit ;
     rdfs:label "Million Cubic Feet"@en ;
@@ -379,7 +403,7 @@ geou:MegaFT3 a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "MMcf" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:MegaL-PER-DAY a qudt:Unit ;
     rdfs:label "Megalitres per Day"@en ;
@@ -387,7 +411,7 @@ geou:MegaL-PER-DAY a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "ML/d" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:MegaM3 a qudt:Unit ;
     rdfs:label "Million Cubic Metres"@en ;
@@ -395,7 +419,7 @@ geou:MegaM3 a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "MMm3" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:MegaTON_M a qudt:Unit ;
     rdfs:label "Million Tonnes"@en ;
@@ -403,7 +427,7 @@ geou:MegaTON_M a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "Mt" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:MicroS-PER-CentiM a qudt:Unit ;
     rdfs:label "Micro-Siemens per Centimetre"@en ;
@@ -411,7 +435,7 @@ geou:MicroS-PER-CentiM a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "µS/cm" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:MicroS-PER-M a qudt:Unit ;
     rdfs:label "Micro-Siemens per Metre"@en ;
@@ -419,7 +443,7 @@ geou:MicroS-PER-M a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "µS/m" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:MilliD a qudt:Unit ;
     rdfs:label "Millidarcy"@en ;
@@ -427,7 +451,7 @@ geou:MilliD a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "mD" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:MilliGM a qudt:Unit ;
     rdfs:label "Milligram"@en ;
@@ -435,7 +459,7 @@ geou:MilliGM a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "mg" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:MilliGM-PER-TOC a qudt:Unit ;
     rdfs:label "Milligrams per gram TOC"@en ;
@@ -443,7 +467,7 @@ geou:MilliGM-PER-TOC a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "mg/gTOC" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:MilliGM-PER-TON_M a qudt:Unit ;
     rdfs:label "Milligrams per Tonne"@en ;
@@ -451,7 +475,7 @@ geou:MilliGM-PER-TON_M a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "mg/t" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:MilliM-PER-SEC a qudt:Unit ;
     rdfs:label "Metres per Millisecond"@en ;
@@ -459,7 +483,15 @@ geou:MilliM-PER-SEC a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "m/ms" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
+
+geou:N-PER-M a qudt:Unit ;
+    rdfs:label "Newtons per Metre"@en ;
+    dcterms:description "A measure of the resistance offered by an elastic body to deformation. the length change of a body, in metres relative to the force applied, in Newtons."@en ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "N/M" ;
+    rdfs:isDefinedBy geou: .
 
 geou:OZ-PER-TON_LONG a qudt:Unit ;
     rdfs:label "Ounce per Ton"@en ;
@@ -467,7 +499,7 @@ geou:OZ-PER-TON_LONG a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "oz/ton" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:OZ-PER-TON_M a qudt:Unit ;
     rdfs:label "Ounce per Tonne"@en ;
@@ -475,7 +507,7 @@ geou:OZ-PER-TON_M a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "oz/t" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:PER-PA a qudt:Unit ;
     rdfs:label "Inverse Pascal"@en ;
@@ -483,7 +515,7 @@ geou:PER-PA a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "Pa-1" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:PERCENT-PER-VOL a qudt:Unit ;
     rdfs:label "Percent by Volume"@en ;
@@ -491,7 +523,7 @@ geou:PERCENT-PER-VOL a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "vo%" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:PERCENT-PER-WEIGHT a qudt:Unit ;
     rdfs:label "Percent by Weight"@en ;
@@ -499,7 +531,7 @@ geou:PERCENT-PER-WEIGHT a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "wt%" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:PetaJ a qudt:Unit ;
     rdfs:label "Petajoule"@en ;
@@ -507,7 +539,7 @@ geou:PetaJ a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "PJ" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:PetaJ-PER-MegaL a qudt:Unit ;
     rdfs:label "Petajoules per Megalitre"@en ;
@@ -515,7 +547,7 @@ geou:PetaJ-PER-MegaL a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "PJ/ML" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:RATIO a qudt:Unit ;
     rdfs:label "Ratio"@en ;
@@ -523,7 +555,7 @@ geou:RATIO a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol ":" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:SHOTS-PER-FT a qudt:Unit ;
     rdfs:label "Shots per Foot"@en ;
@@ -531,7 +563,7 @@ geou:SHOTS-PER-FT a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "sht/ft" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:SHOTS-PER-M a qudt:Unit ;
     rdfs:label "Shots per Metre"@en ;
@@ -539,7 +571,7 @@ geou:SHOTS-PER-M a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "sht/m" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:TOC a qudt:Unit ;
     rdfs:label "Total Organic Carbon"@en ;
@@ -547,7 +579,7 @@ geou:TOC a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "TOC" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:TON_M-PER-M a qudt:Unit ;
     rdfs:label "Tonnes per Cubic Metre"@en ;
@@ -555,7 +587,7 @@ geou:TON_M-PER-M a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "t/m3" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 geou:MYR a qudt:Unit ;
     rdfs:label "Millions of Years"@en ;
@@ -563,7 +595,7 @@ geou:MYR a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "Ma" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 unit:ATM a qudt:CGS-Unit,
         qudt:Unit ;
@@ -947,7 +979,7 @@ unit:G_REL a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 unit:GigaBYTE a qudt:DecimalScaledUnit,
         qudt:Unit ;
@@ -1079,7 +1111,7 @@ unit:KiloFT3 a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 unit:KiloGM a qudt:BaseUnit,
         qudt:CGS-Unit,
@@ -1155,7 +1187,7 @@ unit:KiloLB_M-PER-IN2 a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 unit:KiloN a qudt:Unit ;
     rdfs:label "KiloN" ;
@@ -1546,7 +1578,7 @@ unit:OZ a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 unit:PA-PER-SEC a qudt:DerivedCoherentUnit,
         qudt:Unit ;
