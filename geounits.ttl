@@ -1,4 +1,4 @@
-@prefix geou: <http://linked.data.gov.au/def/geou> .
+@prefix geou: <http://linked.data.gov.au/def/geou/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geou: <http://linked.data.gov.au/def/geou/> .
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
@@ -1963,10 +1963,10 @@ unit:BYTE a qudt:DerivedUnit,
     qudt:uneceCommonCode "AD" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
-: a prof:Profile ;
+<http://linked.data.gov.au/def/geou> a prof:Profile ;
     dcterms:created "2020-04-15"^^xsd:date ;
     dcterms:creator <http://linked.data.gov.au/org/gsq> ;
-    dcterms:modified "2020-05-13"^^xsd:date ;
+    dcterms:modified "2020-06-10"^^xsd:date ;
     dcterms:publisher <http://linked.data.gov.au/org/gsq> ;
     skos:definition "This profile of the Quantities, Units, Dimensions & Types ontology and vocabularies lists those elements deemed by the profile creators to be of relevance to the geosciences." ;
     skos:prefLabel "Geoscience Profile of QUDT" ;

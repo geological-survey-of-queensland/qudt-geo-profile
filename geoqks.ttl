@@ -1,7 +1,6 @@
-@prefix geou: <http://linked.data.gov.au/def/geou> .
+@prefix geou: <http://linked.data.gov.au/def/geou/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geoqk: <http://linked.data.gov.au/def/geoqk/> .
-@prefix ns1: <http://www.linkedmodel.org/schema/vaem#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
@@ -419,7 +418,7 @@ geoqk:gas-content a qudt:QuantityKind ;
 geoqk:grain-shape a qudt:QuantityKind ;
     rdfs:label "Grain Shape"@en ;
     dcterms:description "The degree of smoothing due to abrasion of sedimentary particles i.e. well-rounded, rounded, sub-rounded, sub-angular, angular, very angular."@en ;
-    qudt:applicableUnit unit:UNITLESS,
+    qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Roundness"@en ;
     skos:inScheme <http://linked.data.gov.au/def/result-type> ;
@@ -734,7 +733,7 @@ geoqk:yield-point a qudt:QuantityKind ;
     skos:notation "ryld" ;
     skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
 
-: a prof:Profile ;
+<http://linked.data.gov.au/def/geoqk> a prof:Profile ;
     dcterms:created "2020-04-15"^^xsd:date ;
     dcterms:creator <http://linked.data.gov.au/org/gsq> ;
     dcterms:modified "2020-06-10"^^xsd:date ;
@@ -853,7 +852,6 @@ geoqk:yield-point a qudt:QuantityKind ;
     qudt:informativeReference "http://en.wikipedia.org/wiki/Density"^^xsd:anyURI ;
     qudt:latexDefinition "\\(\\rho = m/V\\), where \\(\\rho\\) is the density, \\(m\\) is the mass, and \\(V\\) is the volume."^^qudt:LatexString ;
     qudt:latexSymbol "\\(\\rho\\)"^^qudt:LatexString ;
-    ns1:todo "belongs to SOQ-ISO" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
 
 <http://qudt.org/vocab/quantitykind/Distance> a qudt:QuantityKind ;
