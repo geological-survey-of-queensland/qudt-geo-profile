@@ -155,7 +155,7 @@ def slim_down_graph(g, g_out):
     g_out.remove((None, DCTERMS.description, None))
 
 
-g = Graph().parse("../geoprofile/geounits.ttl", format="turtle")
+g = Graph().parse("../geounits.ttl", format="turtle")
 g_skos = Graph()
 
 g_skos.bind('skos', SKOS)
@@ -171,5 +171,5 @@ pylode_expand_graph(g)
 qudt_expand_graph(g)
 slim_down_graph(g, g_skos)
 
-with open("../geoprofile/geounits.skos.ttl", "w") as f:
+with open("../geounits.skos.ttl", "w") as f:
     f.write(g_skos.serialize(format="turtle").decode("utf-8"))
