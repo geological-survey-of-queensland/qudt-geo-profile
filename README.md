@@ -5,6 +5,10 @@ This is a profile of the [Quantities, Units, Dimensions & Types (QUDT)](http://q
 
 The profile aspects of this are described using the [Profiles Vocabulary](https://www.w3.org/TR/dx-prof/).
 
+This profile is published online at the persistent web address:
+
+* **<https://linked.data.gov.au/def/geou>**
+
 
 ## Repository Contents
 * [resources/](resources/) - non-RDF source files used to create the RDF
