@@ -1,4 +1,4 @@
-@prefix : <http://linked.data.gov.au/def/geou> .
+@prefix geou: <http://linked.data.gov.au/def/geou> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geou: <http://linked.data.gov.au/def/geou/> .
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
@@ -13,548 +13,589 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 geou:BBLOE a qudt:Unit ;
-    rdfs:label "Barrels of Oil Equivalent"@en ;
-    dcterms:description "Barrels of Oil Equivalent"@en ;
+    rdfs:label "Barrel of Oil Equivalent per Megalitre"@en ;
+    dcterms:description "A measure of oil quality or energy density defined as the energy in Barrel of Oil Equivalent (6.1178632×10e9 J) per million litres."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "BOE/ML" ;
+    rdfs:isDefinedBy geou: .
 
 geou:BBL_US-PER-HR a qudt:Unit ;
     rdfs:label "US Barrels per Hour"@en ;
-    dcterms:description "US Barrels per Hour"@en ;
+    dcterms:description "A measure of flow rate, typically used for oil production. The number of standard US barrels flowing past a given point per hour."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "bbl/hr" ;
+    rdfs:isDefinedBy geou: .
 
 geou:BBL_US-PER-MIN a qudt:Unit ;
     rdfs:label "US Barrels per Minute"@en ;
-    dcterms:description "US Barrels per Minute"@en ;
+    dcterms:description "A measure of flow rate, typically used for oil production. The number of standard US barrels flowing past a given point per minute."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "bbl/min" ;
+    rdfs:isDefinedBy geou: .
+
+geou:BOE a qudt:Unit ;
+    rdfs:label "Barrel of Oil Equivalent"@en ;
+    dcterms:description "A measure of energy  defined as the energy equivalent to one Barrel of Oil (6.1178632×10e9 J)."@en ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "BOE" ;
+    rdfs:isDefinedBy geou: .
 
 geou:BTU-PER-MegaL a qudt:Unit ;
     rdfs:label "British Thermal Unit per Megalitre"@en ;
-    dcterms:description "British Thermal Unit per Megalitre"@en ;
+    dcterms:description "A measure of oil quality or energy density defined as the energy in one BTU (1055 J) per million litres."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "BTU/ML" ;
+    rdfs:isDefinedBy geou: .
 
 geou:BWOC a qudt:Unit ;
-    rdfs:label ""@en ;
-    dcterms:description ""@en ;
+    rdfs:label "By Weight of Cement"@en ;
+    dcterms:description "A measure of concentration within Cement. The amount of an additives mass per unit mass of cement."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "BWOC" ;
+    rdfs:isDefinedBy geou: .
 
 geou:BWOW a qudt:Unit ;
-    rdfs:label ""@en ;
-    dcterms:description ""@en ;
+    rdfs:label "By Weight of Water"@en ;
+    dcterms:description "A measure of concentration within Water. The amount of an additives mass per unit mass of water."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "BWOW" ;
+    rdfs:isDefinedBy geou: .
 
 geou:COUNT a qudt:Unit ;
     rdfs:label "Count"@en ;
-    dcterms:description "The sum of the individuals of something"@en ;
+    dcterms:description "The number of unique and discrete objects or entities in a set."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "n" ;
+    rdfs:isDefinedBy geou: .
 
 geou:CentiM3-PER-TON_M a qudt:Unit ;
-    rdfs:label "Centimetres per Tonne"@en ;
-    dcterms:description "Centimetres per Tonne"@en ;
+    rdfs:label "Cubic Centimetres per Tonne"@en ;
+    dcterms:description "A measure of concentration, typically a fluid held within a solid. The cubic centimetres or mL of a substance per ton of host material."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "cm3/t" ;
+    rdfs:isDefinedBy geou: .
 
 geou:D a qudt:Unit ;
-    rdfs:label "D"@en ;
-    dcterms:description "D"@en ;
+    rdfs:label "Darcy"@en ;
+    dcterms:description "A measure of permeability. A medium with a permeability of 1 darcy permits a flow of 1 cm³/s of a fluid with viscosity 1 cP (1 mPa·s) under a pressure gradient of 1 atm/cm acting across an area of 1 cm²."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "D" ;
+    rdfs:isDefinedBy geou: .
 
 geou:DEG-PER-100F a qudt:Unit ;
-    rdfs:label "Degrees per 100 Foot"@en ;
-    dcterms:description "Degrees per 100 Foot"@en ;
+    rdfs:label "Degrees per Hundred Feet"@en ;
+    dcterms:description "A measure of curvature. The deviation (in degrees) of a line over an arc length of 100 feet."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "°/100ft" ;
+    rdfs:isDefinedBy geou: .
 
 geou:DEG-PER-30M a qudt:Unit ;
-    rdfs:label "Degrees per 30 Metres"@en ;
-    dcterms:description "Degrees per 30 Metres"@en ;
+    rdfs:label "Degrees per Thirty Metres"@en ;
+    dcterms:description "A measure of curvature. The deviation (in degrees) of a line over an arc length of 30 metres."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "°/30m" ;
+    rdfs:isDefinedBy geou: .
 
 geou:DEG-PER-F a qudt:Unit ;
     rdfs:label "Degrees per Foot"@en ;
-    dcterms:description "Degrees per Foot"@en ;
+    dcterms:description "A measure of curvature. The deviation (in degrees) of a line over an arc length of 1 feet."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "°/ft" ;
+    rdfs:isDefinedBy geou: .
 
 geou:DEG-PER-M a qudt:Unit ;
     rdfs:label "Degrees per Metre"@en ;
-    dcterms:description "Degrees per Metre"@en ;
+    dcterms:description "A measure of curvature. The deviation (in degrees) of a line over an arc length of 1 metre."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "°/m" ;
+    rdfs:isDefinedBy geou: .
 
 geou:DecaREV-PER-MIN a qudt:Unit ;
-    rdfs:label "DecaRevs per Minute"@en ;
-    dcterms:description "DecaRevs per Minute"@en ;
+    rdfs:label "Hundred Revolutions per Minute"@en ;
+    dcterms:description "A measure of rotation or Angular Velocity. The number of revolutions of an object relative to a fixed frame of reference in one minute, divided by 100."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "hRPM" ;
+    rdfs:isDefinedBy geou: .
 
 geou:ExaBYTE a qudt:Unit ;
-    rdfs:label "ExaByte"@en ;
-    dcterms:description "10^18 Bytes"@en ;
+    rdfs:label "Exabyte"@en ;
+    dcterms:description "The exabyte is a multiple of the unit byte for digital information. In the International System of Units (SI), the prefix exa indicates multiplication by the sixth power of 1000 (1018). Therefore, one exabyte is one quintillion bytes (short scale)."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "EB" ;
+    rdfs:isDefinedBy geou: .
 
 geou:FRAC a qudt:Unit ;
-    rdfs:label "Fraction"@en ;
-    dcterms:description "Fraction"@en ;
+    rdfs:label "Decimal Fraction"@en ;
+    dcterms:description "A fraction whose denominator is a power of ten and whose numerator is expressed by figures placed to the right of a decimal point."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "." ;
+    rdfs:isDefinedBy geou: .
 
 geou:FT-PER-MilliSEC a qudt:Unit ;
-    rdfs:label "Foot per Millisecond"@en ;
-    dcterms:description "Foot per Millisecond"@en ;
+    rdfs:label "Feet per Millisecond"@en ;
+    dcterms:description "An imperial measure of velocity. The number of feet traversed in the time of 1 millisecond."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "ft/ms" ;
+    rdfs:isDefinedBy geou: .
 
 geou:FT3-PER-TON a qudt:Unit ;
-    rdfs:label "Cubed Foot per Ton"@en ;
-    dcterms:description "Cubed Foot per Ton"@en ;
+    rdfs:label "Standard Cubic Feet per Ton"@en ;
+    dcterms:description "A measure of concentration or gas content. Typically used in the resource industry to refer to the number of cubic feet of a gas contained within one ton of host material."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "scf/ton" ;
+    rdfs:isDefinedBy geou: .
 
 geou:FT3-PER-TON_M a qudt:Unit ;
-    rdfs:label "Cubed Foot per Tonne"@en ;
-    dcterms:description "Cubed Foot per Tonne"@en ;
+    rdfs:label "Cubic Feet Per Ton"@en ;
+    dcterms:description "A measure of concentration. The number of cubic feet of a fluid contained within one tonne of host material."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "ft3/ton" ;
+    rdfs:isDefinedBy geou: .
 
 geou:GAL_IMP-PER-50SACK a qudt:Unit ;
-    rdfs:label "Imperial Gallon per 50 Sacks"@en ;
-    dcterms:description "Imperial Gallon per 50 Sacks"@en ;
+    rdfs:label "Gallons per 50kg Sack"@en ;
+    dcterms:description "A proportional concentration ratio typically used for cement mixtures. The number of gallons of water added to 50kg of additive(s)."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "gal/50kg" ;
+    rdfs:isDefinedBy geou: .
 
 geou:GM-PER-KiloGM a qudt:Unit ;
     rdfs:label "Grams per Kilogram"@en ;
-    dcterms:description "Grams per Kilogram"@en ;
+    dcterms:description ""@en ;
     qudt:conversionOffset "" ;
-    qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:hasQuantityKind "A measure of concentration. The number of grams of a material of interest within the mass of one kilogram of total material." ;
+    qudt:symbol "g/kg" ;
+    rdfs:isDefinedBy geou: .
 
 geou:GM-PER-TON_M a qudt:Unit ;
     rdfs:label "Grams per Tonne"@en ;
-    dcterms:description "Grams per Tonne"@en ;
+    dcterms:description "A measure of concentration. The number of grams of a material of interest within the mass of one tonne of total material."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "g/t" ;
+    rdfs:isDefinedBy geou: .
 
 geou:GigaJ a qudt:Unit ;
     rdfs:label "Gigajoule"@en ;
-    dcterms:description "10^9 Joule"@en ;
+    dcterms:description "The gigajoule (GJ) is equal to one billion (10e9) joules. 6 GJ is about the chemical energy of combusting 1 barrel (159 l) of crude oil."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "GJ" ;
+    rdfs:isDefinedBy geou: .
 
 geou:GigaJ-PER-MegaL a qudt:Unit ;
-    rdfs:label "Gigajoule per Megalitre"@en ;
-    dcterms:description "Gigajoule per Megalitre"@en ;
+    rdfs:label "Gigajoules per Megalitre"@en ;
+    dcterms:description "A measure of energy density defined as the energy in Gigajoules per million litres."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "GJ/ML" ;
+    rdfs:isDefinedBy geou: .
 
 geou:HR-PER-FT a qudt:Unit ;
     rdfs:label "Hours per Foot"@en ;
-    dcterms:description "Hours per Foot"@en ;
+    dcterms:description "An Imperial unit for Linear Velocity. Used in borehole drilling to describe the rate of pentration. The number of hours taken to penetrate one foot of material."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "hr/ft" ;
+    rdfs:isDefinedBy geou: .
 
 geou:KiloBBL a qudt:Unit ;
-    rdfs:label "Kilobarrel"@en ;
-    dcterms:description "10^3 Barrels"@en ;
+    rdfs:label "Thousand Barrels"@en ;
+    dcterms:description "A unit equivalent in volume to one thousand barrels."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "Mbbl" ;
+    rdfs:isDefinedBy geou: .
 
 geou:KiloBBLOE a qudt:Unit ;
-    rdfs:label "Kilobarrel of Oil Equivalent"@en ;
-    dcterms:description "10^3 Barrels of Oil Equivalent"@en ;
+    rdfs:label "Thousand Barrels of Oil Equivalent per Megalitre"@en ;
+    dcterms:description "A measure of oil quality or energy density defined as the energy equivalent to one thousand Barrel of Oil Equivalents (6.1178632×10e12 J) per million litres."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "MBOE/ML" ;
+    rdfs:isDefinedBy geou: .
 
 geou:KiloBTU a qudt:Unit ;
     rdfs:label "Thousand British Thermal Unit"@en ;
-    dcterms:description "10^3 British Thermal Unit"@en ;
+    dcterms:description "An Imperial measure unit of energy, defined as one thousand British thermal units."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "MBTU" ;
+    rdfs:isDefinedBy geou: .
 
 geou:KiloBTU-PER-MegaL a qudt:Unit ;
-    rdfs:label "Thousand British Thermal Unit per Megalitre"@en ;
-    dcterms:description "Thousand British Thermal Unit per Megalitre"@en ;
+    rdfs:label "Thousand British Thermal Units per Megalitre"@en ;
+    dcterms:description "A measure of oil quality or energy density defined as the energy in one thousand BTU (1,055,000 J) per million litres."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "MBTU/ML" ;
+    rdfs:isDefinedBy geou: .
 
 geou:KiloL a qudt:Unit ;
     rdfs:label "Kilolitre"@en ;
-    dcterms:description "1000 Litre"@en ;
+    dcterms:description "A measure of volume equivalent to one thousand litres."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "kl" ;
+    rdfs:isDefinedBy geou: .
 
 geou:KiloL-PER-DAY a qudt:Unit ;
-    rdfs:label "Kilolitres per Day"@en ;
-    dcterms:description "Kilolitres per Day"@en ;
+    rdfs:label "Kilolitre per Day"@en ;
+    dcterms:description "A measure of volume flow rate Thousands of litres divided by number of days."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "kl/d" ;
+    rdfs:isDefinedBy geou: .
 
 geou:KiloLB_F a qudt:Unit ;
-    rdfs:label "Kilo Pounds Force"@en ;
-    dcterms:description "Kilo Pounds Force"@en ;
+    rdfs:label "Thousand Pounds Force"@en ;
+    dcterms:description "A US customary unit of force. It equals 1000 pounds-force, used primarily by American architects and engineers to measure engineering loads."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "klbf" ;
+    skos:altLabel "kip"@en ;
+    rdfs:isDefinedBy geou: .
 
 geou:KiloLB_M a qudt:Unit ;
-    rdfs:label "Kilo Pounds per Metre"@en ;
-    dcterms:description "1000 Pounds per Metre"@en ;
+    rdfs:label "Thousand Pounds"@en ;
+    dcterms:description "A mass equivalent to one thousand pounds."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "klbs" ;
+    rdfs:isDefinedBy geou: .
 
 geou:KiloREV-PER-MIN a qudt:Unit ;
-    rdfs:label "Kilo Revolutions per Minute"@en ;
-    dcterms:description "1000 Revolutions per Minute"@en ;
+    rdfs:label "Thousand Revolutions per Minute"@en ;
+    dcterms:description "A measure of rotation or Angular Velocity. The number of revolutions of an object relative to a fixed frame of reference in one minute, divided by 1000."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "kRPM" ;
+    rdfs:isDefinedBy geou: .
 
 geou:L-PER-50SACK a qudt:Unit ;
-    rdfs:label "Litres per 50 Sack"@en ;
-    dcterms:description "Litres per 50 Sack"@en ;
+    rdfs:label "Litres per 50kg Sack"@en ;
+    dcterms:description "A proportional concentration ratio typically used for cement mixtures. The number of litres of water added to 50kg of additive(s)."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "l/50kg" ;
+    rdfs:isDefinedBy geou: .
 
 geou:LB_F-PER-100FT2 a qudt:Unit ;
-    rdfs:label "Pounds of Force per 100 Foot Squared"@en ;
-    dcterms:description "Pounds of Force per 100 Foot Squared"@en ;
+    rdfs:label "Pounds Force per 100 Square Feet"@en ;
+    dcterms:description "Pounds Force per 100 Square Feet is a British (Imperial) and American pressure unit. The number of pounds force applied to an area of 100 square feet."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "lbf/100ft2" ;
+    rdfs:isDefinedBy geou: .
+
+geou:LB_F-PER-IN a qudt:Unit ;
+    rdfs:label "Pounds per Inch"@en ;
+    dcterms:description "A measure of the resistance offered by an elastic body to deformation. the length change of a body, in inches relative to the force applied, in Pounds Force."@en ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "lbf/in" ;
+    rdfs:isDefinedBy geou: .
 
 geou:LB_M-PER-100FT2 a qudt:Unit ;
-    rdfs:label "Pounds per 100 Foot Squared"@en ;
-    dcterms:description "Pounds per 100 Foot Squared"@en ;
+    rdfs:label "Pounds per 100 Square Feet"@en ;
+    dcterms:description "Pounds per 100 Square Feet is a British (Imperial) and American pressure unit. The force equivalent to the number of pounds mass under standard gravity conditions applied to an area of 100 square feet."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "lb/100ft2" ;
+    rdfs:isDefinedBy geou: .
 
 geou:LB_M-PER-50SACK a qudt:Unit ;
-    rdfs:label "Pounds per 50 Sack"@en ;
-    dcterms:description "Pounds per 50 Sack"@en ;
+    rdfs:label "Pounds per 50kg Sack"@en ;
+    dcterms:description "A proportional concentration ratio typically used for cement mixtures. The number of pounds of water added to 50kg of additive(s)."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "lb/50kg" ;
+    rdfs:isDefinedBy geou: .
 
 geou:LB_M-PER-BBL a qudt:Unit ;
-    rdfs:label "Pounds per Barrel"@en ;
-    dcterms:description "Pounds per Barrel"@en ;
+    rdfs:label "Pounds Per Barrel"@en ;
+    dcterms:description "A measure of fluid density. The weight in pounds equivalent to one barrel of fluid."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "lbs/bbl" ;
+    rdfs:isDefinedBy geou: .
 
 geou:M2-PER-N a qudt:Unit ;
-    rdfs:label "Metres Squared per Newton"@en ;
-    dcterms:description "Metres Squared per Newton"@en ;
+    rdfs:label "Metre Squared per Newton"@en ;
+    dcterms:description "A measure of compressibility equivalent to the inverse of one Pascal."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "m2/N" ;
+    rdfs:isDefinedBy geou: .
 
 geou:M3-PER-TON_M a qudt:Unit ;
-    rdfs:label "Metres Cubed per Tonne"@en ;
-    dcterms:description "Metres Cubed per Tonne"@en ;
+    rdfs:label "Cubic Metres per Tonne"@en ;
+    dcterms:description "A measure of concentration. The number of cubic metres of a fluid contained within one tonne of host material."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "m3/t" ;
+    rdfs:isDefinedBy geou: .
 
 geou:MegaBBLOE a qudt:Unit ;
-    rdfs:label "Mega Barrels of Oil Equivalent"@en ;
-    dcterms:description "Mega Barrels of Oil Equivalent"@en ;
+    rdfs:label "Million Barrel of Oil Equivalent per Megalitre"@en ;
+    dcterms:description "A measure of oil quality or energy density defined as the energy equivalent to one million Barrel of Oil Equivalents (6.1178632×10e15 J) per million litres."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "MMBOE/ML" ;
+    rdfs:isDefinedBy geou: .
+
+geou:MegaBOE a qudt:Unit ;
+    rdfs:label "Million Barrel of Oil Equivalent"@en ;
+    dcterms:description "A measure of energy  defined as the energy equivalent to one million Barrel of Oil (6.1178632×10e15 J)s."@en ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "MMBOE" ;
+    rdfs:isDefinedBy geou: .
 
 geou:MegaBTU a qudt:Unit ;
-    rdfs:label "Mega British Thermal Unit"@en ;
-    dcterms:description "10^6 British Thermal Unit"@en ;
+    rdfs:label "Million British Thermal Units"@en ;
+    dcterms:description "An Imperial measure unit of energy, defined as one million British thermal units."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "MMBTU" ;
+    rdfs:isDefinedBy geou: .
 
 geou:MegaBTU-PER-MegaL a qudt:Unit ;
-    rdfs:label "Mega British Thermal Unit per Megalitre"@en ;
-    dcterms:description "10^6 British Thermal Unit per 10^6 Litre"@en ;
+    rdfs:label "Million British Thermal Units per Megalitre"@en ;
+    dcterms:description "A measure of oil quality or energy density defined as the energy in one million BTU (1,055,000,000 J) per million litres."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "MMBTU/ML" ;
+    rdfs:isDefinedBy geou: .
 
 geou:MegaF3-PER-DAY a qudt:Unit ;
-    rdfs:label "Megafoot Cubed per Day"@en ;
-    dcterms:description "10^6 Foot Cubed per Day"@en ;
+    rdfs:label "Million Cubic Feet per Day"@en ;
+    dcterms:description "A measure of volume flow rate Millions of cubic feet divided by number of days."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "MMscf/d" ;
+    rdfs:isDefinedBy geou: .
 
 geou:MegaFT3 a qudt:Unit ;
-    rdfs:label "Megafoot Cubed"@en ;
-    dcterms:description "10^6 Foot Cubed"@en ;
+    rdfs:label "Million Cubic Feet"@en ;
+    dcterms:description "An Imperial measure of volume equivalent to one million cubic feet."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "MMcf" ;
+    rdfs:isDefinedBy geou: .
 
 geou:MegaL-PER-DAY a qudt:Unit ;
     rdfs:label "Megalitres per Day"@en ;
-    dcterms:description "Megalitres per Day"@en ;
+    dcterms:description "A measure of volume flow rate Millions of litres divided by number of days"@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "ML/d" ;
+    rdfs:isDefinedBy geou: .
 
 geou:MegaM3 a qudt:Unit ;
-    rdfs:label "Megametre Cubed"@en ;
-    dcterms:description "10^6 Metre, Cubed"@en ;
+    rdfs:label "Million Cubic Metres"@en ;
+    dcterms:description "A measure of volume equivalent to one million cubic metres."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "MMm3" ;
+    rdfs:isDefinedBy geou: .
 
 geou:MegaTON_M a qudt:Unit ;
-    rdfs:label "Megatonne"@en ;
-    dcterms:description "10^6 Tonne"@en ;
+    rdfs:label "Million Tonnes"@en ;
+    dcterms:description "A measure of mass equivalent to one million tonnes."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "Mt" ;
+    rdfs:isDefinedBy geou: .
 
 geou:MicroS-PER-CentiM a qudt:Unit ;
-    rdfs:label "Microseconds per Centimetre"@en ;
-    dcterms:description "Microseconds per Centimetre"@en ;
+    rdfs:label "Micro-Siemens per Centimetre"@en ;
+    dcterms:description "A unit of Electric conductivity. It is also known as microsiemens per centimetre, microsiemens/centimeter. Microsiemens Per Centimeter (µS/cm) has a dimension of M-1L-3T3I2 where M is mass, L is length, T is time, and I is electric current. It can be converted to the corresponding standard SI unit S/m by multiplying its value by a factor of 0.0001."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "µS/cm" ;
+    rdfs:isDefinedBy geou: .
 
 geou:MicroS-PER-M a qudt:Unit ;
-    rdfs:label "Microseconds per Metre"@en ;
-    dcterms:description "Microseconds per Metre"@en ;
+    rdfs:label "Micro-Siemens per Metre"@en ;
+    dcterms:description "A unit of Electric conductivity. It is also known as microsiemens per metre, microsiemens/meter. This unit is commonly used in the SI unit system. Microsiemens Per Meter (µS/m) has a dimension of M-1L-3T3I2 where M is mass, L is length, T is time, and I is electric current. It can be converted to the corresponding standard SI unit S/m by multiplying its value by a factor of 1E-006."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "µS/m" ;
+    rdfs:isDefinedBy geou: .
 
 geou:MilliD a qudt:Unit ;
-    rdfs:label "MilliD"@en ;
-    dcterms:description "MilliD"@en ;
+    rdfs:label "Millidarcy"@en ;
+    dcterms:description "A measure of permeability. A medium with a permeability of 1 millidarcy permits a flow of 0.001 cm³/s of a fluid with viscosity 1 cP (1 mPa·s) under a pressure gradient of 1 atm/cm acting across an area of 1 cm²."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "mD" ;
+    rdfs:isDefinedBy geou: .
 
 geou:MilliGM a qudt:Unit ;
     rdfs:label "Milligram"@en ;
-    dcterms:description "10^-3 Gram"@en ;
+    dcterms:description "One thousandth of a gram"@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "mg" ;
+    rdfs:isDefinedBy geou: .
 
 geou:MilliGM-PER-TOC a qudt:Unit ;
-    rdfs:label ""@en ;
-    dcterms:description ""@en ;
+    rdfs:label "Milligrams per gram TOC"@en ;
+    dcterms:description "A measure of concentration. The number of milligrams of hydrocarbon per gram of Total Organic Carbon in a sample."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "mg/gTOC" ;
+    rdfs:isDefinedBy geou: .
 
 geou:MilliGM-PER-TON_M a qudt:Unit ;
     rdfs:label "Milligrams per Tonne"@en ;
-    dcterms:description "Milligrams per Tonne"@en ;
+    dcterms:description "A measure of concentration. The number of milligrams of a material of interest within the mass of one tonne of total material."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "mg/t" ;
+    rdfs:isDefinedBy geou: .
 
 geou:MilliM-PER-SEC a qudt:Unit ;
-    rdfs:label "Milligrams per Second"@en ;
-    dcterms:description "Milligrams per Second"@en ;
+    rdfs:label "Metres per Millisecond"@en ;
+    dcterms:description "A measure of velocity. The number of metres traversed in the time of 1 millisecond."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "m/ms" ;
+    rdfs:isDefinedBy geou: .
+
+geou:N-PER-M a qudt:Unit ;
+    rdfs:label "Newtons per Metre"@en ;
+    dcterms:description "A measure of the resistance offered by an elastic body to deformation. the length change of a body, in metres relative to the force applied, in Newtons."@en ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "N/M" ;
+    rdfs:isDefinedBy geou: .
 
 geou:OZ-PER-TON_LONG a qudt:Unit ;
-    rdfs:label "Ounces per Long Ton"@en ;
-    dcterms:description "Ounces per Long Ton"@en ;
+    rdfs:label "Ounce per Ton"@en ;
+    dcterms:description "A measure of concentration. The number of ounces of a material of interest within the mass of one ton of total material."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "oz/ton" ;
+    rdfs:isDefinedBy geou: .
 
 geou:OZ-PER-TON_M a qudt:Unit ;
-    rdfs:label "Ounces per Tonne"@en ;
-    dcterms:description "Ounces per Tonne"@en ;
+    rdfs:label "Ounce per Tonne"@en ;
+    dcterms:description "A measure of concentration. The number of ounces of a material of interest within the mass of one tonne of total material."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "oz/t" ;
+    rdfs:isDefinedBy geou: .
 
-geou:PER-N a qudt:Unit ;
-    rdfs:label "Per Newton"@en ;
-    dcterms:description "Per Newton"@en ;
+geou:PER-PA a qudt:Unit ;
+    rdfs:label "Inverse Pascal"@en ;
+    dcterms:description "A measure of compressibility. The inverse of one Pascal."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "Pa-1" ;
+    rdfs:isDefinedBy geou: .
 
 geou:PERCENT-PER-VOL a qudt:Unit ;
-    rdfs:label "Percent per Volume"@en ;
-    dcterms:description "Percent per Volume"@en ;
+    rdfs:label "Percent by Volume"@en ;
+    dcterms:description "The proportion of the volume of a material of interest within the volume of a total sample expressed as a percentage."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "vo%" ;
+    rdfs:isDefinedBy geou: .
 
 geou:PERCENT-PER-WEIGHT a qudt:Unit ;
-    rdfs:label "Percent per Weight"@en ;
-    dcterms:description "Percent per Weight"@en ;
+    rdfs:label "Percent by Weight"@en ;
+    dcterms:description "The proportion of the weight or mass of a material of interest within the weight or mass of a total sample expressed as a percentage."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "wt%" ;
+    rdfs:isDefinedBy geou: .
 
 geou:PetaJ a qudt:Unit ;
     rdfs:label "Petajoule"@en ;
-    dcterms:description "10^15 Joules"@en ;
+    dcterms:description "The petajoule (PJ) is equal to one quadrillion (1015) joules. 210 PJ is about 50 megatons of TNT which is the amount of energy released by the Tsar Bomba, the largest man-made explosion ever."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "PJ" ;
+    rdfs:isDefinedBy geou: .
 
 geou:PetaJ-PER-MegaL a qudt:Unit ;
-    rdfs:label "Peta Joules per Megalitre"@en ;
-    dcterms:description "Peta Joules per Megalitre"@en ;
+    rdfs:label "Petajoules per Megalitre"@en ;
+    dcterms:description "A measure of energy density defined as the energy in Petajoules per million litres."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "PJ/ML" ;
+    rdfs:isDefinedBy geou: .
 
 geou:RATIO a qudt:Unit ;
     rdfs:label "Ratio"@en ;
-    dcterms:description "Ratio"@en ;
+    dcterms:description "The quantitative relation between two amounts showing the number of times one value contains or is contained within the other."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol ":" ;
+    rdfs:isDefinedBy geou: .
 
 geou:SHOTS-PER-FT a qudt:Unit ;
     rdfs:label "Shots per Foot"@en ;
-    dcterms:description "Shots per Foot"@en ;
+    dcterms:description "The number of perforation shots in a borehole casing or liner per foot."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "sht/ft" ;
+    rdfs:isDefinedBy geou: .
 
 geou:SHOTS-PER-M a qudt:Unit ;
     rdfs:label "Shots per Metre"@en ;
-    dcterms:description "Shots per Metre"@en ;
+    dcterms:description "The number of perforation shots in a borehole casing or liner per metre."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "sht/m" ;
+    rdfs:isDefinedBy geou: .
 
 geou:TOC a qudt:Unit ;
-    rdfs:label ""@en ;
-    dcterms:description ""@en ;
+    rdfs:label "Total Organic Carbon"@en ;
+    dcterms:description "The amount of carbon found in an organic compound. The amount of organic carbon in soil, or in a geological formation, particularly the source rock for a petroleum play."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "TOC" ;
+    rdfs:isDefinedBy geou: .
 
 geou:TON_M-PER-M a qudt:Unit ;
-    rdfs:label "Tonnes per Metre"@en ;
-    dcterms:description ""@en ;
+    rdfs:label "Tonnes per Cubic Metre"@en ;
+    dcterms:description "Tonnes per cubic metre is an SI derived unit of density, defined by mass in tonnes divided by volume in cubic metres."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "t/m3" ;
+    rdfs:isDefinedBy geou: .
+
+geou:MYR a qudt:Unit ;
+    rdfs:label "Millions of Years"@en ;
+    dcterms:description "The number of years divided by one million. Commonly used in disciplines that describe events over long periods, such as astronomy and geology."@en ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "Ma" ;
+    rdfs:isDefinedBy geou: .
 
 unit:ATM a qudt:CGS-Unit,
         qudt:Unit ;
@@ -596,7 +637,7 @@ unit:BAR a qudt:CGS-Unit,
 
 unit:BBL a qudt:Unit ;
     rdfs:label "Barrel" ;
-    dcterms:description "A barrel is one of several units of volume, with dry barrels, fluid barrels (UK beer barrel, U.S. beer barrel), oil barrel, etc. The volume of some barrel units is double others, with various volumes in the range of about 100-200 litres (22-44 impÂ gal; 26-53 USÂ gal)."^^rdf:HTML ;
+    dcterms:description "A barrel is one of several units of volume, with dry barrels, fluid barrels (UK beer barrel, U.S. beer barrel), oil barrel, etc. The volume of some barrel units is double others, with various volumes in the range of about 100-200 litres (22-44 impÂ gal; 26-53 USÂ gal)."^^rdf:HTML ;
     qudt:conversionOffset 0e+00 ;
     qudt:dbpediaMatch "http://dbpedia.org/resource/Barrel"^^xsd:anyURI ;
     qudt:hasQuantityKind <http://qudt.org/vocab/quantitykind/Volume> ;
@@ -759,7 +800,7 @@ unit:FT a qudt:ImperialUnit,
         qudt:US-CustomaryUnit,
         qudt:Unit ;
     rdfs:label "Foot" ;
-    dcterms:description "A foot is a unit of length defined as being 0.3048Â m exactly and used in the imperial system of units and United States customary units. It is subdivided into 12Â inches. The foot is still officially used in Canada and still commonly used in the United Kingdom, although the latter has partially metricated its units of measurement. "^^rdf:HTML ;
+    dcterms:description "A foot is a unit of length defined as being 0.3048m exactly and used in the imperial system of units and United States customary units. It is subdivided into 12Â inches. The foot is still officially used in Canada and still commonly used in the United Kingdom, although the latter has partially metricated its units of measurement. "^^rdf:HTML ;
     qudt:conversionMultiplier 3.048e-01 ;
     qudt:conversionOffset 0e+00 ;
     qudt:dbpediaMatch "http://dbpedia.org/resource/Foot_%28length%29"^^xsd:anyURI ;
@@ -933,12 +974,13 @@ unit:GRAD a qudt:Unit ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:G_REL a qudt:Unit ;
-    rdfs:label ""@en ;
-    dcterms:description ""@en ;
+    skos:altLabel "Relative Density"@en ;
+    rdfs:label "Specific Gravity"@en ;
+    dcterms:description "The ratio of the density of a substance to the density of water."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "sg" ;
+    rdfs:isDefinedBy geou: .
 
 unit:GigaBYTE a qudt:DecimalScaledUnit,
         qudt:Unit ;
@@ -998,7 +1040,7 @@ unit:IN a qudt:ImperialUnit,
         qudt:US-CustomaryUnit,
         qudt:Unit ;
     rdfs:label "Inch" ;
-    dcterms:description "An inch is the name of a unit of length in a number of different systems, including Imperial units, and United States customary units. There are 36Â inches in a yard and 12Â inches in a foot. Corresponding units of area and volume are the square inch and the cubic inch."^^rdf:HTML ;
+    dcterms:description "An inch is the name of a unit of length in a number of different systems, including Imperial units, and United States customary units. There are 36Â inches in a yard and 12Â inches in a foot. Corresponding units of area and volume are the square inch and the cubic inch."^^rdf:HTML ;
     qudt:conversionMultiplier 2.54e-02 ;
     qudt:conversionOffset 0e+00 ;
     qudt:dbpediaMatch "http://dbpedia.org/resource/Inch"^^xsd:anyURI ;
@@ -1065,12 +1107,12 @@ unit:KiloBYTE a qudt:BinaryScaledUnit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:KiloFT3 a qudt:Unit ;
-    rdfs:label "Thousands of Feet Cubed"@en ;
-    dcterms:description "Thousands of Feet Cubed"@en ;
+    rdfs:label ""@en ;
+    dcterms:description ""@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 unit:KiloGM a qudt:BaseUnit,
         qudt:CGS-Unit,
@@ -1141,12 +1183,12 @@ unit:KiloL a qudt:Unit ;
     skos:prefLabel "kilolitre" .
 
 unit:KiloLB_M-PER-IN2 a qudt:Unit ;
-    rdfs:label ""@en ;
-    dcterms:description ""@en ;
+    rdfs:label "Thousand Pounds per Square Inch"@en ;
+    dcterms:description "A scaled unit derived from psi, equivalent to a thousand psi (1000 lbf/in2)."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    qudt:symbol "kpsi" ;
+    rdfs:isDefinedBy geou: .
 
 unit:KiloN a qudt:Unit ;
     rdfs:label "KiloN" ;
@@ -1532,12 +1574,12 @@ unit:OHM-M a qudt:Unit ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:OZ a qudt:Unit ;
-    rdfs:label "Ounces"@en ;
-    dcterms:description "Ounces"@en ;
+    rdfs:label ""@en ;
+    dcterms:description ""@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "" ;
-    rdfs:isDefinedBy : .
+    rdfs:isDefinedBy geou: .
 
 unit:PA-PER-SEC a qudt:DerivedCoherentUnit,
         qudt:Unit ;
@@ -1848,6 +1890,18 @@ Under the International System of Units (via the International Committee for Wei
     qudt:uneceCommonCode "SEC" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
+unit:UNITLESS a qudt:BaseUnit,
+        qudt:CGS-Unit,
+        qudt:DimensionlessUnit,
+        qudt:Unit ;
+   dcterms:description "An explicit unit to say something has no units."^^qudt:LatexString ;
+  qudt:conversionMultiplier 1.0 ;
+  qudt:conversionOffset 0.0 ;
+  qudt:hasQuantityKind <http://qudt.org/vocab/quantitykind/Dimensionless> ;
+  qudt:symbol "U" ;
+  rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
+  rdfs:label "Unitless" .
+
 <http://linked.data.gov.au/org/gsq> a sdo:Organization ;
     sdo:name "Geological Survey of Queensland" ;
     sdo:url <https://www.business.qld.gov.au/industries/mining-energy-water/resources/geoscience-information/gsq> .
@@ -1921,4 +1975,3 @@ unit:BYTE a qudt:DerivedUnit,
             prof:hasArtifact <http://linked.data.gov.au/def/geou.ttl> ;
             prof:hasRole role:vocabulary ] ;
     prof:isProfileOf <https://qudt.org> .
-
