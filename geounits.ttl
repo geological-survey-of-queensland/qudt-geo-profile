@@ -1065,8 +1065,8 @@ unit:KiloBYTE a qudt:BinaryScaledUnit,
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:KiloFT3 a qudt:Unit ;
-    rdfs:label ""@en ;
-    dcterms:description ""@en ;
+    rdfs:label "Thousands of Feet Cubed"@en ;
+    dcterms:description "Thousands of Feet Cubed"@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "" ;
@@ -1532,8 +1532,8 @@ unit:OHM-M a qudt:Unit ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
 unit:OZ a qudt:Unit ;
-    rdfs:label ""@en ;
-    dcterms:description ""@en ;
+    rdfs:label "Ounces"@en ;
+    dcterms:description "Ounces"@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "" ;
