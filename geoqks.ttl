@@ -21,9 +21,7 @@ geoqk:angle a qudt:QuantityKind ;
         unit:ARCMIN,
         unit:ARCSEC ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rang" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rang" .
 
 geoqk:age a qudt:QuantityKind ;
     rdfs:label "Age"@en ;
@@ -36,9 +34,7 @@ geoqk:age a qudt:QuantityKind ;
         unit:YR,
         geou:MYR ;
     qudt:hasDimensionVector "A0E0L0I0M0H0T1D0" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rage" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rage" .
 
 geoqk:api-gravity a qudt:QuantityKind ;
     rdfs:label "API Gravity"@en ;
@@ -46,9 +42,7 @@ geoqk:api-gravity a qudt:QuantityKind ;
     qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Oil Gravity"@en ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rapi" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rapi" .
 
 geoqk:casing-weight a qudt:QuantityKind ;
     rdfs:label "Casing Weight"@en ;
@@ -56,18 +50,14 @@ geoqk:casing-weight a qudt:QuantityKind ;
     qudt:applicableUnit unit:KiloGM-PER-M,
         unit:LB_M-PER-FT ;
     qudt:hasDimensionVector "A0E0L-1I0M1H0T1D0" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rcsw" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rcsw" .
 
 geoqk:colour a qudt:QuantityKind ;
     rdfs:label "Colour"@en ;
     dcterms:description "The qualitative description of the colour of an object."@en ;
     qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rcol" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rcol" .
 
 geoqk:composition a qudt:QuantityKind ;
     rdfs:label "Composition"@en ;
@@ -76,9 +66,7 @@ geoqk:composition a qudt:QuantityKind ;
         unit:PERCENT,
         geou:RATIO ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rcmp" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rcmp" .
 
 geoqk:compressive-strength a qudt:QuantityKind ;
     rdfs:label "Compressive Strength"@en ;
@@ -91,9 +79,7 @@ geoqk:compressive-strength a qudt:QuantityKind ;
         unit:LB_M-PER-IN2,
         unit:KiloLB_M-PER-IN2 ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rcps" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rcps" .
 
 geoqk:cost a qudt:QuantityKind ;
     rdfs:label "Cost"@en ;
@@ -283,18 +269,14 @@ geoqk:cost a qudt:QuantityKind ;
         unit:ZimbabweDollar,
         unit:Zloty ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rcst" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rcst" .
 
 geoqk:count a qudt:QuantityKind ;
     rdfs:label "Count"@en ;
     dcterms:description "A quanitifation of the absolute number of discrete objects, groups, or sets."@en ;
     qudt:applicableUnit geou:COUNT ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rcnt" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rcnt" .
 
 geoqk:curvature a qudt:QuantityKind ;
     rdfs:label "Curvature"@en ;
@@ -305,9 +287,7 @@ geoqk:curvature a qudt:QuantityKind ;
         geou:DEG-PER-F ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Dog Leg Severity"@en ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rdls" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rdls" .
 
 geoqk:data a qudt:QuantityKind ;
     rdfs:label "Data"@en ;
@@ -320,18 +300,14 @@ geoqk:data a qudt:QuantityKind ;
         unit:PetaBYTE,
         geou:ExaBYTE ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rdat" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rdat" .
 
 geoqk:descriptive a qudt:QuantityKind ;
     rdfs:label "Descriptive"@en ;
     dcterms:description "A decription of a subject or object of interest."@en ;
     qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rdsc" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rdsc" .
 
 geoqk:drill-rate a qudt:QuantityKind ;
     rdfs:label "Drill Rate"@en ;
@@ -342,9 +318,7 @@ geoqk:drill-rate a qudt:QuantityKind ;
         unit:M-PER-HR ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Rate of Penetration"@en ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rdlr" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rdlr" .
 
 geoqk:electrical-conductivity a qudt:QuantityKind ;
     rdfs:label "Conductivity"@en ;
@@ -354,9 +328,7 @@ geoqk:electrical-conductivity a qudt:QuantityKind ;
         geou:MicroS-PER-M ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Electrical Conductance"@en ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "recd" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "recd" .
 
 geoqk:elevation a qudt:QuantityKind ;
     rdfs:label "Elevation"@en ;
@@ -366,9 +338,7 @@ geoqk:elevation a qudt:QuantityKind ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Height",
         "Altitude"@en ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "relv" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "relv" .
 
 geoqk:flow-rate a qudt:QuantityKind ;
     rdfs:label "Flow Rate"@en ;
@@ -388,9 +358,7 @@ geoqk:flow-rate a qudt:QuantityKind ;
         geou:MegaF3-PER-DAY ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Volumetric Flow Rate"@en ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rflr" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rflr" .
 
 geoqk:fluid-density a qudt:QuantityKind ;
     rdfs:label "Fluid Density"@en ;
@@ -401,9 +369,7 @@ geoqk:fluid-density a qudt:QuantityKind ;
         unit:KiloGM-PER-L ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Mud Weight"@en ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rfld" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rfld" .
 
 geoqk:gas-content a qudt:QuantityKind ;
     rdfs:label "Gas Content"@en ;
@@ -411,9 +377,7 @@ geoqk:gas-content a qudt:QuantityKind ;
     qudt:applicableUnit geou:FT3-PER-TON,
         geou:M3-PER-TON_M ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rgsc" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rgsc" .
 
 geoqk:grain-shape a qudt:QuantityKind ;
     rdfs:label "Grain Shape"@en ;
@@ -421,9 +385,7 @@ geoqk:grain-shape a qudt:QuantityKind ;
     qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Roundness"@en ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rgrs" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rgrs" .
 
 geoqk:grain-size a qudt:QuantityKind ;
     rdfs:label "Grain Size"@en ;
@@ -432,9 +394,7 @@ geoqk:grain-size a qudt:QuantityKind ;
         unit:MicroM,
         unit:MilliM ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rgrz" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rgrz" .
 
 geoqk:heat a qudt:QuantityKind ;
     rdfs:label "Heat"@en ;
@@ -446,18 +406,14 @@ geoqk:heat a qudt:QuantityKind ;
         unit:TON_FG,
         unit:W ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rhet" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rhet" .
 
 geoqk:magnetic-susceptibility a qudt:QuantityKind ;
     rdfs:label "Magnetic Susceptibility"@en ;
     dcterms:description "A measure of how much a material will become magnetized in an applied magnetic field. Mathematically, it is the ratio of magnetization M (magnetic moment per unit volume) to the applied magnetizing field intensity H."@en ;
     qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rmsc" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rmsc" .
 
 geoqk:measured-depth a qudt:QuantityKind ;
     rdfs:label "Measured Depth"@en ;
@@ -465,10 +421,8 @@ geoqk:measured-depth a qudt:QuantityKind ;
     qudt:applicableUnit unit:FT,
         unit:M ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "MD",
-        "rmmd" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+        "rmmd" .
 
 geoqk:oil-quality a qudt:QuantityKind ;
     rdfs:label "Oil Quality"@en ;
@@ -483,9 +437,7 @@ geoqk:oil-quality a qudt:QuantityKind ;
         geou:MegaBTU-PER-MegaL,
         unit:TOE ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rolq" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rolq" .
 
 geoqk:porosity a qudt:QuantityKind ;
     rdfs:label "Porosity"@en ;
@@ -493,9 +445,7 @@ geoqk:porosity a qudt:QuantityKind ;
     qudt:applicableUnit geou:FRAC,
         unit:PERCENT ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rpor" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rpor" .
 
 geoqk:radioactivity a qudt:QuantityKind ;
     rdfs:label "Radioactivity"@en ;
@@ -508,9 +458,7 @@ geoqk:radioactivity a qudt:QuantityKind ;
         "nuclear disintegration"@en,
         "radioactive decay"@en,
         "radioactive disintegration"@en ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rrad" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rrad" .
 
 geoqk:rotation a qudt:QuantityKind ;
     rdfs:label "Rotation"@en ;
@@ -521,9 +469,7 @@ geoqk:rotation a qudt:QuantityKind ;
         geou:DecaREV-PER-MIN ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Rotation Rate"@en ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rrtt" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rrtt" .
 
 geoqk:sales-volumetric a qudt:QuantityKind ;
     rdfs:Label "Sales Volumetric"@en ;
@@ -538,10 +484,7 @@ geoqk:sales-volumetric a qudt:QuantityKind ;
         geou:MegaM3,
         geou:MegaFT3 ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rsal" ;
-
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rsal" .
 
 geoqk:saturation a qudt:QuantityKind ;
     rdfs:label "Saturation"@en ;
@@ -549,9 +492,7 @@ geoqk:saturation a qudt:QuantityKind ;
     qudt:applicableUnit geou:FRAC,
         unit:PERCENT ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rsat" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rsat" .
 
 geoqk:sorting a qudt:QuantityKind ;
     rdfs:label "Sorting"@en ;
@@ -559,9 +500,7 @@ geoqk:sorting a qudt:QuantityKind ;
     qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Sedimentary Sorting"@en ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rsrt" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rsrt" .
 
 geoqk:spacing a qudt:QuantityKind ;
     rdfs:label "Spacing"@en ;
@@ -570,18 +509,14 @@ geoqk:spacing a qudt:QuantityKind ;
         geou:SHOTS-PER-M,
         unit:PER-M ;         ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rspc" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rspc" .
 
 geoqk:sphericity a qudt:QuantityKind ;
     rdfs:label "Sphericity"@en ;
     dcterms:description "A measure of how closely the shape of an object resembles that of a perfect sphere."@en ;
     qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rsph" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rsph" .
 
 geoqk:stiffness a qudt:QuantityKind ;
     rdfs:label "Stiffness"@en ;
@@ -589,18 +524,14 @@ geoqk:stiffness a qudt:QuantityKind ;
     qudt:applicableUnit geou:LB_F-PER-IN,
         geou:N-PER-M ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rstf" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rstf" .
 
 geoqk:strain a qudt:QuantityKind ;
     rdfs:label "Strain"@en ;
     dcterms:description "Strain is a measure of deformation representing the displacement between particles in the body relative to a reference length."@en ;
     qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rstn" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rstn" .
 
 geoqk:stress a qudt:QuantityKind ;
     rdfs:label "Stress"@en ;
@@ -611,9 +542,7 @@ geoqk:stress a qudt:QuantityKind ;
         unit:LB_M-PER-IN2,
         unit:KiloLB_M-PER-IN2 ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rsts" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rsts" .
 
 geoqk:tensile-strength a qudt:QuantityKind ;
     rdfs:label "Tensile Strength"@en ;
@@ -624,9 +553,7 @@ geoqk:tensile-strength a qudt:QuantityKind ;
         unit:LB_M-PER-IN2,
         unit:KiloLB_M-PER-IN2 ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rtns" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rtns" .
 
 geoqk:thermal-conductivity a qudt:QuantityKind ;
     rdfs:label "Thermal Conductivity"@en ;
@@ -641,9 +568,7 @@ geoqk:thermal-conductivity a qudt:QuantityKind ;
         unit:W-PER-M-K ;
     qudt:hasDimensionVector "" ;
     skos:altLabel "Thermal Conductance"@en ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rtcd" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rtcd" .
 
 geoqk:true-vertical-depth a qudt:QuantityKind ;
     rdfs:label "True Vertical Depth"@en ;
@@ -651,10 +576,8 @@ geoqk:true-vertical-depth a qudt:QuantityKind ;
     qudt:applicableUnit unit:FT,
         unit:M ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
     skos:notation "TVD",
-        "rtvd" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+        "rtvd" .
 
 geoqk:wavelength a qudt:QuantityKind ;
     rdfs:label "Wavelength"@en ;
@@ -666,9 +589,7 @@ geoqk:wavelength a qudt:QuantityKind ;
         unit:M2,
         unit:KiloM ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rwvl" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rwvl" .
 
 geoqk:weight-on-bit a qudt:QuantityKind ;
     rdfs:label "Weight on Bit"@en ;
@@ -682,9 +603,7 @@ geoqk:weight-on-bit a qudt:QuantityKind ;
         geou:KiloLB_M,
         unit:MegaLB_F ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rwob" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rwob" .
 
 geoqk:width a qudt:QuantityKind ;
     rdfs:label "Width"@en ;
@@ -719,9 +638,7 @@ geoqk:width a qudt:QuantityKind ;
         unit:ROD,
         unit:YD ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "rwid" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "rwid" .
 
 geoqk:yield-point a qudt:QuantityKind ;
     rdfs:label "Yield Point"@en ;
@@ -729,17 +646,15 @@ geoqk:yield-point a qudt:QuantityKind ;
     qudt:applicableUnit geou:LB_M-PER-100FT2,
         geou:LB_F-PER-100FT2 ;
     qudt:hasDimensionVector "" ;
-    skos:inScheme <http://linked.data.gov.au/def/result-type> ;
-    skos:notation "ryld" ;
-    skos:topConceptOf <http://linked.data.gov.au/def/result-type> .
+    skos:notation "ryld" .
 
 <http://linked.data.gov.au/def/geoqk> a prof:Profile ;
     dcterms:created "2020-04-15"^^xsd:date ;
     dcterms:creator <http://linked.data.gov.au/org/gsq> ;
-    dcterms:modified "2020-06-10"^^xsd:date ;
+    dcterms:modified "2020-06-11"^^xsd:date ;
     dcterms:publisher <http://linked.data.gov.au/org/gsq> ;
     skos:definition "This profile of the Quantities, Units, Dimensions & Types ontology and vocabularies lists those elements deemed by the profile creators to be of relevance to the geosciences." ;
-    skos:prefLabel "Geoscience Profile of QUDT" ;
+    skos:prefLabel "Geoscience Profile of QUDT Quantity Kinds" ;
     prof:hasResource [ dcterms:conformsTo <https://qudt.org> ;
             dcterms:format "text/turtle" ;
             prof:hasArtifact <http://linked.data.gov.au/def/geoqk.ttl> ;
