@@ -1,6 +1,7 @@
 @prefix geou: <http://linked.data.gov.au/def/geou/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geoqk: <http://linked.data.gov.au/def/geoqk/> .
+@prefix ns1: <http://www.linkedmodel.org/schema/vaem#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
@@ -22,6 +23,13 @@ geoqk:angle a qudt:QuantityKind ;
         unit:ARCSEC ;
     qudt:hasDimensionVector "" ;
     skos:notation "rang" .
+
+geoqk:age a qudt:QuantityKind ;
+    rdfs:label "Acidity"@en ;
+    dcterms:description "The level of acidity or alkalinity in a substance."@en ;
+    qudt:applicableUnit geou:pH ;
+    qudt:hasDimensionVector "" ;
+    skos:notation "racd" .
 
 geoqk:age a qudt:QuantityKind ;
     rdfs:label "Age"@en ;
@@ -324,6 +332,7 @@ geoqk:electrical-conductivity a qudt:QuantityKind ;
     rdfs:label "Conductivity"@en ;
     dcterms:description "A measure of a material's ability to conduct an electric current."@en ;
     qudt:applicableUnit unit:S-PER-M,
+        unit:S,
         geou:MicroS-PER-CentiM,
         geou:MicroS-PER-M ;
     qudt:hasDimensionVector "" ;
@@ -396,6 +405,14 @@ geoqk:grain-size a qudt:QuantityKind ;
     qudt:hasDimensionVector "" ;
     skos:notation "rgrz" .
 
+geoqk:growth a qudt:QuantityKind ;
+    rdfs:label "Growth"@en ;
+    dct:description "The change in volume or mass of an object or entity. The swelling of a substance under chemical or physical processes."@en ;
+    qudt:applicableUnit unit:UNITLESS;
+    qudt:hasDimensionVector "" ;
+    skos:notation "rgwt" ;
+    skos:altLabel "Swelling"@em .
+
 geoqk:heat a qudt:QuantityKind ;
     rdfs:label "Heat"@en ;
     dcterms:description "Energy in transfer to or from a thermodynamic system, by mechanisms other than thermodynamic work or transfer of matter."@en ;
@@ -452,12 +469,14 @@ geoqk:radioactivity a qudt:QuantityKind ;
     dcterms:description "The process by which an unstable atomic nucleus loses energy by radiation. A material containing unstable nuclei is considered radioactive."@en ;
     qudt:applicableUnit unit:BQ,
         unit:Ci,
-        unit:MicroCi ;
+        unit:MicroCi,
+        geou:MicroSV ;
     qudt:hasDimensionVector "A0E0L0I0M0H0T-1D0" ;
     skos:altLabel "nuclear decay"@en,
         "nuclear disintegration"@en,
         "radioactive decay"@en,
-        "radioactive disintegration"@en ;
+        "radioactive disintegration"@en,
+        "radiation"@en ;
     skos:notation "rrad" .
 
 geoqk:rotation a qudt:QuantityKind ;
@@ -529,7 +548,8 @@ geoqk:stiffness a qudt:QuantityKind ;
 geoqk:strain a qudt:QuantityKind ;
     rdfs:label "Strain"@en ;
     dcterms:description "Strain is a measure of deformation representing the displacement between particles in the body relative to a reference length."@en ;
-    qudt:applicableUnit unit:UNITLESS ;
+    qudt:applicableUnit unit:UNITLESS,
+        geou:DD-PER-MIN ;
     qudt:hasDimensionVector "" ;
     skos:notation "rstn" .
 
@@ -651,7 +671,7 @@ geoqk:yield-point a qudt:QuantityKind ;
 <http://linked.data.gov.au/def/geoqk> a prof:Profile ;
     dcterms:created "2020-04-15"^^xsd:date ;
     dcterms:creator <http://linked.data.gov.au/org/gsq> ;
-    dcterms:modified "2020-06-11"^^xsd:date ;
+    dcterms:modified "2020-06-24"^^xsd:date ;
     dcterms:publisher <http://linked.data.gov.au/org/gsq> ;
     skos:definition "This profile of the Quantities, Units, Dimensions & Types ontology and vocabularies lists those elements deemed by the profile creators to be of relevance to the geosciences." ;
     skos:prefLabel "Geoscience Profile of QUDT Quantity Kinds" ;
@@ -717,16 +737,25 @@ geoqk:yield-point a qudt:QuantityKind ;
 <http://qudt.org/vocab/quantitykind/Concentration> a qudt:QuantityKind ;
     rdfs:label "Concentration" ;
     qudt:applicableUnit geou:FT3-PER-TON_M,
+        geou:CentiM3-PER-GM,
         geou:CentiM3-PER-TON_M,
         geou:M3-PER-TON_M,
         geou:GM-PER-KiloGM,
         geou:GM-PER-TON_M,
+        geou:L-PER-TON_M,
+        unit:MilliGM-PER-GM,
+        unit:MilliGM-PER-KiloGM,
+        geou:MilliGM-PER-TOC,
+        unit:MilliGM-PER-L,
+        geou:MilliL-PER-10GM,
         geou:MilliGM-PER-TOC,
         geou:MilliGM-PER-TON_M,
+        unit:MOL,
         geou:OZ-PER-TON_LONG,
         geou:OZ-PER-TON_M,
         unit:PPB,
         unit:PPM,
+        geou:PERCENT-MOL,
         geou:PERCENT-PER-VOL,
         geou:PERCENT-PER-WEIGHT,
         geou:BWOW,
@@ -767,6 +796,7 @@ geoqk:yield-point a qudt:QuantityKind ;
     qudt:informativeReference "http://en.wikipedia.org/wiki/Density"^^xsd:anyURI ;
     qudt:latexDefinition "\\(\\rho = m/V\\), where \\(\\rho\\) is the density, \\(m\\) is the mass, and \\(V\\) is the volume."^^qudt:LatexString ;
     qudt:latexSymbol "\\(\\rho\\)"^^qudt:LatexString ;
+    ns1:todo "belongs to SOQ-ISO" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
 
 <http://qudt.org/vocab/quantitykind/Distance> a qudt:QuantityKind ;
@@ -850,7 +880,8 @@ geoqk:yield-point a qudt:QuantityKind ;
     qudt:applicableUnit unit:BTU_IT-PER-FT3,
         unit:BTU_TH-PER-FT3,
         unit:ERG-PER-CentiM3,
-        unit:J-PER-M3 ;
+        unit:J-PER-M3,
+        unit:MegaJ-PER-KiloGM ;
     qudt:baseISOUnitDimensions "\\(m^{-1} \\cdot kg \\cdot s^{-2}\\)" ;
     qudt:baseImperialUnitDimensions "\\(ft^{-1} \\cdot lb \\cdot s^{-2}\\)"^^qudt:LatexString ;
     qudt:baseSIUnitDimensions "\\(m^{-1} \\cdot kg \\cdot s^{-2}\\)"^^qudt:LatexString ;
@@ -1130,7 +1161,8 @@ Alternatively,
 
 <http://qudt.org/vocab/quantitykind/Resistivity> a qudt:QuantityKind ;
     rdfs:label "Resistivity" ;
-    qudt:applicableUnit unit:OHM-M ;
+    qudt:applicableUnit unit:OHM-M,
+        unit:OHM ;
     qudt:hasDimensionVector "" ;
     qudt:informativeReference "http://www.electropedia.org/iev/iev.nsf/display?openform&ievref=121-12-04"^^xsd:anyURI,
         "http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=31891"^^xsd:anyURI ;
