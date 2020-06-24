@@ -24,7 +24,7 @@ geoqk:angle a qudt:QuantityKind ;
     qudt:hasDimensionVector "" ;
     skos:notation "rang" .
 
-geoqk:age a qudt:QuantityKind ;
+geoqk:acidity a qudt:QuantityKind ;
     rdfs:label "Acidity"@en ;
     dcterms:description "The level of acidity or alkalinity in a substance."@en ;
     qudt:applicableUnit geou:pH ;
