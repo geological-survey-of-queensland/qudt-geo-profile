@@ -1,4 +1,3 @@
-@prefix geou: <http://linked.data.gov.au/def/geou/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geou: <http://linked.data.gov.au/def/geou/> .
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
@@ -76,6 +75,14 @@ geou:COUNT a qudt:Unit ;
     qudt:symbol "n" ;
     rdfs:isDefinedBy geou: .
 
+geou:CentiM3-PER-GM a qudt:Unit ;
+    rdfs:label "Cubic Centimetres per Gram"@en ;
+    dcterms:description "A measure of concentration, typically a fluid held within a solid. The cubic centimetres or mL of a substance per gram of host material."@en ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind <http://qudt.org/vocab/quantitykind/SpecificVolume> ;
+    qudt:symbol "cm3/g" ;
+    rdfs:isDefinedBy geou: .
+
 geou:CentiM3-PER-TON_M a qudt:Unit ;
     rdfs:label "Cubic Centimetres per Tonne"@en ;
     dcterms:description "A measure of concentration, typically a fluid held within a solid. The cubic centimetres or mL of a substance per ton of host material."@en ;
@@ -130,6 +137,14 @@ geou:DecaREV-PER-MIN a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "hRPM" ;
+    rdfs:isDefinedBy geou: .
+
+geou:DD-PER-MIN a qudt:Unit ;
+    rdfs:label "Dial Degrees per Minute"@en ;
+    dcterms:description "Maximum fluidity measure of coal which is determined against temperature."@en ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind <http://qudt.org/vocab/quantitykind/Strain> ;
+    qudt:symbol "DD/min" ;
     rdfs:isDefinedBy geou: .
 
 geou:ExaBYTE a qudt:Unit ;
@@ -301,6 +316,14 @@ geou:L-PER-50SACK a qudt:Unit ;
     qudt:symbol "l/50kg" ;
     rdfs:isDefinedBy geou: .
 
+geou:L-PER-TON_M a qudt:Unit ;
+    rdfs:label "Litres per Tonne"@en ;
+    dcterms:description "A measure of concentration ratio. The number of litres of a subject fluid per tone of total material."@en ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind <http://qudt.org/vocab/quantitykind/SpecificVolume> ;
+    qudt:symbol "l/t" ;
+    rdfs:isDefinedBy geou: .
+
 geou:LB_F-PER-100FT2 a qudt:Unit ;
     rdfs:label "Pounds Force per 100 Square Feet"@en ;
     dcterms:description "Pounds Force per 100 Square Feet is a British (Imperial) and American pressure unit. The number of pounds force applied to an area of 100 square feet."@en ;
@@ -445,6 +468,14 @@ geou:MicroS-PER-M a qudt:Unit ;
     qudt:symbol "µS/m" ;
     rdfs:isDefinedBy geou: .
 
+geou:MicroSV a qudt:Unit ;
+    rdfs:label "Microsieverts"@en ;
+    dcterms:description "Although the sievert has the same dimensions as the gray (i.e. joules per kilogram), it measures a different quantity. To avoid any risk of confusion between the absorbed dose and the equivalent dose, the corresponding special units, namely the gray instead of the joule per kilogram for absorbed dose and the sievert instead of the joule per kilogram for the dose equivalent, should be used. the microsivert can be converted to the corresponding standard SI unit SV by multiplying its value by a factor of 1E-006."@en ;
+    qudt:conversionOffset "0.0"^^xsd:double ;
+    qudt:hasQuantityKind <http://qudt.org/vocab/quantitykind/DoseEquivalent> ;
+    qudt:symbol "mSV" ;
+    rdfs:isDefinedBy geou: .
+
 geou:MilliD a qudt:Unit ;
     rdfs:label "Millidarcy"@en ;
     dcterms:description "A measure of permeability. A medium with a permeability of 1 millidarcy permits a flow of 0.001 cm³/s of a fluid with viscosity 1 cP (1 mPa·s) under a pressure gradient of 1 atm/cm acting across an area of 1 cm²."@en ;
@@ -463,7 +494,7 @@ geou:MilliGM a qudt:Unit ;
 
 geou:MilliGM-PER-TOC a qudt:Unit ;
     rdfs:label "Milligrams per gram TOC"@en ;
-    dcterms:description "A measure of concentration. The number of milligrams of hydrocarbon per gram of Total Organic Carbon in a sample."@en ;
+    dcterms:description "A measure of concentration. The number of milligrams of hydrocarbon, carbon dioxide, or other substance per gram of Total Organic Carbon in a sample."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "mg/gTOC" ;
@@ -475,6 +506,14 @@ geou:MilliGM-PER-TON_M a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "mg/t" ;
+    rdfs:isDefinedBy geou: .
+
+geou:MilliL-PER-10GM a qudt:Unit ;
+    rdfs:label "Millilitres per 10 Grams"@en ;
+    dcterms:description "A measure of concentration, typically a fluid held within a solid. The cubic centimetres or mL of a substance per 10 grams of host material."@en ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind <http://qudt.org/vocab/quantitykind/SpecificVolume> ;
+    qudt:symbol "mL/10g" ;
     rdfs:isDefinedBy geou: .
 
 geou:MilliM-PER-SEC a qudt:Unit ;
@@ -517,12 +556,20 @@ geou:PER-PA a qudt:Unit ;
     qudt:symbol "Pa-1" ;
     rdfs:isDefinedBy geou: .
 
+geou:PERCENT-MOL a qudt:Unit ;
+    rdfs:label "Mole Percent"@en ;
+    dcterms:description "Percentage of the total moles that is of a particular component."@en ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind <http://qudt.org/vocab/quantitykind/InverseAmountOfSubstance> ;
+    qudt:symbol "%mol" ;
+    rdfs:isDefinedBy geou: .
+
 geou:PERCENT-PER-VOL a qudt:Unit ;
     rdfs:label "Percent by Volume"@en ;
     dcterms:description "The proportion of the volume of a material of interest within the volume of a total sample expressed as a percentage."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "vo%" ;
+    qudt:symbol "%vol" ;
     rdfs:isDefinedBy geou: .
 
 geou:PERCENT-PER-WEIGHT a qudt:Unit ;
@@ -530,7 +577,7 @@ geou:PERCENT-PER-WEIGHT a qudt:Unit ;
     dcterms:description "The proportion of the weight or mass of a material of interest within the weight or mass of a total sample expressed as a percentage."@en ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
-    qudt:symbol "wt%" ;
+    qudt:symbol "%wt" ;
     rdfs:isDefinedBy geou: .
 
 geou:PetaJ a qudt:Unit ;
@@ -547,6 +594,15 @@ geou:PetaJ-PER-MegaL a qudt:Unit ;
     qudt:conversionOffset "" ;
     qudt:hasQuantityKind "" ;
     qudt:symbol "PJ/ML" ;
+    rdfs:isDefinedBy geou: .
+
+geou:pH a qudt:Unit ;
+    rdfs:label "pH"@en ;
+    skos:altLabel "Potential Hydrogen"@en ;
+    dcterms:description "A scale used to specify how acidic or basic a water-based solution is. Acidic solutions have a lower pH, while basic solutions have a higher pH. At room temperature (25°C or 77°F), pure water is neither acidic nor basic and has a pH of 7."@en ;
+    qudt:conversionOffset "" ;
+    qudt:hasQuantityKind "" ;
+    qudt:symbol "pH" ;
     rdfs:isDefinedBy geou: .
 
 geou:RATIO a qudt:Unit ;
@@ -1564,6 +1620,27 @@ unit:NanoSEC a qudt:DecimalScaledUnit,
     qudt:uneceCommonCode "C47" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
+unit:OHM a qudt:Unit ;
+    rdfs:label "Ohm" ;
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:Unit ;
+  dcterms:description "The ohm is the SI derived unit of electrical resistance, named after German physicist Georg Simon Ohm"@en ;
+  qudt:conversionMultiplier 1.0e0 ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:dbpediaMatch "http://dbpedia.org/resource/Ohm"^^xsd:anyURI ;
+  qudt:hasQuantityKind <http://qudt.org/vocab/quantitykind/Resistance> ;
+  qudt:iec61360Code "0112/2///62720#UAA017" ;
+  qudt:informativeReference "http://en.wikipedia.org/wiki/Ohm?oldid=494685555"^^xsd:anyURI ;
+  qudt:omUnit <http://www.ontology-of-units-of-measure.org/resource/om-2/ohm> ;
+  qudt:siUnitsExpression "V/A" ;
+  qudt:symbol "\\ohm" ;
+  qudt:ucumCaseInsensitiveCode "OHM" ;
+  qudt:ucumCaseSensitiveCode "Ohm" ;
+  qudt:ucumCode "OHM" ;
+  qudt:ucumCode "Ohm" ;
+  qudt:uneceCommonCode "OHM" ;
+  rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
+
 unit:OHM-M a qudt:Unit ;
     rdfs:label "Ohm Meter" ;
     qudt:conversionOffset 0e+00 ;
@@ -1663,6 +1740,25 @@ unit:REV-PER-MIN a qudt:DerivedUnit,
     qudt:hasQuantityKind <http://qudt.org/vocab/quantitykind/AngularVelocity> ;
     qudt:iec61360Code "0112/2///62720#UAB231" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
+
+unit:S a qudt:Unit ;
+    a qudt:DerivedCoherentUnit,
+        qudt:Unit 
+        qudt:DerivedUnit ;
+    rdfs:label "Siemens" ;
+    dct:description "Siemens is the SI unit of electric conductance, susceptance, and admittance. The most important property of a conductor is the amount of current it will carry when a voltage is applied. Current flow is opposed by resistance in all circuits, and by also by reactance and impedance in alternating current circuits. Conductance, susceptance, and admittance are the inverses of resistance, reactance, and impedance, respectively. To measure these properties, the siemens is the reciprocal of the ohm. In other words, the conductance, susceptance, or admittance, in siemens, is simply 1 divided by the resistance, reactance or impedance, respectively, in ohms. The unit is named for the German electrical engineer Werner von Siemens (1816-1892)."^^qudt:LatexString  ;
+    qudt:conversionMultiplier 1.0e0 ;
+    qudt:conversionOffset "0.0"^^xsd:double ;
+    qudt:hasQuantityKind <http://qudt.org/vocab/quantitykind/ElectricConductivity> ;
+    qudt:iec61360Code "0112/2///62720#UAA277" ;
+    qudt:informativeReference "https://en.wikipedia.org/wiki/Siemens_(unit)"^^xsd:anyURI , "http://www.simetric.co.uk/siderived.htm"^^xsd:anyURI ;
+    qudt:omUnit <http://www.ontology-of-units-of-measure.org/resource/om-2/siemens ;
+    qudt:siUnitsExpression "A/V" ;
+    qudt:symbol "S" ;
+    qudt:ucumCaseInsensitiveCode "S" , "SIE" ;
+    qudt:ucumCode "S" , "SIE" ;
+    qudt:uneceCommonCode "SIE" ;
+    rdfs:isDefinedBy  <http://qudt.org/2.1/vocab/unit> .
 
 unit:TOE a qudt:Unit ;
     rdfs:label "Ton of Oil Equivalent" ;
@@ -1815,6 +1911,16 @@ unit:M a qudt:BaseUnit,
     qudt:uneceCommonCode "MTR" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
 
+unit:MegaJ-PER-KiloGM a qudt:Unit ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
+    rdfs:label "MegaJ PER KiloGM" ;
+    qudt:conversionMultiplier 1.0e+06 ;
+    qudt:conversionOffset 0e+00 ;
+    qudt:hasQuantityKind <http://qudt.org/vocab/quantitykind/SpecificEnergy> ;
+    qudt:plainTextDescription "1,000,000-fold of the derived SI unit joule divided by the SI base unit kilogram" ;
+    qudt:uneceCommonCode "JK" ;
+    skos:prefLabel "megajoule per kilogram"@en .
+    
 unit:MIN a qudt:Unit ;
     rdfs:label "Minute" ;
     dcterms:description "A minute is a unit of measurement of time. The minute is a unit of time equal to 1/60 (the first sexagesimal fraction of an hour or 60 seconds. In the UTC time scale, a minute on rare occasions has 59 or 61 seconds; see leap second. The minute is not an SI unit; however, it is accepted for use with SI units. The SI symbol for minute or minutes is min (for time measurement) or the prime symbol after a number, e.g. 5' (for angle measurement, even if it is informally used for time)."^^rdf:HTML ;
@@ -1846,6 +1952,56 @@ unit:MegaBYTE a qudt:DecimalScaledUnit,
     qudt:isScalingOf unit:BYTE ;
     qudt:symbol "mB" ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> .
+
+unit:MilliGM-PER-GM a qudt:Unit ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
+    rdfs:label "MilliGM PER GM" ;
+    qudt:conversionMultiplier 1e-03 ;
+    qudt:conversionOffset 0e+00 ;
+    qudt:hasQuantityKind <http://qudt.org/vocab/quantitykind/MassRatio> ;
+    qudt:plainTextDescription "0.000001-fold of the SI base unit kilogram divided by the 0.001-fold of the SI base unit kilogram" ;
+    dcterms:description "A measure of concentration. The number of milligrams of a material of interest within a mass of one gram of total material."@en ;
+    qudt:uneceCommonCode "H64" ;
+    skos:prefLabel "milligram per gram"@en .
+
+unit:MilliGM-PER-KiloGM a qudt:Unit ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/vocab/unit> ;
+    rdfs:label "MilliGM PER KiloGM" ;
+    qudt:conversionMultiplier 1e-06 ;
+    qudt:conversionOffset 0e+00 ;
+    qudt:hasQuantityKind <http://qudt.org/vocab/quantitykind/MassRatio> ;
+    qudt:plainTextDescription "0.000001-fold of the SI base unit kilogram divided by the SI base unit kilogram" ;
+    dcterms:description "A measure of concentration. The number of milligrams of a material of interest within a mass of one kilogram of total material."@en ;
+    skos:prefLabel "milligram per kilogram"@en .
+
+unit:MilliGM-PER-L a qudt:Unit ;
+    rdfs:isDefinedBy  <http://qudt.org/2.1/vocab/unit> ;
+    rdfs:label "MilliGM PER L" ;
+    qudt:conversionMultiplier 1e-03 ;
+    qudt:conversionOffset 0e+00 ;
+    qudt:hasQuantityKind <http://qudt.org/vocab/quantitykind/MassDensity> ;
+    qudt:plainTextDescription "0.000001-fold of the SI base unit kilogram divided by the unit litre" ;
+    dcterms:description "A measure of concentration. The number of milligrams of a material of interest within a volume of one litre of total material."@en ;
+    qudt:uneceCommonCode "M1" ;
+    skos:prefLabel "milligram per litre"@en .
+
+unit:MOL a qudt:Unit ,
+        qudt:BaseUnit ;
+    rdfs:label "Mole" ;
+    dct:description "The mole is a unit of measurement used in chemistry to express amounts of a chemical substance. The official definition, adopted as part of the SI system in 1971, is that one mole of a substance contains just as many elementary entities (atoms, molecules, ions, or other kinds of particles) as there are atoms in 12 grams of carbon-12 (carbon-12 is the most common atomic form of carbon, consisting of atoms having 6 protons and 6 neutrons).  This corresponds to a value of \\(6.02214179(30) \\times 1023\\) elementary entities of the substance. It is one of the base units in the International System of Units, and has the unit symbol \\(mol\\)</p\n\n<pA Mole is the SI base unit of the amount of a substance (as distinct from its mass or weight). Moles measure the actual number of atoms or molecules in an object. An earlier name is gram molecular weight, because one mole of a chemical compound is the same number of grams as the molecular weight of a molecule of that compound measured in atomic mass units."^^qudt:LatexString ;
+    qudt:conversionMultiplier "1"^^xsd:double ;
+    qudt:conversionOffset "0.0"^^xsd:double ;
+    qudt:dbpediaMatch "http://dbpedia.org/resource/Mole_%28unit%29"^^xsd:anyURI ;
+    qudt:hasQuantityKind <http://qudt.org/vocab/quantitykind/AmountOfSubstance> ;
+    qudt:informativeReference "http://en.wikipedia.org/wiki/Mole_(unit)"^^xsd:anyURI ;
+    qudt:omUnit <http://www.ontology-of-units-of-measure.org/resource/om-2/mole> ;
+    qudt:symbol "mol" ;
+    qudt:ucumCaseInsensitiveCode "MOL" ;
+    qudt:ucumCaseSensitiveCode "mol" ;
+    qudt:ucumCode "mol" ,
+        "MOL" ;
+    qudt:uneceCommonCode "C34" ;
+    rdfs:isDefinedBy  <http://qudt.org/2.1/vocab/unit> .
 
 unit:PA a qudt:DerivedUnit,
         qudt:Unit ;
@@ -1966,7 +2122,7 @@ unit:BYTE a qudt:DerivedUnit,
 <http://linked.data.gov.au/def/geou> a prof:Profile ;
     dcterms:created "2020-04-15"^^xsd:date ;
     dcterms:creator <http://linked.data.gov.au/org/gsq> ;
-    dcterms:modified "2020-06-11"^^xsd:date ;
+    dcterms:modified "2020-06-24"^^xsd:date ;
     dcterms:publisher <http://linked.data.gov.au/org/gsq> ;
     skos:definition "This profile of the Quantities, Units, Dimensions & Types ontology and vocabularies lists those elements deemed by the profile creators to be of relevance to the geosciences." ;
     skos:prefLabel "Geoscience Profile of QUDT Units" ;
