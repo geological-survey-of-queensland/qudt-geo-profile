@@ -182,9 +182,9 @@
     skos:topConceptOf <http://linked.data.gov.au/def/geoqk> .
 
 <http://linked.data.gov.au/def/geoqk/sales-volumetric> a skos:Concept ;
-    rdfs:Label "Sales Volumetric"@en ;
     skos:definition "A measure of the amount of a commodity in its unit of sale. A measure of a reserve or resource volume."@en ;
     skos:notation "rsal" ;
+    skos:prefLabel "Sales Volumetric"@en ;
     skos:scopeNote "Sales volumes are represented by commodity specific units of measure that are internally inconsistent within a standard result type and refer specifically to the context of marketable quantities i.e. a sales quantity may be a volume, energy unit, mass, or other result type."@en ;
     skos:topConceptOf <http://linked.data.gov.au/def/geoqk> .
 
