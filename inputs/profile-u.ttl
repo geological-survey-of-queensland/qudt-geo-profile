@@ -9,7 +9,7 @@
 @prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://linked.data.gov.au/def/geou>
+<https://linked.data.gov.au/def/geou>
     a prof:Profile ;
     skos:prefLabel "Geoscience Profile of QUDT" ;
     skos:definition "This profile of the Quantities, Units, Dimensions & Types ontology and vocabularies lists those elements deemed by the profile creators to be of relevance to the geosciences." ;
@@ -22,15 +22,15 @@
             <https://qudt.org> ;
             # <https://www.w3.org/TR/skos-reference/> ; -- only the SKOS version
         prof:hasRole role:vocabulary ;
-        prof:hasArtifact <http://linked.data.gov.au/def/geou.ttl> ;
+        prof:hasArtifact <https://linked.data.gov.au/def/geou.ttl> ;
     ] ;
     dcterms:created "2020-04-15"^^xsd:date ;
-    dcterms:creator <http://linked.data.gov.au/org/gsq> ;
+    dcterms:creator <https://linked.data.gov.au/org/gsq> ;
     dcterms:modified "2020-05-13"^^xsd:date ;
-    dcterms:publisher <http://linked.data.gov.au/org/gsq> ;
+    dcterms:publisher <https://linked.data.gov.au/org/gsq> ;
 .
 
-<http://linked.data.gov.au/org/gsq> a sdo:Organization ;
+<https://linked.data.gov.au/org/gsq> a sdo:Organization ;
     sdo:name "Geological Survey of Queensland" ;
     sdo:url <https://www.business.qld.gov.au/industries/mining-energy-water/resources/geoscience-information/gsq> ;
 .

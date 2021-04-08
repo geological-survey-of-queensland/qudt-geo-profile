@@ -7,12 +7,12 @@
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://linked.data.gov.au/def/months> a skos:ConceptScheme ;
+<https://linked.data.gov.au/def/months> a skos:ConceptScheme ;
     dcterms:source <http://www.w3.org/ns/time/gregorian> ;
     dcterms:created "2020-05-13"^^xsd:date ;
     dcterms:modified "2020-05-13"^^xsd:date ;
-    dcterms:creator <http://linked.data.gov.au/org/gsq> ;
-    dcterms:publisher <http://linked.data.gov.au/org/gsq> ;
+    dcterms:creator <https://linked.data.gov.au/org/gsq> ;
+    dcterms:publisher <https://linked.data.gov.au/org/gsq> ;
     skos:definition "The set of months-of-the-year from the Gregorian calendar."@en ;
     skos:prefLabel "The Gregorian months"@en ;
     skos:hasTopConcepts
@@ -30,14 +30,14 @@
         greg:September
 .
 
-<http://linked.data.gov.au/org/gsq> a sdo:Organization ;
+<https://linked.data.gov.au/org/gsq> a sdo:Organization ;
     sdo:name "Geological Survey of Queensland" ;
     sdo:url <https://www.business.qld.gov.au/industries/mining-energy-water/resources/geoscience-information/gsq> .
 
 greg:April a skos:Concept ;
     skos:definition "The fourth month of the Gregorian Calendar year"@en ;
     skos:notation "--04"^^xsd:gMonth ;
-    skos:topConceptOf <http://linked.data.gov.au/def/months> ;
+    skos:topConceptOf <https://linked.data.gov.au/def/months> ;
     skos:prefLabel "April"@en ;
     time:unitType time:unitMonth .
 
@@ -45,66 +45,66 @@ greg:August a skos:Concept ;
     skos:definition "The eighth month of the Gregorian Calendar year"@en ;
     skos:notation "--08"^^xsd:gMonth ;
     skos:prefLabel "August"@en ;
-    skos:topConceptOf <http://linked.data.gov.au/def/months> ;
+    skos:topConceptOf <https://linked.data.gov.au/def/months> ;
     time:unitType time:unitMonth .
 
 greg:December a skos:Concept ;
     skos:definition "The twelfth month of the Gregorian Calendar year"@en ;
     skos:notation "--12"^^xsd:gMonth ;
-    skos:topConceptOf <http://linked.data.gov.au/def/months> ;
+    skos:topConceptOf <https://linked.data.gov.au/def/months> ;
     skos:prefLabel "December"@en .
 
 greg:February a skos:Concept ;
     skos:definition "The second month of the Gregorian Calendar year"@en ;
     skos:notation "--02"^^xsd:gMonth ;
-    skos:topConceptOf <http://linked.data.gov.au/def/months> ;
+    skos:topConceptOf <https://linked.data.gov.au/def/months> ;
     skos:prefLabel "February"@en .
 
 greg:January a skos:Concept ;
     skos:definition "The first month of the Gregorian Calendar year"@en ;
     skos:notation "--01"^^xsd:gMonth ;
-    skos:topConceptOf <http://linked.data.gov.au/def/months> ;
+    skos:topConceptOf <https://linked.data.gov.au/def/months> ;
     skos:prefLabel "January"@en .
 
 greg:July a skos:Concept ;
     skos:definition "The seventh month of the Gregorian Calendar year"@en ;
     skos:notation "--07"^^xsd:gMonth ;
-    skos:topConceptOf <http://linked.data.gov.au/def/months> ;
+    skos:topConceptOf <https://linked.data.gov.au/def/months> ;
     skos:prefLabel "July"@en .
 
 greg:June a skos:Concept ;
     skos:definition "The sixth month of the Gregorian Calendar year"@en ;
     skos:notation "--06"^^xsd:gMonth ;
-    skos:topConceptOf <http://linked.data.gov.au/def/months> ;
+    skos:topConceptOf <https://linked.data.gov.au/def/months> ;
     skos:prefLabel "June"@en .
 
 greg:March a skos:Concept ;
     skos:definition "The third month of the Gregorian Calendar year"@en ;
     skos:notation "--03"^^xsd:gMonth ;
-    skos:topConceptOf <http://linked.data.gov.au/def/months> ;
+    skos:topConceptOf <https://linked.data.gov.au/def/months> ;
     skos:prefLabel "March"@en .
 
 greg:May a skos:Concept ;
     skos:definition "The fifth month of the Gregorian Calendar year"@en ;
     skos:notation "--05"^^xsd:gMonth ;
-    skos:topConceptOf <http://linked.data.gov.au/def/months> ;
+    skos:topConceptOf <https://linked.data.gov.au/def/months> ;
     skos:prefLabel "May"@en .
 
 greg:November a skos:Concept ;
     skos:definition "The eleventh month of the Gregorian Calendar year"@en ;
     skos:notation "--11"^^xsd:gMonth ;
-    skos:topConceptOf <http://linked.data.gov.au/def/months> ;
+    skos:topConceptOf <https://linked.data.gov.au/def/months> ;
     skos:prefLabel "November"@en .
 
 greg:October a skos:Concept ;
     skos:definition "The tenth month of the Gregorian Calendar year"@en ;
     skos:notation "--10"^^xsd:gMonth ;
-    skos:topConceptOf <http://linked.data.gov.au/def/months> ;
+    skos:topConceptOf <https://linked.data.gov.au/def/months> ;
     skos:prefLabel "October"@en .
 
 greg:September a skos:Concept ;
     skos:definition "The ninth month of the Gregorian Calendar year"@en ;
     skos:notation "--09"^^xsd:gMonth ;
-    skos:topConceptOf <http://linked.data.gov.au/def/months> ;
+    skos:topConceptOf <https://linked.data.gov.au/def/months> ;
     skos:prefLabel "September"@en .
 

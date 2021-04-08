@@ -104,7 +104,7 @@ def qudt_expand_graph(g):
 
     for s in g.subjects(RDF.type, QUDT.QuantityKind):
         g.add((s, RDF.type, SKOS.Concept))
-        # g.add((s, RDFS.isDefinedBy, URIRef("http://linked.data.gov.au/def/geoqk")))
+        # g.add((s, RDFS.isDefinedBy, URIRef("https://linked.data.gov.au/def/geoqk")))
 
     # for s, p, o in g:
     #     if p in [QUDT.symbol, QUDT.ucumCaseInsensitiveCode, QUDT.ucumCode, QUDT.uneceCommonCode]:
@@ -121,14 +121,14 @@ def qudt_expand_graph(g):
             g.remove((s, p, o))
             g.add((s, p, Literal(str(o), lang="en")))
 
-    cs = URIRef("http://linked.data.gov.au/def/geoqk")
+    cs = URIRef("https://linked.data.gov.au/def/geoqk")
     g.remove((cs, RDF.type, URIRef("http://www.w3.org/ns/dx/prof/Profile")))
     g.add((cs, RDF.type, SKOS.ConceptScheme))
 
     g.add((
         cs,
         DCTERMS.source,
-        Literal("Derived from the geo-profile of QUDT (http://linked.data.gov.au/def/geou)", lang="en")
+        Literal("Derived from the geo-profile of QUDT (https://linked.data.gov.au/def/geou)", lang="en")
     ))
 
     for s in g.subjects(predicate=RDF.type, object=SKOS.Concept):
@@ -172,7 +172,7 @@ g_skos.bind('skos', SKOS)
 g_skos.bind('dcterms', DCTERMS)
 g_skos.bind('owl', OWL)
 g_skos.bind('sdo', SDO)
-GEOU = Namespace("http://linked.data.gov.au/def/geou/")
+GEOU = Namespace("https://linked.data.gov.au/def/geou/")
 g_skos.bind('geou', GEOU)
 QUDT = Namespace("http://qudt.org/schema/qudt/")
 g_skos.bind('qudt', QUDT)

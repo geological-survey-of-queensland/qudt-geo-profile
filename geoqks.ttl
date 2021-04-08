@@ -1,6 +1,6 @@
-@prefix geou: <http://linked.data.gov.au/def/geou/> .
+@prefix geou: <https://linked.data.gov.au/def/geou/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix geoqk: <http://linked.data.gov.au/def/geoqk/> .
+@prefix geoqk: <https://linked.data.gov.au/def/geoqk/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
@@ -648,16 +648,16 @@ geoqk:yield-point a qudt:QuantityKind ;
     qudt:hasDimensionVector "" ;
     skos:notation "ryld" .
 
-<http://linked.data.gov.au/def/geoqk> a prof:Profile ;
+<https://linked.data.gov.au/def/geoqk> a prof:Profile ;
     dcterms:created "2020-04-15"^^xsd:date ;
-    dcterms:creator <http://linked.data.gov.au/org/gsq> ;
+    dcterms:creator <https://linked.data.gov.au/org/gsq> ;
     dcterms:modified "2020-06-11"^^xsd:date ;
-    dcterms:publisher <http://linked.data.gov.au/org/gsq> ;
+    dcterms:publisher <https://linked.data.gov.au/org/gsq> ;
     skos:definition "This profile of the Quantities, Units, Dimensions & Types ontology and vocabularies lists those elements deemed by the profile creators to be of relevance to the geosciences." ;
     skos:prefLabel "Geoscience Profile of QUDT Quantity Kinds" ;
     prof:hasResource [ dcterms:conformsTo <https://qudt.org> ;
             dcterms:format "text/turtle" ;
-            prof:hasArtifact <http://linked.data.gov.au/def/geoqk.ttl> ;
+            prof:hasArtifact <https://linked.data.gov.au/def/geoqk.ttl> ;
             prof:hasRole role:vocabulary ] ;
     prof:isProfileOf <https://qudt.org> .
 
@@ -1435,6 +1435,6 @@ For an irrotational electric field, the voltage is independent of the path betwe
     qudt:plainTextDescription "The volume of a solid object is the three-dimensional concept of how much space it occupies, often quantified numerically. One-dimensional figures (such as lines) and two-dimensional shapes (such as squares) are assigned zero volume in the three-dimensional space." ;
     rdfs:isDefinedBy <http://qudt.org/2.1/vocab/quantitykind> .
 
-<http://linked.data.gov.au/org/gsq> a sdo:Organization ;
+<https://linked.data.gov.au/org/gsq> a sdo:Organization ;
     sdo:name "Geological Survey of Queensland" ;
     sdo:url <https://www.business.qld.gov.au/industries/mining-energy-water/resources/geoscience-information/gsq> .
